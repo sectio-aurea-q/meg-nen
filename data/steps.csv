@@ -1,0 +1,12 @@
+step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes
+SLO1_SOYBN_I553V_LA,SLO1_SOYBN_I553V,linoleic acid,linoleic acid C11,Fe(III)–OH oxygen,PCET,verified,proton-coupled electron transfer from C-11 to Fe(III)-OH (S002 Scheme 1)
+SLO1_SOYBN_I553L_LA,SLO1_SOYBN_I553L,linoleic acid,linoleic acid C11,Fe(III)–OH oxygen,PCET,verified,proton-coupled electron transfer from C-11 to Fe(III)-OH (S002 Scheme 1)
+SLO1_SOYBN_I553G_LA,SLO1_SOYBN_I553G,linoleic acid,linoleic acid C11,Fe(III)–OH oxygen,PCET,verified,proton-coupled electron transfer from C-11 to Fe(III)-OH (S002 Scheme 1)
+DHFR_ECOLI_G121V_M42W_NADPH,DHFR_ECOLI_G121V_M42W,NADPH,NADPH C4 (pro-R H),"7,8-dihydrofolate C6 (si face)",hydride,verified,
+MR_PSEPU_WT_RED,MR_PSEPU_WT,NADH,NADH C4 (A-side H),FMN,hydride,verified,"reductive half-reaction; S006 reports no significant solvent isotope effect on flavin reduction (1.05 ± 0.02, temperature not stated); the source names FMN as the acceptor; transfer to flavin N5 is general flavin chemistry, not stated in the source"
+PETNR_ENTCL_WT_RED,PETNR_ENTCL_WT,NADPH,NADPH C4,FMN,hydride,verified,"reductive half-reaction; NADP2H made with T. brockii alcohol dehydrogenase, as the A-side NAD2H; the source names FMN as the acceptor; transfer to flavin N5 is general flavin chemistry, not stated in the source"
+MR_PSEPU_WT_OX_H,MR_PSEPU_WT,reduced FMN,FMN N5,"2-cyclohexenone, α/β unsaturated bond",hydride,verified,"oxidative half-reaction; concerted with the protonation of 2-cyclohexenone (double isotope effect, S006)"
+MR_PSEPU_WT_OX_P,MR_PSEPU_WT,unidentified active-site acid,unidentified active-site acid,2-cyclohexenone (protonation),proton,verified,concerted with the hydride transfer; measured as solvent isotope effects
+TMADH_METME_H172Q_TMA,TMADH_METME_H172Q,trimethylamine,trimethylamine methyl C–H,6-S-cysteinyl-FMN,unknown,verified,"C–H bond cleavage/flavin reduction; S007 proposes cleavage initiated by flavin N5 (Fig. 2), without unequivocal evidence"
+TMADH_METME_Y169F_TMA,TMADH_METME_Y169F,trimethylamine,trimethylamine methyl C–H,6-S-cysteinyl-FMN,unknown,verified,"C–H bond cleavage/flavin reduction; S007 proposes cleavage initiated by flavin N5 (Fig. 2), without unequivocal evidence"
+DHFR_ECOLI_G121V_NADPH,DHFR_ECOLI_G121V,NADPH,NADPH C4 (pro-R H),"7,8-dihydrofolate C6 (si face)",hydride,verified,the source states the stereochemistry: pro-R C4 of the nicotinamide ring to the si face of C6

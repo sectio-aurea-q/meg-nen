@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+"""Checks the four data tables against SCHEMA.md. Exit code 0 means every row passes."""
+import csv, re, sys, pathlib
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+DOI = re.compile(r'^10\.\d{4,9}/\S+$')
+
+HEADERS = {
+    'enzymes.csv': 'enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes',
+    'steps.csv': 'step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes',
+    'measurements.csv': 'meas_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
+                        'value,error,temperature_K,pH,conditions,doi,location,as_printed,'
+                        'extracted_by,checked_by,status,notes',
+    'temperature.csv': 'temp_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
+                       'T_min_K,T_max_K,n_temperatures,AH_AX,AH_AX_error,dEa_kcal,dEa_error,'
+                       'Ea_light_kcal,Ea_light_error,pH,conditions,doi,location,as_printed,'
+                       'extracted_by,checked_by,status,notes',
+}
+ALLOWED = {
+    'status': {'verified', 'single', 'disputed'},
+    'transfer': {'H_atom', 'hydride', 'proton', 'PCET', 'unknown'},
+    'kie_type': {'primary', 'secondary', 'solvent', 'other'},
+    'isotopes': {'H/D', 'H/T', 'D/T'},
+    'quantity': {'kcat', 'kcat/KM', 'single_turnover', 'other'},
+    'method': {'noncompetitive', 'competitive', 'other'},
+    'kind': {'observed', 'intrinsic'},
+}
+
+errors = []
+
+
+def err(table, row, msg):
+    errors.append(f'{table} row {row}: {msg}')
+
+
+def load(name):
+    with open(ROOT / 'data' / name, newline='', encoding='utf-8') as f:
+        if f.readline().strip() != HEADERS[name]:
+            err(name, 1, 'header differs from SCHEMA.md')
+            return []
+        f.seek(0)
+        return list(csv.DictReader(f))
+
+
+def allowed(table, i, r, *fields):
+    for f in fields:
+        if r[f] not in ALLOWED[f]:
+            err(table, i, f'{f} {r[f]!r} is not one of {sorted(ALLOWED[f])}')
+
+
+def number(table, i, r, field, lo=None, hi=None, required=False):
+    v = r[field].strip()
+    if not v:
+        if required:
+            err(table, i, f'{field} is empty')
+        return None
+    try:
+        x = float(v)
+    except ValueError:
+        err(table, i, f'{field} is not a number: {v!r}')
+        return None
+    if lo is not None and x < lo:
+        err(table, i, f'{field} = {v} is below {lo}')
+    elif hi is not None and x > hi:
+        err(table, i, f'{field} = {v} is above {hi}')
+    return x
+
+
+def unique(table, rows, key):
+    seen = set()
+    for i, r in enumerate(rows, 2):
+        if not r[key].strip():
+            err(table, i, f'{key} is empty')
+        elif r[key] in seen:
+            err(table, i, f'{key} {r[key]} appears twice')
+        seen.add(r[key])
+    return seen
+
+
+def source(table, i, r):
+    if not DOI.match(r['doi'].strip()):
+        err(table, i, f'doi {r["doi"]!r} is not a DOI')
+    for f in ('location', 'as_printed', 'extracted_by'):
+        if not r[f].strip():
+            err(table, i, f'{f} is empty')
+    if len(r['as_printed'].split()) > 15:
+        err(table, i, 'as_printed is longer than 15 words')
+    if r['status'] == 'verified':
+        first, second = r['extracted_by'].strip(), r['checked_by'].strip()
+        if not second:
+            err(table, i, 'verified, but there is no second reading (checked_by)')
+        elif first == second:
+            err(table, i, 'verified needs two different readers')
+
+
+enzymes = load('enzymes.csv')
+enzyme_ids = unique('enzymes.csv', enzymes, 'enzyme_id')
+for i, r in enumerate(enzymes, 2):
+    allowed('enzymes.csv', i, r, 'status')
+
+steps = load('steps.csv')
+step_ids = unique('steps.csv', steps, 'step_id')
+for i, r in enumerate(steps, 2):
+    allowed('steps.csv', i, r, 'transfer', 'status')
+    if r['enzyme_id'] not in enzyme_ids:
+        err('steps.csv', i, f'enzyme_id {r["enzyme_id"]!r} is not in enzymes.csv')
+
+tables = {}
+for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id')):
+    rows = tables[name] = load(name)
+    unique(name, rows, key)
+    for i, r in enumerate(rows, 2):
+        if r['step_id'] not in step_ids:
+            err(name, i, f'step_id {r["step_id"]!r} is not in steps.csv')
+        allowed(name, i, r, 'kie_type', 'isotopes', 'quantity', 'method', 'kind', 'status')
+        source(name, i, r)
+        number(name, i, r, 'pH', 0, 14)
+        if name == 'measurements.csv':
+            number(name, i, r, 'value', 0, required=True)
+            number(name, i, r, 'error', 0)
+            number(name, i, r, 'temperature_K', 200, 400, required=True)
+        else:
+            lo = number(name, i, r, 'T_min_K', 200, 400)
+            hi = number(name, i, r, 'T_max_K', 200, 400)
+            if (lo is None) != (hi is None):
+                err(name, i, 'give both T_min_K and T_max_K, or neither')
+            elif lo is not None and lo >= hi:
+                err(name, i, 'T_min_K is not below T_max_K')
+            n = number(name, i, r, 'n_temperatures', 2)
+            if n is not None and n != int(n):
+                err(name, i, 'n_temperatures is not a whole number')
+            number(name, i, r, 'AH_AX', 0)
+            number(name, i, r, 'dEa_kcal')
+            number(name, i, r, 'Ea_light_kcal')
+            for f in ('AH_AX_error', 'dEa_error', 'Ea_light_error'):
+                number(name, i, r, f, 0)
+            if not (r['AH_AX'].strip() or r['dEa_kcal'].strip()):
+                err(name, i, 'neither AH_AX nor dEa_kcal is given')
+
+if errors:
+    print('\n'.join(errors))
+    print(f'\n{len(errors)} problem(s)')
+    sys.exit(1)
+print(f'all rows pass: {len(enzymes)} enzymes, {len(steps)} steps, '
+      f'{len(tables["measurements.csv"])} isotope effects, '
+      f'{len(tables["temperature.csv"])} temperature series')

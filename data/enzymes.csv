@@ -1,0 +1,10 @@
+enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes
+SLO1_SOYBN_I553V,soybean lipoxygenase-1 (SLO-1),1.13.11.12,Glycine max,P08170,I553V,3BND,verified,"RCSB lists the entity as I553V, S160E relative to UniProt; 3BND cites the source DOI; the source itself prints no PDB ID"
+SLO1_SOYBN_I553L,soybean lipoxygenase-1 (SLO-1),1.13.11.12,Glycine max,P08170,I553L,3BNB,verified,"RCSB lists the entity as I553L, S160E relative to UniProt; 3BNB cites the source DOI; the source itself prints no PDB ID"
+SLO1_SOYBN_I553G,soybean lipoxygenase-1 (SLO-1),1.13.11.12,Glycine max,P08170,I553G,3BNC;5TQP,verified,"RCSB lists the entity as I553G, S160E relative to UniProt; 3BNC cites the source DOI; the source itself prints no PDB ID; 5TQP is a later structure of the same variant at 300 K (released 2017)"
+DHFR_ECOLI_G121V_M42W,dihydrofolate reductase (ecDHFR),1.5.1.3,Escherichia coli,P0ABQ4,G121V/M42W,,verified,"the source writes G121V–M42W; the sources name no E. coli strain; P0ABQ4 is the K-12 Swiss-Prot entry (P0ABQ5, strain CFT073, has the same sequence)"
+MR_PSEPU_WT,morphinone reductase (MR),,Pseudomonas putida M10,Q51990,WT,,single,expressed from the cloned morB gene in E. coli
+PETNR_ENTCL_WT,pentaerythritol tetranitrate reductase (PETN reductase),1.3.1.-;1.7.1.-,Enterobacter cloacae PB2,P71278,WT,,single,EC as in UniProt
+TMADH_METME_H172Q,trimethylamine dehydrogenase (TMADH),1.5.8.2,Methylophilus methylotrophus W3A1,P16099,H172Q,,verified,the source gives the older EC 1.5.99.7; the source numbers the mature protein: His-172 is H173 in UniProt (initiator methionine removed)
+TMADH_METME_Y169F,trimethylamine dehydrogenase (TMADH),1.5.8.2,Methylophilus methylotrophus W3A1,P16099,Y169F,,verified,the source gives the older EC 1.5.99.7; the source numbers the mature protein: Tyr-169 is Y170 in UniProt (initiator methionine removed)
+DHFR_ECOLI_G121V,dihydrofolate reductase (ecDHFR),1.5.1.3,Escherichia coli,P0ABQ4,G121V,,verified,"the sources name no E. coli strain; P0ABQ4 is the K-12 Swiss-Prot entry (P0ABQ5, strain CFT073, has the same sequence)"
