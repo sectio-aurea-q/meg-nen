@@ -13,8 +13,8 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `ec` | EC number, may be empty |
 | `organism` | species |
 | `uniprot` | UniProt accession |
-| `variant` | `WT` or the mutation(s), e.g. `I553A`; several mutations joined by `/` (e.g. `G121V/M42W`), in the numbering of the source |
-| `pdb` | PDB entries of exactly this variant, separated by `;`; sequence differences that RCSB lists but the study did not engineer go into `notes`; for a wild type with very many entries the field stays empty and `notes` names the entries the source uses |
+| `variant` | `WT` or the mutation(s), e.g. `I553A`; several mutations joined by `/` (e.g. `G121V/M42W`), in the numbering of the source; a truncated construct as the source names it (e.g. `Δ117`, `102–416`) |
+| `pdb` | PDB entries of exactly this variant, separated by `;`; sequence differences that RCSB lists but the study did not engineer go into `notes`; for a wild type with very many entries the field stays empty and `notes` names the entries the source uses; entries of a shorter construct (a truncation or a single domain) are named in `notes`, not listed, while a missing initiator Met, tags or a removed transit peptide do not count |
 | `status` | `verified`, `single` or `disputed` (see CURATION.md) |
 | `notes` | free text |
 
