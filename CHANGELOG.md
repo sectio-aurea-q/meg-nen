@@ -3,6 +3,13 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-07 18:43
+- S014–S018 entered and read twice: five open-access papers on E. coli DHFR (M42W; I14V, I14G), soybean
+  lipoxygenase-1 (L546A/I553A; L546A/L754A) and ht-ADH (L176V, L176A, L176G, L176Δ, V260A): 8 isotope effects and
+  11 temperature series, all `verified`, with 10 new enzyme variants and their steps. The second reading found the
+  PDB entries 4QLG and 4QLF of I14V and I14G, which the first reading had missed.
+  See `curation/2026-11-07_second_reading_S014-S018/`.
+
 ## 2026-11-07 13:41
 - Second check of 7 enzyme rows (`ai-2`): UniProt, EC, organism and variant agree in all 7; `SLO1_SOYBN_I553G` gains
   PDB 5TQP; notes on the TMADH residue numbering and the E. coli strain. `MR_PSEPU_WT` and `PETNR_ENTCL_WT` stay
