@@ -10,10 +10,10 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 |---|---|
 | `enzyme_id` | unique short id, e.g. `SLO1_SOYBN_WT` |
 | `name` | name as used in the source |
-| `ec` | EC number, may be empty |
+| `ec` | EC number as UniProt gives it now, may be empty; a different number printed by the source goes into `notes` |
 | `organism` | species |
 | `uniprot` | UniProt accession |
-| `variant` | `WT` or the mutation(s), e.g. `I553A`; several mutations joined by `/` (e.g. `G121V/M42W`), in the numbering of the source; a truncated construct as the source names it (e.g. `Δ117`, `102–416`) |
+| `variant` | `WT` or the mutation(s), e.g. `I553A`; several mutations joined by `/` (e.g. `G121V/M42W`), in the numbering of the source; a truncated construct as the source names it (e.g. `Δ117`, `102–416`); an isotope-labelled protein by its labels (e.g. `heavy (13C, 15N, 2H)`) |
 | `pdb` | PDB entries of exactly this variant, separated by `;`; sequence differences that RCSB lists but the study did not engineer go into `notes`; for a wild type with very many entries the field stays empty and `notes` names the entries the source uses; entries of a shorter construct (a truncation or a single domain) are named in `notes`, not listed, while a missing initiator Met, tags or a removed transit peptide do not count |
 | `status` | `verified`, `single` or `disputed` (see CURATION.md) |
 | `notes` | free text |
