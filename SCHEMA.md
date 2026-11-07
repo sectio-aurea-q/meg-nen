@@ -14,7 +14,7 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `organism` | species |
 | `uniprot` | UniProt accession |
 | `variant` | `WT` or the mutation(s), e.g. `I553A`; several mutations joined by `/` (e.g. `G121V/M42W`), in the numbering of the source |
-| `pdb` | PDB entries of exactly this variant, separated by `;`; sequence differences that RCSB lists but the study did not engineer go into `notes` |
+| `pdb` | PDB entries of exactly this variant, separated by `;`; sequence differences that RCSB lists but the study did not engineer go into `notes`; for a wild type with very many entries the field stays empty and `notes` names the entries the source uses |
 | `status` | `verified`, `single` or `disputed` (see CURATION.md) |
 | `notes` | free text |
 
@@ -39,8 +39,8 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `labelled_position` | where the heavy isotope sits, e.g. `C11, both H (11,11-d2)` |
 | `kie_type` | `primary` (the transferred hydrogen), `secondary` (a hydrogen that is not transferred), `solvent` (D2O) or `other` |
 | `isotopes` | `H/D`, `H/T` or `D/T` |
-| `quantity` | the rate the effect is on: `kcat`, `kcat/KM`, `single_turnover` (a single-turnover or pre-steady-state rate constant) or `other` |
-| `method` | `noncompetitive` (light and heavy measured separately), `competitive` (both in one mixture) or `other` |
+| `quantity` | the rate the effect is on: `kcat`, `kcat/KM`, `single_turnover` (a single-turnover or pre-steady-state rate constant) or `other`; an intrinsic value calculated from competitive kcat/KM KIEs (Northrop method) keeps `kcat/KM` |
+| `method` | `noncompetitive` (light and heavy measured separately), `competitive` (both in one mixture, also intramolecular competition within one molecule) or `other` |
 | `kind` | `intrinsic` only when the source says so, otherwise `observed` |
 | `value` | the isotope effect, light over heavy |
 | `error` | the ± value as printed, empty if none is given |
