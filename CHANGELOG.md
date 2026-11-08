@@ -3,6 +3,14 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-08 15:02
+- S039–S040 entered and read twice: E. coli thymidylate synthase Y209W (intrinsic H/T Arrhenius parameters of the
+  hydride transfer, 5–35 °C) and the wild type with 50 mM MgCl2 (Dkcat and intrinsic Dk at 25 °C, intrinsic H/T
+  Arrhenius parameters): 2 isotope effects and 2 temperature series, all `verified`, with 1 new enzyme variant and
+  2 steps. Both readings agree in every number; they differ only in whether the Dkcat with Mg2+, which the source
+  finds equal to the intrinsic KIE, is `observed` or `intrinsic` (kept `observed`). The wild-type row now names the
+  PDB entries of S040. See `curation/2026-11-08_second_reading_S039-S040/`.
+
 ## 2026-11-08 02:54
 - S034–S038 entered and read twice: E. coli DHFR distal and double mutants (W133F, F125M, G121V/F125M, M42W/F125M,
   I14A/G121V; intrinsic H/T Arrhenius parameters), E. coli DHFR at pH 7.0 and the humanized mutants N23PP and
