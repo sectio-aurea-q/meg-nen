@@ -3,6 +3,15 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-08 20:10
+- S046–S050 entered and read twice (block 2 of the second reading list): the hydride transfer of E. coli TS N177S
+  and N177D, of E. coli DHFR I14A and the heavy (13C, 15N, 2H) E. coli DHFR, and of human DHFR M53W, S145V, their
+  double mutant, F32M, F32L, F32L/PP26N/PEKN62G, Δ62-PEKN and Δ26-PPLR/Δ62-PEKN: 11 isotope effects and 13
+  temperature series, all `verified`, with 12 new enzyme rows and 12 steps. Both readings agree in every number and
+  sign. The wild-type values the papers print come from earlier work and are not entered; the human ones equal
+  T0078 (S037). S050 prints F32L parameters that cannot both be right, and S048 and S050 print their Arrhenius
+  equations with the opposite sign; see `curation/2026-11-08_second_reading_S046-S050/`.
+
 ## 2026-11-08 18:06
 - `README.md` links *tunnelling informatics* to its definition page,
   https://sectio-aurea-q.github.io/tunnelling-informatics.html. No data changed.
