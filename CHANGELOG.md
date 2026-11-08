@@ -3,6 +3,10 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-08 18:06
+- `README.md` links *tunnelling informatics* to its definition page,
+  https://sectio-aurea-q.github.io/tunnelling-informatics.html. No data changed.
+
 ## 2026-11-08 17:13
 - S041–S045 entered and read twice (block 1 of the second reading list, thymidylate synthase): the proton
   abstraction of E. coli TS (wild type H/T and D/T, Y94F, Y209W, R166K) and the hydride transfer and proton

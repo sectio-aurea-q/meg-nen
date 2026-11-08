@@ -2,8 +2,10 @@
 
 A curated database of measured hydrogen isotope effects in enzymes: kinetic isotope effects
 and their temperature dependence, each value traced to the table or page of its primary
-source. It is the data basis of tunnelling informatics: deciding from open data and stated
-rules what the measurements say about hydrogen tunnelling in enzymes.
+source. It is the data basis of
+[tunnelling informatics](https://sectio-aurea-q.github.io/tunnelling-informatics.html):
+deciding from open data and stated rules what the measurements say about hydrogen tunnelling
+in enzymes.
 
 **Status:** in construction, no release yet.
 
