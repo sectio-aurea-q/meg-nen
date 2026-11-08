@@ -38,7 +38,7 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `step_id` | refers to `steps.csv` |
 | `labelled_position` | where the heavy isotope sits, e.g. `C11, both H (11,11-d2)` |
 | `kie_type` | `primary` (the transferred hydrogen), `secondary` (a hydrogen that is not transferred), `solvent` (D2O) or `other` |
-| `isotopes` | `H/D`, `H/T` or `D/T` |
+| `isotopes` | `H/D`, `H/T` or `D/T`; effects of labelling the protein itself (heavy-enzyme effects) are not entered |
 | `quantity` | the rate the effect is on: `kcat`, `kcat/KM`, `single_turnover` (a single-turnover or pre-steady-state rate constant) or `other`; an intrinsic value calculated from competitive kcat/KM KIEs (Northrop method) keeps `kcat/KM` |
 | `method` | `noncompetitive` (light and heavy measured separately), `competitive` (both in one mixture, also intramolecular competition within one molecule) or `other` |
 | `kind` | `intrinsic` only when the source says so, otherwise `observed` |
