@@ -3,6 +3,14 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-08 17:13
+- S041–S045 entered and read twice (block 1 of the second reading list, thymidylate synthase): the proton
+  abstraction of E. coli TS (wild type H/T and D/T, Y94F, Y209W, R166K) and the hydride transfer and proton
+  abstraction of human TS: 7 temperature series, all `verified`, with 2 new enzyme rows and 4 steps. Both readings
+  agree in every number and sign. The second reading also entered the single KIEs of S045 Table 2 and one value
+  from its text; they are left out, since the paper states no temperature for them. See
+  `curation/2026-11-08_second_reading_S041-S045/`.
+
 ## 2026-11-08 15:02
 - S039–S040 entered and read twice: E. coli thymidylate synthase Y209W (intrinsic H/T Arrhenius parameters of the
   hydride transfer, 5–35 °C) and the wild type with 50 mM MgCl2 (Dkcat and intrinsic Dk at 25 °C, intrinsic H/T
