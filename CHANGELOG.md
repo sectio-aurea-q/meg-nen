@@ -3,6 +3,21 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-09 10:25
+
+- Correction to the entry of 08:05, which said that all 65 papers of MEG-NEN had been read twice. The reading list
+  holds 65 papers, but eight of them are behind paywalls, carry `pdf_in_hand = no` in `sources/first_sources.csv`
+  and contribute no row to the data: S001, S003, S004, S005, S008, S010, S011 and S012. **57 papers have been
+  read.** Earlier entries counted correctly (47 papers after S051–S055, 52 after S056–S060); the entry of 08:05
+  counted the rows of the reading list instead of the papers read.
+- The papers read were published between 2001 and 2026, not between 1989 and 2026: the only paper of 1989, Cha,
+  Murray and Klinman, *Hydrogen Tunneling in Enzyme Reactions*, is one of the eight that are missing, as are
+  Knapp, Rickert and Klinman (2002) on soybean lipoxygenase-1 and Kohen et al. (1999) on the thermophilic alcohol
+  dehydrogenase. The earliest primary literature of the field is therefore not yet represented.
+- No entered value, enzyme row, step or reading is affected. The error was in the count, not in the data; the
+  validator and the double readings are unchanged. The project website carried the wrong figure for about an
+  hour on 9 November and was corrected the same morning.
+
 ## 2026-11-09 08:05
 - S061–S065 entered and read twice (block 5, the last block of the second reading list): the hydride transfer from
   NADH to the FAD of human NQO1 in the two non-equivalent sites of the dimer, the aromatic, tautomerization and
@@ -25,8 +40,9 @@ decision is kept in `curation/`.
   carry `n_temperatures` 10. SCHEMA.md unchanged; the PDB fields of S062 and S064 follow its clause on sequence
   differences a study did not engineer, with both readings' findings in the notes.
   See `curation/2026-11-09_second_reading_S061-S065/`.
-- The second reading list is finished: all 65 papers of MEG-NEN have been read twice, 283 isotope effects and 153
-  temperature series. 113 of 115 enzyme rows are `verified`; `MR_PSEPU_WT` and `PETNR_ENTCL_WT` wait for a person.
+- The second reading list is finished: every paper that has been obtained has now been read twice. The reading
+  list holds 65 papers, of which 57 have been read; 283 isotope effects and 153 temperature series come from
+  those 57. 113 of 115 enzyme rows are `verified`; `MR_PSEPU_WT` and `PETNR_ENTCL_WT` wait for a person.
 
 ## 2026-11-09 07:09
 - S056–S060 entered and read twice (block 4 of the second reading list): the C–H activation of soybean
