@@ -3,6 +3,31 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-09 08:05
+- S061–S065 entered and read twice (block 5, the last block of the second reading list): the hydride transfer from
+  NADH to the FAD of human NQO1 in the two non-equivalent sites of the dimer, the aromatic, tautomerization and
+  benzylic isotope effects of the phenylalanine hydroxylase of *Chromobacterium violaceum* and of its I234D variant,
+  the protonation of geranylgeranyl diphosphate by the class II terpene cyclase PtmT2 measured in mixed H₂O/D₂O
+  buffers, the proton abstraction of the designed Kemp eliminase KE07 in six rounds of a directed-evolution
+  trajectory, and the transient oxidation of CDP-glucose by the C2 epimerase of *Thermodesulfatator atlanticus* from
+  20 to 80 °C: 35 isotope effects and 17 temperature series, all `verified`, with 11 new enzyme rows and 14 steps.
+  Both readings agree in every value, error, temperature, pH, quantity and method. The second reading found two
+  values and two temperature series the first had missed, all four now entered: the KIE of four that S063 reports
+  for its mixed buffers (M0282), the D(kcat) of 6.1 at 40 °C of S065 (M0283) and the two forced Arrhenius fits of
+  footnote b of S063 Table 1 (T0152, T0153, sign changed, because the printed Δ_H–D E_a is Ea(light) − Ea(heavy)).
+  It also found one error: the UniProt accession A0ABS1GJY6, which RCSB cross-references from entry 9RL0 of the
+  epimerase, is a *Persephonella atlantica* homolog at 85.6 % identity and not this protein, so the field is now
+  empty. The four D(kcat) values of S062 Table 2 change from `primary` to `other`, because the paper states they
+  combine the isotope effect on the attack of the Fe(IV)O intermediate on the ring, where no bond to a labelled
+  hydrogen breaks, with the effect on the tautomerization, where a ring hydrogen is lost. The six values of S063
+  stay `observed`: the word intrinsic appears only in the hypothesis sentence of its introduction, about the method
+  and not about a number. The ten temperatures of S063 are listed in its Experimental Section, so those rows now
+  carry `n_temperatures` 10. SCHEMA.md unchanged; the PDB fields of S062 and S064 follow its clause on sequence
+  differences a study did not engineer, with both readings' findings in the notes.
+  See `curation/2026-11-09_second_reading_S061-S065/`.
+- The second reading list is finished: all 65 papers of MEG-NEN have been read twice, 283 isotope effects and 153
+  temperature series. 113 of 115 enzyme rows are `verified`; `MR_PSEPU_WT` and `PETNR_ENTCL_WT` wait for a person.
+
 ## 2026-11-09 07:09
 - S056–S060 entered and read twice (block 4 of the second reading list): the C–H activation of soybean
   lipoxygenase-1 in three double mutants of its substrate pocket, in mutants of the surface residue Y317 and of
