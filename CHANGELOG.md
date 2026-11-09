@@ -3,6 +3,16 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-09 06:27
+- S051–S055 entered and read twice (block 3 of the second reading list): the hydride transfer of DHFR from the
+  deep-sea bacterium Moritella profunda and from Geobacillus stearothermophilus with six variants (L20M, A104Q,
+  L20M/A104Q, P122E, P129D, P122E/P129D), of E. coli and human DHFR at five temperatures from 5 to 45 °C, and of
+  recombinant Candida boidinii FDH and its variants V123A and V123G: 19 isotope effects and 12 temperature series,
+  all `verified`, with 11 new enzyme rows and 11 steps. Both readings agree in every number and sign. The
+  recombinant FDH has its own row (`FDH_CANBO_REC`), apart from the commercial enzyme. The second reading also
+  entered two α-secondary KIEs of S051 that are averages over temperature; they are left out. S055 credits its
+  wild-type values to the wrong reference; see `curation/2026-11-09_second_reading_S051-S055/`.
+
 ## 2026-11-08 20:10
 - S046–S050 entered and read twice (block 2 of the second reading list): the hydride transfer of E. coli TS N177S
   and N177D, of E. coli DHFR I14A and the heavy (13C, 15N, 2H) E. coli DHFR, and of human DHFR M53W, S145V, their
