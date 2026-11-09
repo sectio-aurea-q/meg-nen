@@ -41,7 +41,7 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `isotopes` | `H/D`, `H/T` or `D/T`; effects of labelling the protein itself (heavy-enzyme effects) are not entered |
 | `quantity` | the rate the effect is on: `kcat`, `kcat/KM`, `single_turnover` (a single-turnover or pre-steady-state rate constant) or `other`; an intrinsic value calculated from competitive kcat/KM KIEs (Northrop method) keeps `kcat/KM` |
 | `method` | `noncompetitive` (light and heavy measured separately), `competitive` (both in one mixture, also intramolecular competition within one molecule) or `other` |
-| `kind` | `intrinsic` only when the source says so, otherwise `observed` |
+| `kind` | `intrinsic` when the source says so of that value, or when it comes from a competitive measurement the source reports as yielding intrinsic effects; otherwise `observed`. See CURATION.md rule 5 |
 | `value` | the isotope effect, light over heavy |
 | `error` | the ± value as printed, empty if none is given |
 | `temperature_K` | in kelvin |

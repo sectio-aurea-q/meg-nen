@@ -11,8 +11,18 @@
    published with the release. Every second reading is kept in `curation/`, together with the
    comparison of both readings and the decisions taken on each difference.
 4. **As printed.** `as_printed` holds the number exactly as it stands in the source. Nothing
-   is rounded or averaged; a value read off a plot is marked as such in `notes`.
-5. **Observed or intrinsic.** A value is `intrinsic` only when the source says it is.
+   is rounded or averaged; a value that can only be read off a plot is not entered, while a number printed in a figure legend is printed text and is entered.
+5. **Observed or intrinsic.** A value is `intrinsic` when the source says so of that value, or when it comes
+   from a competitive measurement that the source reports as yielding intrinsic effects. A statement that a
+   method *can* yield intrinsic effects is not enough: it must be said of the measurement. Where the second
+   limb is used, `notes` should record the source's statement; 22 rows do not yet do so and are to be closed
+   before release. A source also says so of a value when it asserts, of that measurement or of the conditions
+   under which it was made for the same enzyme and step, that what is measured there *is*, reflects or is
+   realized as the intrinsic effect; such an assertion carries to a temperature series fitted from those same
+   measurements. It stays `observed` when the source also prints, for the same step, an intrinsic value obtained
+   by another route, which the database holds as its own row, when the identification is hedged ("essentially", "approaches", "likely to be",
+   "largely revealed"), or when it is made of the system, the method or earlier work and not of this
+   measurement.
 6. **No value without a source.** Numbers from memory, "typical" values and values copied
    from other databases stay out. The table in `seed/` is the old, unchecked MEG-APSU table:
    it only says which papers to read, and none of its numbers enters `data/` without being

@@ -3,6 +3,61 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-09 13:06
+
+- Four further corrections from the last review of the draft data note, none of them in an entered value:
+  `CURATION.md` rule 4 said a value read off a plot "is marked as such in `notes`", implying such values are
+  entered; no row is so marked and none was entered, so the rule now says a value that can only be read off a plot
+  is not entered, while a number printed in a figure legend is. Rule 5's `observed` carve-out said "only sets the
+  value beside an intrinsic value", which did not cover M0188, whose source states the identity *and* prints the
+  intrinsic value separately (held here as M0189); the carve-out now turns on the source printing that value for
+  the same step. M0131's notes carried two overlapping sentences from different passes, and now carry one. The
+  entry of 12:25 was written with a time later than the archive cut from it; the time is corrected.
+
+## 2026-11-09 12:25
+
+- A third reading settled a rule the database had been applying inconsistently. Rows were marked `intrinsic` on
+  the strength of a source saying that the measured value *is* or *is realized as* the intrinsic effect, while
+  other rows resting on similar wording were marked `observed`. The eighteen rows concerned were re-read against
+  their sources. Seventeen stand as they were; **T0011** (trimethylamine dehydrogenase H172Q, S007) changes from
+  `observed` to `intrinsic`, because the source states that "Only at pH values of 9.5 and above ... is the
+  intrinsic isotope effect realized" and that series was run at pH 9.5 for the same enzyme and step. The earlier
+  settlement had taken a figure legend's "the observed KIE" as decisive; that legend covers the whole pH 6-11
+  histogram, most of which the same text calls inflated.
+- `CURATION.md` rule 5 now states the distinction that separates these cases: an assertion that the measurement
+  *is* the intrinsic effect counts, and carries to a temperature series fitted from the same measurements; a
+  comparison with an intrinsic value obtained by another route does not, nor does a hedged or second-hand
+  identification. Under that rule M0188 stays `observed`, because its source prints the intrinsic value beside it
+  and the database holds it separately as M0189; T0062, T0063, M0104 and M0105 stay `observed` on the hedge
+  "essentially the intrinsic KIE". T0012's notes now record why pH 11 does not carry the same warrant.
+- `SCHEMA.md` carried the superseded one-limb wording for `kind` and now refers to the rule. `data/LICENSE.md`
+  misdirected the grant of rights after the licence was narrowed, and now names the curation. `README.md` states
+  that `seed/` is working material and not part of the release. T0153's notes carried T0152's arithmetic and now
+  carry their own.
+- Counts after these changes: 283 isotope effects, 280 `verified`; 153 temperature series, 151 `verified`;
+  88 observed and 65 intrinsic among the series; 113 rows `intrinsic` in all, of which 22 do not yet quote the
+  source's statement.
+
+## 2026-11-09 11:40
+
+- Four corrections found by an independent review of the draft data note, none of them in an entered value:
+- `sources/first_sources.csv`: the `access` field of S013 said `open` while `pdf_in_hand` recorded an author
+  manuscript, and the rows read from it say so themselves. Corrected to `open (PMC author manuscript)`. Counted
+  over `pdf_in_hand`, 53 of the 57 papers read were read through PMC and 28 of those as author manuscripts,
+  supplying 84 isotope effects and 64 temperature series.
+- M0131, M0282, M0283, T0152 and T0153 stood at `verified` although each was found by one reading only, the other
+  having missed it; the curator checked them against the source, which is not a second independent reading. All
+  five are now `single`, and their notes say so. The counts are now 280 of 283 isotope effects and 151 of 153
+  temperature series `verified`.
+- `CURATION.md` rule 5 stated only the first limb of the rule actually in use. It now states both: a value is
+  `intrinsic` where the source says so of that value, or where it comes from a competitive measurement the source
+  reports as yielding intrinsic effects; and it records that 22 rows entered under the second limb do not yet
+  quote the source's statement.
+- `data/LICENSE.md` and `README.md` licensed `data/` and `sources/` wholesale under CC BY 4.0, which cannot be
+  granted over the wording quoted from the primary sources in `as_printed`, `notes` and `conditions`. The licence
+  now covers the curation, including `curation/` and the documentation, and excludes the quoted wording, which
+  stays with its publishers and is used as short quotation.
+
 ## 2026-11-09 10:25
 
 - Correction to the entry of 08:05, which said that all 65 papers of MEG-NEN had been read twice. The reading list
