@@ -3,6 +3,17 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-09 07:09
+- S056–S060 entered and read twice (block 4 of the second reading list): the C–H activation of soybean
+  lipoxygenase-1 in three double mutants of its substrate pocket, in mutants of the surface residue Y317 and of
+  S749, under hydrostatic pressure up to 1034 bar, and in the network residues I552 and V750, and of the
+  lipoxygenase of Magnaporthe oryzae with and without its sugar chains: 29 isotope effects and 23 temperature
+  series, all `verified`, with 8 new enzyme rows and 8 steps. Both readings agree in every number and sign. Every
+  paper of this block defines ΔEa as Ea(D) − Ea(H), the direction of this database. The second reading also entered
+  the recollected wild type of S059, whose four values are identical to S057; it is left out, so the measurement is
+  counted once. The wild-type row of S060 is entered but flagged, because the paper's text credits its values to an
+  earlier paper. See `curation/2026-11-09_second_reading_S056-S060/`.
+
 ## 2026-11-09 06:27
 - S051–S055 entered and read twice (block 3 of the second reading list): the hydride transfer of DHFR from the
   deep-sea bacterium Moritella profunda and from Geobacillus stearothermophilus with six variants (L20M, A104Q,
