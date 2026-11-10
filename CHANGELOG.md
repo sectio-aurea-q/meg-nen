@@ -3,6 +3,195 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-10 18:08
+
+- Corrections from a third referee reading, of the revised note and the 10:59 archive. None changes an entered
+  value or a count of rows.
+  - `SCHEMA.md` gives the three cases of
+    `kind` as rule 5 does; rule 5 counted 22 rows of its last case without the source's statement, and counts 20,
+    because M0024 and M0025 (S013) record a correction for the commitment and so belong to the case added today;
+    the five read-once rows say "not a blind second reading" where they said "independent"; `as_printed` of the
+    S008 and S011 series quotes the print with ellipses and no longer reorders it; T0167 says that its conditions
+    are those stated for 25 °C; the note of `YADH_YEAST_WT` says which fields are empty; the comment in
+    `tools/validate.py` names the 1 K margin the code has always used.
+  - `TIMESTAMPS.md` lists the 10:59 archive.
+
+## 2026-11-10 10:59
+
+- Corrections from two referee readings of the note and of the 10:44 archive, made the same day. They change which
+  of the rows read this morning are entered; they change no number that was read.
+  - **Four rows of S001 are not entered.** The 10:45 entry below had entered the WT-SLO and Leu546→Ala rows of
+    Table 1 of Knapp, Rickert and Klinman and held them at `single`. Footnote e of that table cites Rickert &
+    Klinman, Biochemistry 1999, 38, 12218 for exactly these two rows, the Introduction gives the wild-type KIE of
+    81 with the same citation, and the Methods say the Leu546→Ala data appeared in that paper. Rule 1 leaves such
+    rows out, and the collection had applied it to the same kind of citation mark before (S027, S041–S045). Holding
+    the rows was the exception, and rule 1 has none. The rows are removed; the earlier paper is added to
+    `sources/first_sources.csv` as S066, not yet obtained. The reading list now holds 66 papers.
+  - **Rows renumbered.** With those four gone, the rows of this morning are M0284–M0297 and T0154–T0167. The
+    numbers M0284–M0299 and T0154–T0169 of the 10:44 archive were never released and are not those of the
+    collection.
+  - **Yeast alcohol dehydrogenase.** `YADH_YEAST_WT` no longer carries a species, an accession or an EC number: S012
+    names none. The second reader's presumption (S. cerevisiae ADH1, P00330) is in `notes`. The row is `verified`,
+    since both readings agree on what the source says.
+  - **T0167** (S012, the H/D series): `pH` is empty; the source states pH 8.5 for the 25 °C tables only.
+  - **`as_printed`** of twelve of the new rows now follows the print where the first reading had abbreviated or
+    reordered it (S001 series, S008 series, S010 Table 2, S011 values).
+  - **Calculated values are marked.** M0286 and M0291 (S008) are effects the source calculates from its H/T and D/T
+    measurements; `notes` now begin "calculated by the source, not measured".
+  - **S010 Table 2** is an Arrhenius fit reported as enthalpies of activation, not an Eyring analysis; the notes of
+    T0163 and T0164 say so.
+  - **`CURATION.md`.** Rule 2 is headed "Two readings, the second blind" and says that blind is not independent.
+    Rule 4 says what is done with individual experiments printed beside their average, with calculated predictions
+    and with calculated effects. Rule 5 names a third case of `intrinsic`: a value the source reports as corrected
+    for the commitment (M0289, M0290). Rules 10 and 11 give their counts out of 167 series. The closing paragraph
+    says that the convention check admits a temperature within 1 K of the fitted range and does not match on
+    `kind`.
+  - **`README.md`, `SCHEMA.md`.** Both said that whether a step counts as tunnelling is computed from the data by
+    code. No such code exists and rule 7 says none is computed; both now say that. "Independent" readings are now
+    called blind in both files. `README.md`: "under construction".
+  - **`TIMESTAMPS.md`** speaks of working archives, not release archives, and lists the 10:44 archive.
+  - **`sources/first_sources.csv`**: the five papers read today say how they were obtained.
+  - Record: `curation/2026-11-10_second_reading_S001_S008_S010-S012/resolution.md`, rewritten with these decisions.
+- Counts after these changes: the reading list holds 66 papers, of which 62 have been read; S003, S004, S005 and
+  S066 are closed. 297 isotope effects, 294 `verified` and 3 `single`; 167 temperature series, 165 `verified` and
+  2 `single`; 97 observed and 70 intrinsic among the series; 122 rows `intrinsic` in all, 99 of them competitive.
+  115 of 117 enzyme rows are `verified`. `tools/validate.py` compares 64 series/value pairs; all agree within a
+  factor of 3.
+
+## 2026-11-10 10:45
+
+- (Row numbers, counts and the four held rows in this entry were superseded the same day; see the entry above.)
+- S001, S008, S010, S011 and S012 entered and read twice: five of the eight papers that the reading list marked as
+  closed. Copies of the published articles reached the author on 10 November 2026 from the offices of two of the
+  corresponding authors; `pdf_in_hand` is now `yes` for these five. They are the temperature study of soybean
+  lipoxygenase-1 and three mutants by Knapp, Rickert and Klinman (S001), the intrinsic primary and the secondary
+  effects of E. coli dihydrofolate reductase (S008), the thermophilic alcohol dehydrogenase above and below its
+  30 °C transition (S010), the hydride transfer of E. coli thymidylate synthase (S011), and Cha, Murray and
+  Klinman, *Hydrogen Tunneling in Enzyme Reactions*, on yeast alcohol dehydrogenase (S012), which is a scan
+  without a text layer and was read from page images by both readers. 16 isotope effects (M0284–M0299) and 16
+  temperature series (T0154–T0169).
+- Both readings agree in every value, error, prefactor ratio, ΔEa, temperature, pH, effect type, isotope pair,
+  quantity, method and kind. Three differences were settled against the sources: the fourteen individual
+  experiments of S012 Tables 2 and 3, which the second reading had entered beside their printed averages, are
+  left out and listed in `notes`; the intrinsic series of S011 cover 5–40 °C at four temperatures, as the Results
+  and the axis of Fig. 2 say, not 5–45 °C as the Abstract does; and the activation enthalpies of S010 Table 2 are
+  not put into `Ea_light_kcal`. Record: `curation/2026-11-10_second_reading_S001_S008_S010-S012/`.
+- Four of the new rows are held at `single` on purpose although both readings agree: M0284, M0285, T0154 and
+  T0155, the WT-SLO and Leu546→Ala rows of S001 Table 1. A footnote credits them to Rickert & Klinman,
+  Biochemistry 1999, 38, 12218, which is not among the sources and has not been read; under rule 1 a person is
+  to decide whether they stay.
+- Two enzymes are new: `HTADH_GEOSE_WT` (`verified`) and `YADH_YEAST_WT`, held at `single` because S012 names
+  neither species nor isozyme and the assignment to P00330 is not a statement of the source. Two steps are new.
+- Counts after these changes: the reading list holds 65 papers, of which 62 have been read; S003, S004 and S005
+  are still closed. 299 isotope effects, 294 `verified`; 169 temperature series, 165 `verified`; 99 observed and
+  70 intrinsic among the series; 122 rows `intrinsic` in all, 99 of them competitive. 114 of 117 enzyme rows are
+  `verified`. `tools/validate.py` now compares 66 series/value pairs for the sign and unit convention; all agree
+  within a factor of 3. `CURATION.md` rules 10 and 11 give their counts out of 169 series; the counts themselves,
+  15 and 46, are unchanged.
+- `TIMESTAMPS.md`: the proofs of the 17:36, 17:38 and 21:27 archives of 9 November are confirmed and listed
+  (Bitcoin blocks 975200, 975200 and 975221).
+
+## 2026-11-09 21:27
+
+- Corrections from a third referee reading, of the note together with the archive. None changes an entered value.
+  - `data/enzymes.csv`, `CPA2E_THEAT_WT`: the row said "the curator confirmed why" of a sequence comparison.
+    That is the pattern rule 3 was written for, in a file rule 3 does not reach, and the same pattern was
+    already removed from `MR_PSEPU_WT` in the 17:36 pass and missed here. The row no longer names an actor.
+  - `CURATION.md` rule 8: the papers stay with **the author**, not "the curator". The word was doing two
+    jobs in the same file - the model in rule 3, the person in rule 8. Rule 8 now says which is which.
+  - `README.md`: the same correction for the seed table.
+  - `data/temperature.csv`, T0084: `as_printed` carried U+27C2 PERPENDICULAR where the source prints a
+    multiplication sign. One wrong character in 436 verbatim fields, in the one field whose whole purpose
+    is to reproduce what the source printed.
+- Checked and not changed: the claim in `CHANGELOG.md` of 14:06 that the sign check was tested by reversing
+  the sign of T0011. It does catch it, but T0011/M0010 is the pair whose predicted and printed values
+  already differ most of all 59, so that is the easiest case for the check and not evidence that it catches
+  a small error. The note says as much; this entry records it here too.
+
+## 2026-11-09 17:38
+
+- `TIMESTAMPS.md`: the proofs of the 13:30 and 14:06 archives are confirmed, both in Bitcoin block 975184,
+  and the 17:36 archive is listed. The note on pending proofs now says that a cell reading `pending` was
+  pending when the file was written and that `ots upgrade` fetches the block, so the table does not go
+  stale as proofs confirm. The archive that carries this file cannot list its own digest, which the file
+  states; the digest is in the data note that cites the archive.
+
+## 2026-11-09 17:36
+
+- Changes from a third referee reading, of the note together with the archive. None changes an entered value.
+  - `CURATION.md` rule 3 now says what *the curator* means in the records under `curation/`. Those records
+    attribute some checks to the curator - a sequence compared, an equation or a scheme read from an image,
+    a PDB entry looked up again. That work was the model's, done outside the two blind readings. It is a
+    third machine look, not a check by a person, and it does not make a row `verified` on its own. Where a
+    person is meant, these files now say so. Nothing in the records was rewritten; the term is defined.
+  - `CURATION.md` rule 4 now states the collection's scope, which until now stood only in the resolution
+    record of one block: isotope effects on rate constants and on Arrhenius or Eyring parameters and nothing
+    else. An isotope effect on another quantity, such as an activation volume or a pressure derivative, has
+    no field here and is not entered.
+  - `CURATION.md` rule 10: the clause about a conversion from kJ/mol asked `notes` to give the printed value
+    and the conversion. Only 3 of the 35 rows concerned do that, so the rule was wrong. `as_printed` keeps
+    the printed number with the source's own unit, so every conversion can be recomputed from the row; the
+    rule now says that instead. All 35 conversions were checked against `as_printed` and are correct.
+  - `CURATION.md` rule 10 also said `notes` record that a direction was *assumed*. The 15 rows concerned
+    write "read as heavy - light"; the rule now uses the wording the rows use.
+  - `CURATION.md` rule 11 asked `notes` to record a missing fitted temperature range. Only 5 of the 46 rows
+    concerned do, and 3 say nothing about it, so the rule was wrong. It now says what is true and is worth
+    saying: `T_min_K` and `T_max_K` are left empty rather than guessed.
+  - `data/enzymes.csv`, `MR_PSEPU_WT`: the row said the first reading confirmed the two PDB entries by
+    sequence, while the resolution record of block S029-S033 attributes that to the curator. The row no
+    longer names an actor, since the two statements cannot both be right and the record is the older one.
+  - `data/LICENSE.md`: `TIMESTAMPS.md` added to the list of documentation the licence covers.
+## 2026-11-09 14:06
+
+- Changes from two independent referee readings of the draft data note. None of them changes an entered value.
+  - `CURATION.md` rule 2: `single` now covers both cases that occur — a row only one reading produced, and a
+    row held at `single` on purpose until a person has checked it — and the rule states that every reading
+    so far, and every settlement of a difference between two readings, is the work of the model.
+  - `CURATION.md` rule 7 rewritten. It said that whether a step counts as tunnelling "is computed from the
+    data by documented rules". No such label exists in the database and none is computed; the rule now says
+    so, and says that deciding what the measurements can determine is the work this collection serves rather
+    than an input to it.
+  - `CURATION.md` rule 10, new: the sign and unit convention, and how each paper's own convention is
+    established before a value is entered. This was practice from the start and stood only in the draft note.
+  - `CURATION.md` rule 11, new: a single-temperature value is not entered without its temperature.
+    `tools/validate.py` has enforced this from the start; the rule was not written down.
+  - `tools/validate.py` now checks the sign and unit convention against the data: where a series and a
+    single-temperature value cover the same step, isotope pair, effect type, quantity and method in the same
+    paper, and the value's temperature lies inside the series' fitted range, the series must reproduce the
+    value through KIE = (A_light/A_heavy) exp(dEa/RT). There are 59 such pairs; all 59 agree within a factor
+    of three and the median ratio is 1.00. The check was tested by reversing the sign of T0011 on purpose,
+    which it caught.
+  - `TIMESTAMPS.md`, new: the SHA-256 digest and Bitcoin block of every stamped archive, with a note that
+    stamping began on 9 November 2026 and that the eleven archives of 6 to 8 November carry no proof.
+  - The five `single` values M0131, M0282, M0283, T0152 and T0153 now carry `checked_by` ai-1, which the
+    resolution record of their block already stated, and their notes name the first reading as the checker.
+    Four of them said "the curator", which can be read as a person; no person has checked any row.
+  - The two `single` enzyme rows now say why each is single: morphinone reductase was read a second time and
+    its difference settled, but its PDB entries were identified from sequence rather than read from the
+    paper; pentaerythritol tetranitrate reductase was never read a second time.
+  - `README.md`: the quoted wording stays with its rightsholders, not "its publishers" --- the same
+    correction already made in `data/LICENSE.md`; `TIMESTAMPS.md` added to the contents table.
+  - `SCHEMA.md`: the Arrhenius pre-factor ratios are named as apparent, since a tunnelling correction, if
+    any, is absorbed in them; `location` is described as it is used, including a page or a figure legend.
+- The OpenTimestamps proofs of the 12:26 and 13:06 archives are now confirmed, in Bitcoin blocks 975172 and
+  975173. The proof of the 13:30 archive is still pending.
+## 2026-11-09 13:30
+
+- Seven corrections from the further reviews of the draft data note, none of them in an entered value:
+  - `CURATION.md` rule 1 now states what until now stood only in the draft note: a value a paper attributes to
+    other work is not entered, and where a paper reprints such a value in its own table without attribution, or
+    forms an isotope effect from a rate constant published elsewhere, the credit is recorded in `notes`.
+  - `CURATION.md` rule 2: the three statuses restated. `verified` covers a row both readings produced where a
+    difference between them was settled against the source, which is the case for 57 of the 431 rows read twice;
+    the earlier wording said `verified` only where both readings agree, which the data contradicted. `single`
+    now also names the case of a check made by the curator rather than by a second independent reading.
+  - `CURATION.md` rule 4 now also states that a value appearing only in supporting information is not entered.
+  - M0131: the note said the same thing twice in two wordings; merged into one clause.
+  - T0011: the settlement of the second reading, reversed by the re-read of 9 November, is marked as superseded,
+    so that it can no longer be read as the decision in force.
+  - `data/LICENSE.md`: the quoted wording remains with its rightsholders, not with "their publishers", and no
+    legal doctrine is asserted over it.
+  - `README.md`: `seed/` marked in the contents table as not part of a release, as the text already said.
 ## 2026-11-09 13:06
 
 - Four further corrections from the last review of the draft data note, none of them in an entered value:

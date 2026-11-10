@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Checks the four data tables against SCHEMA.md. Exit code 0 means every row passes."""
-import csv, re, sys, pathlib
+import csv, math, re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DOI = re.compile(r'^10\.\d{4,9}/\S+$')
@@ -137,6 +137,45 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
             if not (r['AH_AX'].strip() or r['dEa_kcal'].strip()):
                 err(name, i, 'neither AH_AX nor dEa_kcal is given')
 
+# Sign and unit convention, checked against the data (CURATION.md rule 10).
+# Where a temperature series and a single-temperature value cover the same step, isotope pair,
+# effect type, quantity and method in the same paper, and the value's temperature falls inside (or within 1 K of)
+# the series' fitted range, the series must reproduce the value:
+#     KIE = (A_light / A_heavy) * exp(dEa / RT),      dEa = Ea(heavy) - Ea(light).
+# A sign slip inverts the exponential and a unit slip scales dEa by 4.184, so either shows up
+# at once. Series and value come from different fits, so the test is deliberately loose.
+R_KCAL = 1.98720425e-3  # kcal / (mol K)
+TOLERANCE = 3.0
+MATCH = ('step_id', 'isotopes', 'kie_type', 'quantity', 'method', 'doi')
+
+
+def num(value):
+    try:
+        return float(value)
+    except ValueError:
+        return None
+
+
+checked = 0
+for i, s in enumerate(tables['temperature.csv'], 2):
+    a, d = num(s['AH_AX']), num(s['dEa_kcal'])
+    lo, hi = num(s['T_min_K']), num(s['T_max_K'])
+    if None in (a, d, lo, hi) or a <= 0:
+        continue
+    for m in tables['measurements.csv']:
+        if any(m[f] != s[f] for f in MATCH):
+            continue
+        t, observed = num(m['temperature_K']), num(m['value'])
+        if None in (t, observed) or observed <= 0 or not lo - 1 <= t <= hi + 1:
+            continue
+        checked += 1
+        ratio = a * math.exp(d / (R_KCAL * t)) / observed
+        if not 1 / TOLERANCE <= ratio <= TOLERANCE:
+            err('temperature.csv', i,
+                f'{s["temp_id"]} predicts {a * math.exp(d / (R_KCAL * t)):.3g} at '
+                f'{t:.1f} K, but {m["meas_id"]} prints {observed:.3g} '
+                f'(factor {ratio:.2f}); check the sign of dEa_kcal and its unit')
+
 if errors:
     print('\n'.join(errors))
     print(f'\n{len(errors)} problem(s)')
@@ -144,3 +183,5 @@ if errors:
 print(f'all rows pass: {len(enzymes)} enzymes, {len(steps)} steps, '
       f'{len(tables["measurements.csv"])} isotope effects, '
       f'{len(tables["temperature.csv"])} temperature series')
+print(f'sign and unit convention: {checked} series/value pairs agree within a factor '
+      f'of {TOLERANCE:g}')

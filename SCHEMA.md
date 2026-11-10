@@ -41,17 +41,17 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `isotopes` | `H/D`, `H/T` or `D/T`; effects of labelling the protein itself (heavy-enzyme effects) are not entered |
 | `quantity` | the rate the effect is on: `kcat`, `kcat/KM`, `single_turnover` (a single-turnover or pre-steady-state rate constant) or `other`; an intrinsic value calculated from competitive kcat/KM KIEs (Northrop method) keeps `kcat/KM` |
 | `method` | `noncompetitive` (light and heavy measured separately), `competitive` (both in one mixture, also intramolecular competition within one molecule) or `other` |
-| `kind` | `intrinsic` when the source says so of that value, or when it comes from a competitive measurement the source reports as yielding intrinsic effects; otherwise `observed`. See CURATION.md rule 5 |
+| `kind` | `intrinsic` when the source says so of that value, when the source reports it as corrected for the commitment to catalysis, or when it comes from a competitive measurement the source reports as yielding intrinsic effects; otherwise `observed`. See CURATION.md rule 5 |
 | `value` | the isotope effect, light over heavy |
 | `error` | the ± value as printed, empty if none is given |
 | `temperature_K` | in kelvin |
 | `pH` | as a number |
 | `conditions` | buffer and anything else the source states |
 | `doi` | DOI of the primary source |
-| `location` | where the number stands: `Table 1`, `Fig. 3`, `p. 1148` |
+| `location` | where the number stands: a table with its row and column where it has them, otherwise the section of the running text, a figure legend, or a page: `Table 1`, `Fig. 3 legend`, `p. 1148` |
 | `as_printed` | the number exactly as printed, with its unit, at most 15 words |
 | `extracted_by` | who read it first |
-| `checked_by` | who read it a second time, independently |
+| `checked_by` | who read it a second time, without seeing the first reading |
 | `status` | `verified`, `single` or `disputed` |
 | `notes` | free text, e.g. whether `error` is a standard deviation or a standard error |
 
@@ -66,7 +66,7 @@ mean the same.
 | `step_id`, `labelled_position`, `kie_type`, `isotopes`, `quantity`, `method`, `kind` | as above |
 | `T_min_K`, `T_max_K` | measured range, in kelvin; both empty if the source does not state it |
 | `n_temperatures` | number of temperatures, empty if not stated |
-| `AH_AX`, `AH_AX_error` | ratio of the Arrhenius pre-factors, light over heavy (A_H/A_D for H/D) |
+| `AH_AX`, `AH_AX_error` | ratio of the Arrhenius pre-factors as fitted, light over heavy (A_H/A_D for H/D). These are apparent pre-factors: a tunnelling correction, if any, is absorbed in them |
 | `dEa_kcal`, `dEa_error` | E_a(heavy) − E_a(light), in kcal/mol |
 | `Ea_light_kcal`, `Ea_light_error` | E_a of the light isotope, in kcal/mol |
 | `pH`, `conditions`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above |
@@ -79,4 +79,4 @@ original stays in `as_printed`. Results of an Eyring analysis (A′H:A′D and �
 since the isotope differences are the same as in an Arrhenius analysis; `notes` says so.
 
 Derived quantities, such as Swain–Schaad exponents or whether a step counts as tunnelling,
-are not stored. They are computed from these tables by code.
+are not stored, and no code in this repository computes them (CURATION.md, rules 4 and 7).
