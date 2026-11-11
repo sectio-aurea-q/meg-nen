@@ -23,8 +23,9 @@
    person, and it does not make a row `verified` on its own. Where a person is meant, these files say
    *a person*. Before each release a person checks a random sample
    of at least 10 % of the verified rows against the sources, and the error rate found is
-   published with the release. The first such check was made on 11 November 2026
-   (`curation/2026-11-11_person_check/`). Every second reading is kept in `curation/`, together with the
+   published with the release. A first check was made on 11 November 2026
+   (`curation/2026-11-11_person_check/`); only part of it is recorded row by row, and it will be repeated
+   with every row recorded before a numbered release. Every second reading is kept in `curation/`, together with the
    comparison of both readings and the decisions taken on each difference.
 4. **As printed.** `as_printed` holds the number exactly as it stands in the source. Nothing
    is rounded or averaged in curating; where a source prints individual experiments together with

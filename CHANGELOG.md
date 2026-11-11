@@ -3,6 +3,26 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-11 10:45
+
+- Corrections after two referee readings of version 2 of the data note and of the record of the sample check.
+  No value, error or parameter changes.
+  - `curation/2026-11-11_person_check/report.md` rewritten where it was inexact: the sample is stratified by
+    table (30 isotope effects, then 17 series, one generator), and the code of the draw is given; the ten recorded
+    rows were drawn from a pool of 28 rows whose PubMed Central page the model had already located, not from all
+    rows free to read; the person's comparison was made on the copies from which the values had been read, which
+    for 17 of the 47 rows are author manuscripts, so "against the published articles" was too strong; the 36 rows
+    without a row-by-row record are counted as unrecorded, and the check does not discharge rule 3 for a numbered
+    release; the statement on the error rate names its limits; one third reading (M0017) had been marked ambiguous
+    by the reader. `sample.csv` gains columns for the table, the kind of source copy, the pool and the kind of
+    record. `author_statements.md` holds the author's own words.
+  - Two text fields: the `location` of M0017 names the row of Table I (pH 9.5), which the third reading showed
+    was needed to find the value; the `notes` of M0131 no longer say that no person has checked the row.
+  - `README.md`, `CURATION.md` (rule 3) and `CITATION.cff`: the wording on the sample check follows the report;
+    the DOI given for the data note is the one for all versions (10.5281/zenodo.24116484).
+  - The 09:50 entry below said the sample was "checked against the published articles by the author"; read it
+    with these corrections.
+
 ## 2026-11-11 09:50
 
 - **First sample check under rule 3.** A random sample of 47 rows (30 isotope effects, 17 temperature series;
