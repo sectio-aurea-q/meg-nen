@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use MEG-NEN, please cite the data note below and the primary sources of the values you use."
+title: "MEG-NEN: a curated database of measured hydrogen isotope effects in enzymes"
+type: dataset
+authors:
+  - family-names: Hackfort
+    given-names: Sabrina
+    alias: MEG
+    orcid: "https://orcid.org/0009-0007-7458-2487"
+repository-code: "https://github.com/sectio-aurea-q/meg-nen"
+url: "https://sectio-aurea-q.github.io/tunnelling-informatics.html"
+license:
+  - CC-BY-4.0
+  - AGPL-3.0-or-later
+keywords:
+  - kinetic isotope effect
+  - hydrogen tunnelling
+  - enzyme kinetics
+  - data curation
+preferred-citation:
+  type: report
+  title: "MEG-NEN: a curated database of measured hydrogen isotope effects in enzymes — data note and status"
+  authors:
+    - family-names: Hackfort
+      given-names: Sabrina
+      alias: MEG
+      orcid: "https://orcid.org/0009-0007-7458-2487"
+  year: 2026
+  month: 11
+  institution:
+    name: Zenodo
+  doi: 10.5281/zenodo.24116485

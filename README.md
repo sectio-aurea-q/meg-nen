@@ -7,7 +7,8 @@ source. It is the data basis of
 deciding from open data and stated rules what the measurements say about hydrogen tunnelling
 in enzymes.
 
-**Status:** under construction, no release yet.
+**Status:** under construction; no numbered release yet. The state of 10 November 2026 is described in the
+data note [doi:10.5281/zenodo.24116485](https://doi.org/10.5281/zenodo.24116485).
 
 ## Contents
 
@@ -21,7 +22,8 @@ in enzymes.
 | `curation/` | each second reading, the comparison of both readings and the decisions taken |
 | `CHANGELOG.md` | what changed, with date and time |
 | `TIMESTAMPS.md` | the digest and Bitcoin block of each stamped working archive |
-| `seed/` | the old, unchecked MEG-APSU table, used only to find papers; not part of a release |
+| `seed/` | the old, unchecked MEG-APSU table, used only to find papers; not part of the data |
+| `CITATION.cff` | how to cite |
 | `tools/validate.py` | checks every row |
 
 `SCHEMA.md` describes every field, `CURATION.md` how a value gets in.
@@ -31,6 +33,9 @@ in enzymes.
 - Every number carries its DOI, its place in the source and the number as printed.
 - Two readings, the second blind to the first, before a value counts as verified. Both are
   machine readings by the same model; blind is not independent (see `CURATION.md`, rule 2).
+- A person checks a random sample of at least 10 % of the verified rows before a release. The first such
+  check, of 47 rows on 11 November 2026, found no discrepancy; what it covered and what it did not is in
+  `curation/2026-11-11_person_check/report.md`.
 - Whether a step counts as tunnelling is not stored and not computed here (`CURATION.md`, rule 7).
 
 ## Check
@@ -39,12 +44,13 @@ in enzymes.
 python3 tools/validate.py
 ```
 
-## Not part of the release
+## Not part of the data
 
 `seed/` holds the old, unchecked MEG-APSU table. It only said which papers to read; none of its numbers
 enters `data/` without being read again in the source, and its own figures are not checked against any
-source. It stays with the author and is not released. The reading list that replaced it, with checked
-DOIs, is `sources/first_sources.csv`.
+source. It is kept in this repository only to show where the reading list came from: it is not part of
+the data, `tools/validate.py` does not read it, and its numbers should not be used or cited. The reading
+list that replaced it, with checked DOIs, is `sources/first_sources.csv`.
 
 ## License
 
@@ -52,6 +58,12 @@ Curation (`data/`, `sources/`, `curation/` and the documentation): CC BY 4.0, se
 [`data/LICENSE.md`](data/LICENSE.md). The wording quoted from the primary sources in `as_printed`,
 `notes` and `conditions` is excluded and stays with its rightsholders.
 Code (`tools/`): AGPL-3.0, as MEG-APSU, see [`LICENSE`](LICENSE).
+
+## How to cite
+
+Sabrina Hackfort (MEG), *MEG-NEN: a curated database of measured hydrogen isotope effects in enzymes — data
+note and status*, Zenodo, 2026, [doi:10.5281/zenodo.24116485](https://doi.org/10.5281/zenodo.24116485).
+Please cite the primary sources of the values you use as well. See `CITATION.cff`.
 
 ## Author
 

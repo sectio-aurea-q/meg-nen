@@ -34,6 +34,7 @@ carry no proof; they are working backups, not evidence.
 | `MEG-NEN_2026-11-09_21-27.zip` | `50ac82fae8bcd4cdab49fde7dc56a4d2959ee4e38b1c8ab6c924ecca453fffe7` | 975221 |
 | `MEG-NEN_2026-11-10_10-44.zip` | `084922069fe504e66e17b42ef103f82e4595939ad9450b27c5ae925dab426c60` | 975284 |
 | `MEG-NEN_2026-11-10_10-59.zip` | `11c5cf10539faa5373a0150babe2ff4fe02c1f5afa68866ea173952e431b1124` | 975284 |
+| `MEG-NEN_2026-11-10_18-08.zip` | `c0d84be55f002b63a79ef0453f2bae2ba40ae3557ad8fd3f65f48446c82c5b5e` | 975328 |
 
 A proof shown as pending carried the calendars' signatures but not yet a block when this file was
 written; `ots upgrade` fetches the block once one has confirmed it, which normally takes a few hours. The

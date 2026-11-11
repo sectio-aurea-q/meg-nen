@@ -3,6 +3,20 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-11 09:50
+
+- **First sample check under rule 3.** A random sample of 47 rows (30 isotope effects, 17 temperature series;
+  46 of them `verified`, 10.0 % of the verified rows) was read a third time by the model, blind to the entered
+  values, on 10 November, and checked against the published articles by the author on 11 November. No discrepancy
+  was found and no row was changed. The record, with what the check covered, what it did not, and for which rows
+  a row-by-row record exists, is `curation/2026-11-11_person_check/` (`report.md`, `sample.csv`). `CURATION.md`,
+  rule 3, and `README.md` point to it.
+- `README.md`: the status line names the data note (doi:10.5281/zenodo.24116485); a section on how to cite;
+  the paragraph on `seed/` no longer says that the table is withheld, because it lies in this repository: it says
+  that the table is kept only to show where the reading list came from and is not part of the data.
+- `CITATION.cff` added.
+- `TIMESTAMPS.md` lists the 18:08 archive of 10 November.
+
 ## 2026-11-10 18:08
 
 - Corrections from a third referee reading, of the revised note and the 10:59 archive. None changes an entered
