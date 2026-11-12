@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Checks the four data tables against SCHEMA.md. Exit code 0 means every row passes."""
+"""Checks the five data tables against SCHEMA.md. Exit code 0 means every row passes."""
 import csv, math, re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -15,6 +15,8 @@ HEADERS = {
                        'T_min_K,T_max_K,n_temperatures,AH_AX,AH_AX_error,dEa_kcal,dEa_error,'
                        'Ea_light_kcal,Ea_light_error,pH,conditions,doi,location,as_printed,'
                        'extracted_by,checked_by,status,notes',
+    'rates.csv': 'rate_id,step_id,labelled_position,isotope,quantity,value,error,unit,temperature_K,pH,'
+                 'conditions,doi,location,as_printed,extracted_by,checked_by,status,notes',
 }
 ALLOWED = {
     'status': {'verified', 'single', 'disputed'},
@@ -24,6 +26,7 @@ ALLOWED = {
     'quantity': {'kcat', 'kcat/KM', 'single_turnover', 'other'},
     'method': {'noncompetitive', 'competitive', 'other'},
     'kind': {'observed', 'intrinsic'},
+    'isotope': {'H', 'D', 'T'},
 }
 
 errors = []
@@ -177,12 +180,52 @@ for i, s in enumerate(tables['temperature.csv'], 2):
                 f'{t:.1f} K, but {m["meas_id"]} prints {observed:.3g} '
                 f'(factor {ratio:.2f}); check the sign of dEa_kcal and its unit')
 
+# Rate constants (CURATION.md rule 4b).
+rates = load('rates.csv')
+unique('rates.csv', rates, 'rate_id')
+for i, r in enumerate(rates, 2):
+    if r['step_id'] not in step_ids:
+        err('rates.csv', i, f'step_id {r["step_id"]!r} is not in steps.csv')
+    allowed('rates.csv', i, r, 'isotope', 'quantity', 'status')
+    source('rates.csv', i, r)
+    number('rates.csv', i, r, 'pH', 0, 14)
+    number('rates.csv', i, r, 'value', 0, required=True)
+    number('rates.csv', i, r, 'error', 0)
+    number('rates.csv', i, r, 'temperature_K', 200, 400, required=True)
+    if not r['unit'].strip():
+        err('rates.csv', i, 'unit is empty')
+
+# Where both rate constants and an isotope effect are held for the same step, quantity, pH, temperature
+# and paper, the ratio of the rate constants must reproduce the isotope effect within 10 %.
+RATE_TOLERANCE = 0.10
+RATE_KEY = ('step_id', 'quantity', 'pH', 'temperature_K', 'doi')
+by_key = {}
+for r in rates:
+    by_key.setdefault(tuple(r[f] for f in RATE_KEY), {})[r['isotope']] = (num(r['value']), r['unit'], r['rate_id'])
+rate_checked = 0
+for m in tables['measurements.csv']:
+    pair = by_key.get(tuple(m[f] for f in RATE_KEY))
+    if not pair or m['kie_type'] != 'primary' or m['method'] != 'noncompetitive' or m['kind'] != 'observed':
+        continue
+    light, heavy = m['isotopes'].split('/')
+    if light not in pair or heavy not in pair:
+        continue
+    (kl, ul, il), (kh, uh, ih) = pair[light], pair[heavy]
+    kie = num(m['value'])
+    if None in (kl, kh, kie) or kh <= 0 or kie <= 0 or ul != uh:
+        continue
+    rate_checked += 1
+    if abs(kl / kh / kie - 1) > RATE_TOLERANCE:
+        err('rates.csv', 0, f'{il}/{ih} = {kl / kh:.3g}, but {m["meas_id"]} prints {kie:.3g}')
+
 if errors:
     print('\n'.join(errors))
     print(f'\n{len(errors)} problem(s)')
     sys.exit(1)
 print(f'all rows pass: {len(enzymes)} enzymes, {len(steps)} steps, '
       f'{len(tables["measurements.csv"])} isotope effects, '
-      f'{len(tables["temperature.csv"])} temperature series')
+      f'{len(tables["temperature.csv"])} temperature series, {len(rates)} rate constants')
 print(f'sign and unit convention: {checked} series/value pairs agree within a factor '
       f'of {TOLERANCE:g}')
+print(f'rate constants: {rate_checked} ratios reproduce the isotope effect of the same row within '
+      f'{RATE_TOLERANCE:.0%}')

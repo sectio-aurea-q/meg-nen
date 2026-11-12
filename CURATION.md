@@ -37,7 +37,7 @@
    pair obtained from that for another) is entered, and `notes` say that it is calculated. A value that can only be read off a plot is not entered, in the article or in its
    supporting information, while a number printed in a figure legend is printed text and is entered.
    A value that appears only in the supporting information is entered under rule 4a and not otherwise. The collection holds isotope effects on rate constants and on
-   Arrhenius or Eyring parameters and nothing else: an isotope effect on another quantity, such as an
+   Arrhenius or Eyring parameters and, under rule 4b, rate constants of the light and the heavy isotope, and nothing else: an isotope effect on another quantity, such as an
    activation volume or a pressure derivative, has no field here and is not entered.
 4a. **Supporting information (rule added on 12 November 2026).** Until this date no value from supporting
    information was entered. From now on a value printed in a *table* of a source's supporting information
@@ -49,6 +49,18 @@
    articles themselves stay comparable between versions. The reason for the rule is that many sources
    print the isotope effect at each temperature only there, while the article gives the fitted
    Arrhenius parameters. At the time the rule was added no such row had been entered.
+4b. **Rate constants (rule added on 12 November 2026).** Until this date the collection held no rate constant.
+   From now on a rate constant of a hydrogen-transfer step may be entered in `data/rates.csv`, under the same two
+   readings as any other value, on three conditions: the source prints it as a number, in the article or in a table
+   of its supporting information (rule 4a applies to the latter); the source states the temperature, and prints
+   the rate constant of the same step for at least two temperatures; and the row says which isotope sits in the
+   transferred position. The reason for the rule is that the temperature dependence of the rate itself is a
+   second observable beside the isotope effect, and a collection that keeps only the ratio discards it. Nothing is
+   derived from the rate constants here: no activation energy is fitted and none is stored beyond what a source
+   prints (`Ea_light_kcal` in `temperature.csv`). Rate constants are counted separately from isotope effects in
+   every summary. `tools/validate.py` checks that, where the collection holds the rate constants of both isotopes
+   and an isotope effect for the same step, quantity, pH, temperature and paper, their ratio reproduces the isotope
+   effect within 10 %.
 5. **Observed or intrinsic.** A value is `intrinsic` when the source says so of that value, when the source
    reports it as corrected for the commitment to catalysis, or when it comes
    from a competitive measurement that the source reports as yielding intrinsic effects. A statement that a
@@ -92,7 +104,7 @@
 
 `tools/validate.py` checks every row before a release. Besides the schema it checks the sign and unit
 convention against the data: where a temperature series and a single-temperature value cover the same
-step, isotope pair, effect type, quantity and method in the same paper, and the value's temperature
+step, isotope pair, effect type, quantity, method and kind in the same paper, and the value's temperature
 falls inside the series' fitted range or within 1 K of it, the series must reproduce the value through
-KIE = (A_light/A_heavy) · exp(dEa/RT), within a factor of three. The pairs are not matched on `kind`, so an
-intrinsic series may be compared with an observed value of the same step.
+KIE = (A_light/A_heavy) · exp(dEa/RT), within a factor of three. Since 12 November 2026 the pairs are also matched
+on `kind`, so an intrinsic series is compared only with intrinsic values and an observed series only with observed ones.

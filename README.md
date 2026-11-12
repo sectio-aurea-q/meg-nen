@@ -19,6 +19,7 @@ in enzymes.
 | `data/steps.csv` | hydrogen-transfer steps |
 | `data/measurements.csv` | isotope effects at one temperature |
 | `data/temperature.csv` | temperature series (Arrhenius parameters) |
+| `data/rates.csv` | rate constants of the light and the heavy isotope at one temperature (since 12 November 2026) |
 | `sources/` | reading list with checked DOIs |
 | `curation/` | each second reading, the comparison of both readings and the decisions taken; the sample check |
 | `CHANGELOG.md` | what changed, with date and time |

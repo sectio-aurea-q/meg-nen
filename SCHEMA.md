@@ -1,6 +1,6 @@
 # Schema
 
-Four tables in `data/`, CSV, UTF-8. The unit of the database is one **hydrogen-transfer
+Five tables in `data/`, CSV, UTF-8. The unit of the database is one **hydrogen-transfer
 step**: one enzyme variant, one substrate, one hydrogen moving from a donor atom to an
 acceptor atom. Every isotope effect belongs to one step and comes from one primary source.
 
@@ -70,6 +70,21 @@ mean the same.
 | `dEa_kcal`, `dEa_error` | E_a(heavy) − E_a(light), in kcal/mol |
 | `Ea_light_kcal`, `Ea_light_error` | E_a of the light isotope, in kcal/mol |
 | `pH`, `conditions`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above |
+
+## `rates.csv`: one rate constant at one temperature, for one isotope
+
+Added on 12 November 2026 (CURATION.md rule 4b). Fields that also occur in `measurements.csv` mean the same.
+
+| field | meaning |
+|---|---|
+| `rate_id` | unique id, e.g. `R0001` |
+| `step_id` | refers to `steps.csv` |
+| `labelled_position` | where the label sits, or that the substrate is unlabelled |
+| `isotope` | the isotope in the transferred position: `H`, `D` or `T` |
+| `quantity` | `kcat`, `kcat/KM`, `single_turnover` or `other`, as in `measurements.csv` |
+| `value`, `error` | the rate constant and its ± as printed |
+| `unit` | the unit as the source states it, written with ASCII exponents, e.g. `s-1`, `M-1 s-1` |
+| `temperature_K`, `pH`, `conditions`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above |
 
 ## Units and derived quantities
 

@@ -3,6 +3,22 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-12 09:45
+
+- New table `data/rates.csv` and new rule 4b (`CURATION.md`): rate constants of the light and the heavy isotope at
+  one temperature. Until now the collection held only isotope effects, that is, ratios; the temperature dependence
+  of the rate itself was lost. `SCHEMA.md` describes the fields; `README.md` lists the table.
+  - First rows: 44 rate constants, R0001–R0044, from the supplementary Tables 1–3 of S019
+    (doi:10.1042/bj20051464): DHFR wild type, pre-steady state at pH 7.0 (16) and steady state at pH 9.5 (14),
+    and G121V, pre-steady state at pH 7.0 (14). All read twice and `verified` (both readings agree on all 44; no
+    person has checked them). The isotope effects of the same table rows were entered earlier today.
+  - Counts: 456 isotope effects (unchanged) and 44 rate constants, all 44 from supporting information.
+  - `tools/validate.py` reads the new table and checks that the ratio of the two rate constants reproduces the
+    isotope effect of the same step, quantity, pH, temperature and paper within 10 %: 22 ratios, all pass.
+  - `CURATION.md`, closing paragraph: it still said that the sign check does not match on `kind`; it has matched on
+    `kind` since 08:01 today. Corrected.
+  - Record: `curation/2026-11-12_rates_S019/`.
+
 ## 2026-11-12 08:50
 
 - Third batch under rule 4a: 29 isotope effects from tables of supporting information, M0428–M0456, all read twice and
