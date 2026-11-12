@@ -44,6 +44,8 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `kind` | `intrinsic` when the source says so of that value, when the source reports it as corrected for the commitment to catalysis, or when it comes from a competitive measurement the source reports as yielding intrinsic effects; otherwise `observed`. See CURATION.md rule 5 |
 | `value` | the isotope effect, light over heavy |
 | `error` | the ± value as printed, empty if none is given |
+| `error_type` | what the ± is, as far as the collection has recorded it (CURATION.md rule 12): `sd` (standard deviation), `se` (standard error), `ci95` (95 % confidence interval), `other` (another stated meaning, named in `notes`), `conflicting` (the source gives two meanings), `not_stated` (the source, as read, does not say), `not_recorded` (the readings so far did not record it), `none` (no error printed) |
+| `n_measurements` | number of measurements or independent experiments behind the value, as the source states it: a whole number, or with `>=` where the source says "at least"; empty if not stated or not recorded |
 | `temperature_K` | in kelvin |
 | `pH` | as a number |
 | `conditions` | buffer and anything else the source states |
@@ -83,6 +85,7 @@ Added on 12 November 2026 (CURATION.md rule 4b). Fields that also occur in `meas
 | `isotope` | the isotope in the transferred position: `H`, `D` or `T` |
 | `quantity` | `kcat`, `kcat/KM`, `single_turnover` or `other`, as in `measurements.csv` |
 | `value`, `error` | the rate constant and its ± as printed |
+| `error_type`, `n_measurements` | as in `measurements.csv` |
 | `unit` | the unit as the source states it, written with ASCII exponents, e.g. `s-1`, `M-1 s-1` |
 | `temperature_K`, `pH`, `conditions`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above |
 

@@ -3,6 +3,21 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-12 20:00
+
+- New fields `error_type` and `n_measurements` in `measurements.csv` and `rates.csv`, and new rule 12
+  (`CURATION.md`): what the printed ± is, and from how many measurements. The reporting standard of the field
+  (Francis and Kohen 2014; STRENDA) asks for both; until now the collection held them only as free text in `notes`.
+  - Coded from the rows themselves by two coders blind to each other; no source was read again. They agree in both
+    fields in 482 of 500 rows; the 18 differences are two questions, settled in the record.
+  - Isotope effects (456): `not_stated` 206, `not_recorded` 107, `se` 48, `ci95` 44, `sd` 21, `none` 15,
+    `conflicting` 14, `other` 1. Rate constants (44): all `se`. `n_measurements` is set in 78 and 44 rows.
+  - For 313 of the 441 isotope effects with a printed error the collection cannot say what kind of error it is.
+  - No value, error or other field changes; the two columns stand after `error`.
+  - `tools/validate.py` checks the new fields. `SCHEMA.md` describes them.
+  - Not yet done: `temperature.csv`; closing the 107 `not_recorded` rows from the sources.
+  - Record: `curation/2026-11-12_error_type_coding/`.
+
 ## 2026-11-12 09:45
 
 - New table `data/rates.csv` and new rule 4b (`CURATION.md`): rate constants of the light and the heavy isotope at

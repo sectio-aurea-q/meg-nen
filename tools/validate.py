@@ -9,13 +9,13 @@ HEADERS = {
     'enzymes.csv': 'enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes',
     'steps.csv': 'step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes',
     'measurements.csv': 'meas_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
-                        'value,error,temperature_K,pH,conditions,doi,location,as_printed,'
+                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,doi,location,as_printed,'
                         'extracted_by,checked_by,status,notes',
     'temperature.csv': 'temp_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
                        'T_min_K,T_max_K,n_temperatures,AH_AX,AH_AX_error,dEa_kcal,dEa_error,'
                        'Ea_light_kcal,Ea_light_error,pH,conditions,doi,location,as_printed,'
                        'extracted_by,checked_by,status,notes',
-    'rates.csv': 'rate_id,step_id,labelled_position,isotope,quantity,value,error,unit,temperature_K,pH,'
+    'rates.csv': 'rate_id,step_id,labelled_position,isotope,quantity,value,error,error_type,n_measurements,unit,temperature_K,pH,'
                  'conditions,doi,location,as_printed,extracted_by,checked_by,status,notes',
 }
 ALLOWED = {
@@ -27,6 +27,7 @@ ALLOWED = {
     'method': {'noncompetitive', 'competitive', 'other'},
     'kind': {'observed', 'intrinsic'},
     'isotope': {'H', 'D', 'T'},
+    'error_type': {'sd', 'se', 'ci95', 'other', 'conflicting', 'not_stated', 'not_recorded', 'none'},
 }
 
 errors = []
@@ -67,6 +68,19 @@ def number(table, i, r, field, lo=None, hi=None, required=False):
     elif hi is not None and x > hi:
         err(table, i, f'{field} = {v} is above {hi}')
     return x
+
+
+N_MEAS = re.compile(r'^(>=)?\d+$')
+
+
+def error_fields(table, i, r):
+    """CURATION.md rule 12: kind of the printed error and number of measurements."""
+    allowed(table, i, r, 'error_type')
+    if (r['error_type'] == 'none') != (not r['error'].strip()):
+        err(table, i, "error_type is 'none' exactly when no error is printed")
+    n = r['n_measurements'].strip()
+    if n and not N_MEAS.match(n):
+        err(table, i, f'n_measurements {n!r} is neither a whole number nor >= a whole number')
 
 
 def unique(table, rows, key):
@@ -121,6 +135,7 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
         if name == 'measurements.csv':
             number(name, i, r, 'value', 0, required=True)
             number(name, i, r, 'error', 0)
+            error_fields(name, i, r)
             number(name, i, r, 'temperature_K', 200, 400, required=True)
         else:
             lo = number(name, i, r, 'T_min_K', 200, 400)
@@ -191,6 +206,7 @@ for i, r in enumerate(rates, 2):
     number('rates.csv', i, r, 'pH', 0, 14)
     number('rates.csv', i, r, 'value', 0, required=True)
     number('rates.csv', i, r, 'error', 0)
+    error_fields('rates.csv', i, r)
     number('rates.csv', i, r, 'temperature_K', 200, 400, required=True)
     if not r['unit'].strip():
         err('rates.csv', i, 'unit is empty')

@@ -101,6 +101,16 @@
    its source states the temperature at which it was measured; `tools/validate.py` rejects a row
    without one. A temperature series is entered even where its source states no fitted range: `T_min_K`
    and `T_max_K` are then left empty rather than guessed, which is the case for 45 of the 167 series.
+12. **What the ± is (rule added on 12 November 2026).** Every isotope effect and every rate constant carries
+   `error_type` and, where known, `n_measurements`. The reporting standard of the field asks for both (Francis and
+   Kohen, Perspectives in Science 1, 2014; STRENDA). `error_type` distinguishes two kinds of not knowing:
+   `not_stated` means that the source, as read, does not say what its ± is; `not_recorded` means only that the
+   readings so far did not write it down, and the source has to be opened again. Neither is ever filled in by
+   guessing from the size of the error or from the habits of a laboratory. The first coding, on 12 November 2026,
+   was made from the rows themselves (`notes`, `conditions`, `as_printed`), by two coders blind to each other, and
+   no source was read again for it (`curation/2026-11-12_error_type_coding/`); 107 isotope effects are
+   `not_recorded` and 206 `not_stated`. From now on both fields are filled when a value is read. `temperature.csv`
+   does not carry these fields yet.
 
 `tools/validate.py` checks every row before a release. Besides the schema it checks the sign and unit
 convention against the data: where a temperature series and a single-temperature value cover the same
