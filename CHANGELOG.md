@@ -3,6 +3,21 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-12 08:50
+
+- Third batch under rule 4a: 29 isotope effects from tables of supporting information, M0428–M0456, all read twice and
+  `verified` (both readings agree on all 30 values read; no person has checked them).
+  - S008 (DHFR wild type, doi:10.1021/ja031683w), SI Table 1 (observed H/T and D/T on V/K) and Table 2 (intrinsic
+    H/T, H/D and D/T), 5 to 45 °C: 29 rows. The files were fetched from the publisher by the curator.
+  - One further value was already in the collection from the article and is not entered twice; `notes` of M0286 quote
+    what the supporting table prints.
+  - Counts: 456 isotope effects, of which 297 are printed in the articles themselves and 159 in supporting information.
+  - Series T0156–T0158: `n_temperatures` set to 6 and `notes` updated. No isotope effect, error or Arrhenius
+    parameter changes.
+  - At 10 °C the three intrinsic values of the source are not consistent with each other; entered as printed, with a
+    remark in `notes`.
+  - Record: `curation/2026-11-12_si_reading_S008/`.
+
 ## 2026-11-12 08:01
 
 - Second batch under rule 4a: 80 isotope effects from tables of supporting information, M0348–M0427, all read twice and
