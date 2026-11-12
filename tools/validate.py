@@ -139,14 +139,15 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
 
 # Sign and unit convention, checked against the data (CURATION.md rule 10).
 # Where a temperature series and a single-temperature value cover the same step, isotope pair,
-# effect type, quantity and method in the same paper, and the value's temperature falls inside (or within 1 K of)
+# effect type, quantity, method and kind (observed or intrinsic) in the same paper, and the value's temperature
+# falls inside (or within 1 K of)
 # the series' fitted range, the series must reproduce the value:
 #     KIE = (A_light / A_heavy) * exp(dEa / RT),      dEa = Ea(heavy) - Ea(light).
 # A sign slip inverts the exponential and a unit slip scales dEa by 4.184, so either shows up
 # at once. Series and value come from different fits, so the test is deliberately loose.
 R_KCAL = 1.98720425e-3  # kcal / (mol K)
 TOLERANCE = 3.0
-MATCH = ('step_id', 'isotopes', 'kie_type', 'quantity', 'method', 'doi')
+MATCH = ('step_id', 'isotopes', 'kie_type', 'quantity', 'method', 'kind', 'doi')
 
 
 def num(value):

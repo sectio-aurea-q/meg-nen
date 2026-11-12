@@ -3,6 +3,24 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-12 08:01
+
+- Second batch under rule 4a: 80 isotope effects from tables of supporting information, M0348–M0427, all read twice and
+  `verified` (both readings agree on all 87 values read; no person has checked them).
+  - S013 (DHFR G121V, doi:10.1021/bi0518242), SI Tables 1S and 2S: 24 rows.
+  - S019 (DHFR wild type and G121V, doi:10.1042/bj20051464), supplementary Tables 1–3, KIE columns: 17 rows.
+  - S040 (thymidylate synthase, hydride transfer with Mg2+, doi:10.1021/ja400761x), SI Table S2: 19 rows.
+  - S041 (thymidylate synthase, proton transfer, doi:10.1021/ja103010b), SI Tables S1 and S2: 20 rows.
+  - Seven further values were already in the collection from the articles and are not entered twice; `notes` of
+    M0021, M0034–M0038 and M0189 quote what the supporting tables print.
+  - Counts: 427 isotope effects, of which 297 are printed in the articles themselves and 130 in supporting information.
+  - Series T0013–T0015, T0027–T0029 and T0081–T0083: `notes` updated; `n_temperatures` set for five of them and the
+    range of T0081 from the supporting tables (rule 11: 45 series without a stated range, not 46). No isotope effect,
+    error or Arrhenius parameter changes.
+  - `tools/validate.py`: the check of rule 10 now also requires the same `kind` (observed or intrinsic); before, it
+    compared an intrinsic series with observed values of the same step. 109 pairs, all within a factor of 3.
+  - Record: `curation/2026-11-12_si_reading_S013_S019_S040_S041/`.
+
 ## 2026-11-12 07:22
 
 - First rows under rule 4a: 50 isotope effects from tables of supporting information, M0298–M0347, all read twice

@@ -88,7 +88,7 @@
 11. **No value without its temperature.** A single-temperature isotope effect is not entered unless
    its source states the temperature at which it was measured; `tools/validate.py` rejects a row
    without one. A temperature series is entered even where its source states no fitted range: `T_min_K`
-   and `T_max_K` are then left empty rather than guessed, which is the case for 46 of the 167 series.
+   and `T_max_K` are then left empty rather than guessed, which is the case for 45 of the 167 series.
 
 `tools/validate.py` checks every row before a release. Besides the schema it checks the sign and unit
 convention against the data: where a temperature series and a single-temperature value cover the same
