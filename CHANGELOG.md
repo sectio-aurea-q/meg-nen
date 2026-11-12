@@ -3,6 +3,29 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-12 07:22
+
+- First rows under rule 4a: 50 isotope effects from tables of supporting information, M0298–M0347, all read twice
+  and `verified` (both readings agree on all 50; no person has checked them).
+  - S026 (formate dehydrogenase, doi:10.1021/ja902120t), SI Tables S2 and S3: observed H/T and D/T and intrinsic
+    H/T, H/D and D/T at 5, 15, 25, 35 and 45 °C (25 rows).
+  - S014 (DHFR M42W, doi:10.1098/rstb.2006.1871), SI Tables 1 and 2: the same quantities at the same temperatures (25 rows).
+  - Counts: 347 isotope effects, of which 297 are printed in the articles themselves and 50 in supporting information.
+  - Series T0016–T0018 and T0056–T0058: `notes` now say that the per-temperature values were read and where they are;
+    `n_temperatures` set to 5 from the supporting tables. No value, error or Arrhenius parameter changes.
+  - One printed value is entered with a remark: S026, Table S3, 5 °C, intrinsic H/D 3.14 (see
+    `curation/2026-11-12_si_reading_S014_S026/resolution.md`, point 5).
+  - Record of both readings, their comparison and the decisions: `curation/2026-11-12_si_reading_S014_S026/`.
+
+## 2026-11-12 07:05
+
+- Rule change, no value added or changed. `CURATION.md` rule 4a: a value printed in a table of a source's
+  supporting information may now be entered, read twice like any other value, with `location` beginning
+  `SI:` and `notes` beginning `supporting information`; such rows are counted separately. Values that can
+  only be read off a plot stay out, in the supporting information as in the article. `SCHEMA.md`: the
+  `location` field names the `SI:` prefix. Versions 1 and 2 of the data note describe the collection
+  before this rule; no row has been entered under it yet.
+
 ## 2026-11-11 10:45
 
 - Corrections after two referee readings of version 2 of the data note and of the record of the sample check.

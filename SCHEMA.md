@@ -48,7 +48,7 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `pH` | as a number |
 | `conditions` | buffer and anything else the source states |
 | `doi` | DOI of the primary source |
-| `location` | where the number stands: a table with its row and column where it has them, otherwise the section of the running text, a figure legend, or a page: `Table 1`, `Fig. 3 legend`, `p. 1148` |
+| `location` | where the number stands: a table with its row and column where it has them, otherwise the section of the running text, a figure legend, or a page: `Table 1`, `Fig. 3 legend`, `p. 1148`; a value from a table of the supporting information begins with `SI:`, e.g. `SI: Table S2, row 278 K` (CURATION.md rule 4a) |
 | `as_printed` | the number exactly as printed, with its unit, at most 15 words |
 | `extracted_by` | who read it first |
 | `checked_by` | who read it a second time, without seeing the first reading |

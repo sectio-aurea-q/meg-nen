@@ -34,11 +34,21 @@
    beside the measured effect) is not entered, and neither is a number used as an input to a correction
    without its origin. A value that a source calculates from its own measurements and reports as an
    isotope effect of the step (an intrinsic effect by Northrop's method, or an effect for one isotope
-   pair obtained from that for another) is entered, and `notes` say that it is calculated. A value that can only be read off a plot is not entered, and neither is a
-   value that appears only in supporting information, while a number printed in a figure legend is
-   printed text and is entered. The collection holds isotope effects on rate constants and on
+   pair obtained from that for another) is entered, and `notes` say that it is calculated. A value that can only be read off a plot is not entered, in the article or in its
+   supporting information, while a number printed in a figure legend is printed text and is entered.
+   A value that appears only in the supporting information is entered under rule 4a and not otherwise. The collection holds isotope effects on rate constants and on
    Arrhenius or Eyring parameters and nothing else: an isotope effect on another quantity, such as an
    activation volume or a pressure derivative, has no field here and is not entered.
+4a. **Supporting information (rule added on 12 November 2026).** Until this date no value from supporting
+   information was entered. From now on a value printed in a *table* of a source's supporting information
+   may be entered, under the same two readings as any other value, on three conditions: the file read is
+   the supporting information as published with the article, and `curation/` records its file name and
+   where it was obtained; `location` begins with `SI:` followed by the table and, where it has them, its
+   row and column; and `notes` begin with `supporting information`. Rows entered under this rule are
+   counted separately in every summary of the collection, so that the counts of values printed in the
+   articles themselves stay comparable between versions. The reason for the rule is that many sources
+   print the isotope effect at each temperature only there, while the article gives the fitted
+   Arrhenius parameters. At the time the rule was added no such row had been entered.
 5. **Observed or intrinsic.** A value is `intrinsic` when the source says so of that value, when the source
    reports it as corrected for the commitment to catalysis, or when it comes
    from a competitive measurement that the source reports as yielding intrinsic effects. A statement that a
