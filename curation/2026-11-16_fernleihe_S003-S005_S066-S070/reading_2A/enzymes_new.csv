@@ -1,0 +1,2 @@
+enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes
+MADH_METME_WT,methylamine dehydrogenase (MADH),,Methylophilus methylotrophus (sp. W3A1),,WT,,single,"purified from Methylophilus methylotrophus W3A1 (S004); TTQ (tryptophan tryptophylquinone) cofactor; heterotetramer of heavy and light chains - UniProt accessions, EC and PDB not printed in the source and not looked up in this reading; to be filled"

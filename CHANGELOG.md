@@ -3,6 +3,19 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-16 (Fernleihe)
+
+- Values from the interlibrary-loan paper copies of S003, S004, S005 and S066, and four new cytochrome P450
+  sources S067–S070. Read twice from photos of the copies; both readings agree on every number.
+  - 64 isotope effects, M0457–M0520 (S004 1, S005 6, S066 12, S067 42, S069 3), and 8 temperature series,
+    T0168–T0175 (S004 2, S005 4, S066 2). All `verified`.
+  - 7 enzymes (MADH; CYP2E1, 2B1, 1A2, 2C9 expressed in HepG2; P450cam; phenobarbital rat liver microsomes) and
+    30 steps.
+  - Not entered: S003 (no temperature), S068 (no temperature), S070 (no temperature; p. 375 missing), the
+    corrected copies of the S005 secondary effects, and values the sources take from other papers.
+  - Counts: 520 isotope effects, 175 temperature series, 44 rate constants, 124 enzymes, 160 steps, 70 sources.
+  - Record: `curation/2026-11-16_fernleihe_S003-S005_S066-S070/`.
+
 ## 2026-11-12 20:00
 
 - New fields `error_type` and `n_measurements` in `measurements.csv` and `rates.csv`, and new rule 12
