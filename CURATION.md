@@ -94,13 +94,13 @@
    paper's own equations or definitions where it gives any, otherwise by recomputing the printed
    isotope effect from the printed parameters and seeing which direction reproduces it. Where a paper
    gives neither, the direction is read as heavy minus light, and `notes` record that it was read that
-   way rather than taken from the source, which is the case for 15 of the 167 series.
+   way rather than taken from the source, which is the case for 15 of the 175 series.
    kJ/mol is converted by dividing by 4.184, to four significant figures. `as_printed` keeps the printed
    number with the unit the source printed, so every conversion can be recomputed from the row itself.
 11. **No value without its temperature.** A single-temperature isotope effect is not entered unless
    its source states the temperature at which it was measured; `tools/validate.py` rejects a row
    without one. A temperature series is entered even where its source states no fitted range: `T_min_K`
-   and `T_max_K` are then left empty rather than guessed, which is the case for 45 of the 167 series.
+   and `T_max_K` are then left empty rather than guessed, which is the case for 47 of the 175 series.
 12. **What the ± is (rule added on 12 November 2026).** Every isotope effect and every rate constant carries
    `error_type` and, where known, `n_measurements`. The reporting standard of the field asks for both (Francis and
    Kohen, Perspectives in Science 1, 2014; STRENDA). `error_type` distinguishes two kinds of not knowing:

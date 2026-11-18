@@ -3,6 +3,21 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-18 22:30
+
+- S070 (Gelb et al. 1982): the missing page 375 and the correction notice for page 374 were read from photos of
+  the paper copy. Still no row. The paper states no temperature for Tables I and II (rule 11), and Table II holds
+  label ratios, not isotope effects. Page 375 is discussion and equations and adds no measured value.
+  - The correction notice replaces the equations of page 374 for incomplete labelling of the substrate. Both
+    sets of equations are in the record.
+  - The drawings of Tables I and II are assigned to exo and endo from the paper's own Scheme II.
+  - `sources/first_sources.csv`: the note on S070 no longer says that page 375 is missing.
+  - Counts unchanged.
+  - Record: `curation/2026-11-18_S070_page375_and_correction/`.
+- `CURATION.md`, rules 10 and 11: the two counts were still given out of 167 series. They now read 15 of the
+  175 series (direction read as heavy minus light) and 47 of the 175 series (no fitted range stated), counted
+  from `data/temperature.csv`.
+
 ## 2026-11-16 (rule 13)
 
 - New fields and rule 13 (`CURATION.md`): `pressure_bar`, `cosolvent` and `heavy_other` in `measurements.csv` and
