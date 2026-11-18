@@ -112,6 +112,16 @@
    `not_recorded` and 206 `not_stated`. From now on both fields are filled when a value is read. `temperature.csv`
    does not carry these fields yet.
 
+13. **Conditions that decide whether two numbers belong together (rule added on 16 November 2026).** Pressure,
+   added cosolvent, the branch of a broken Arrhenius plot, and how many non-transferred positions are labelled
+   besides the transferred one are held in their own fields (`pressure_bar`, `cosolvent`, `T_break_K` and `branch`,
+   `heavy_other`; SCHEMA.md). Until now they stood only in `conditions` and `notes`, and an analysis that paired a
+   single value with a temperature series could not see them: on 16 November 2026 two referees found pairs across
+   1 bar and 2 kbar, across a break and across the regime below 5 °C. `heavy_other` matters because a dideuterated or
+   perdeuterated label carries secondary effects inside a value marked `primary`. The first coding was made from the
+   rows themselves by two coders blind to each other, as for rule 12, and no source was read again for it
+   (`curation/2026-11-16_rule13_coding/`). `nd` means the reading does not allow a count. Only hydrogen positions are counted; a remote 14C reporter label (as in the competitive tritium method) is not, because it is placed where it carries no isotope effect. `T_break_K` may be `nd` where the source gives the break only as a range.
+
 `tools/validate.py` checks every row before a release. Besides the schema it checks the sign and unit
 convention against the data: where a temperature series and a single-temperature value cover the same
 step, isotope pair, effect type, quantity, method and kind in the same paper, and the value's temperature

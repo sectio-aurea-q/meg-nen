@@ -9,11 +9,11 @@ HEADERS = {
     'enzymes.csv': 'enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes',
     'steps.csv': 'step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes',
     'measurements.csv': 'meas_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
-                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,doi,location,as_printed,'
+                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,pressure_bar,cosolvent,heavy_other,doi,location,as_printed,'
                         'extracted_by,checked_by,status,notes',
     'temperature.csv': 'temp_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
                        'T_min_K,T_max_K,n_temperatures,AH_AX,AH_AX_error,dEa_kcal,dEa_error,'
-                       'Ea_light_kcal,Ea_light_error,pH,conditions,doi,location,as_printed,'
+                       'Ea_light_kcal,Ea_light_error,pH,conditions,pressure_bar,cosolvent,heavy_other,T_break_K,branch,doi,location,as_printed,'
                        'extracted_by,checked_by,status,notes',
     'rates.csv': 'rate_id,step_id,labelled_position,isotope,quantity,value,error,error_type,n_measurements,unit,temperature_K,pH,'
                  'conditions,doi,location,as_printed,extracted_by,checked_by,status,notes',
@@ -27,6 +27,7 @@ ALLOWED = {
     'method': {'noncompetitive', 'competitive', 'other'},
     'kind': {'observed', 'intrinsic'},
     'isotope': {'H', 'D', 'T'},
+    'branch': {'', 'high', 'low'},
     'error_type': {'sd', 'se', 'ci95', 'other', 'conflicting', 'not_stated', 'not_recorded', 'none'},
 }
 
@@ -132,6 +133,13 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
         allowed(name, i, r, 'kie_type', 'isotopes', 'quantity', 'method', 'kind', 'status')
         source(name, i, r)
         number(name, i, r, 'pH', 0, 14)
+        number(name, i, r, 'pressure_bar', 0, 20000)
+        h = r['heavy_other'].strip()
+        if r['kie_type'] == 'primary':
+            if h != 'nd' and not (h.isdigit()):
+                err(name, i, f"heavy_other {h!r} must be a whole number or 'nd' for a primary effect (rule 13)")
+        elif h:
+            err(name, i, 'heavy_other is only filled for primary effects (rule 13)')
         if name == 'measurements.csv':
             number(name, i, r, 'value', 0, required=True)
             number(name, i, r, 'error', 0)
@@ -152,6 +160,10 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
             number(name, i, r, 'Ea_light_kcal')
             for f in ('AH_AX_error', 'dEa_error', 'Ea_light_error'):
                 number(name, i, r, f, 0)
+            tb = 'nd' if r['T_break_K'].strip() == 'nd' else number(name, i, r, 'T_break_K', 200, 400)
+            allowed(name, i, r, 'branch')
+            if (tb is None) != (not r['branch']):
+                err(name, i, 'give both T_break_K and branch, or neither (rule 13)')
             if not (r['AH_AX'].strip() or r['dEa_kcal'].strip()):
                 err(name, i, 'neither AH_AX nor dEa_kcal is given')
 

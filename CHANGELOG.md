@@ -3,6 +3,16 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-16 (rule 13)
+
+- New fields and rule 13 (`CURATION.md`): `pressure_bar`, `cosolvent` and `heavy_other` in `measurements.csv` and
+  `temperature.csv`, `T_break_K` and `branch` in `temperature.csv`. They hold what decides whether a single value and
+  a temperature series belong together, and how many non-transferred hydrogen positions are labelled in a `primary`
+  row. Coded from the rows by two coders blind to each other; no source read again. No value changes.
+  - `tools/validate.py` checks the new fields; `SCHEMA.md` describes them.
+  - Record: `curation/2026-11-16_rule13_coding/`.
+- Notes on T0065 (printed slope error implausibly small) and T0026 (break at 40 °C).
+
 ## 2026-11-16 (Fernleihe)
 
 - Values from the interlibrary-loan paper copies of S003, S004, S005 and S066, and four new cytochrome P450

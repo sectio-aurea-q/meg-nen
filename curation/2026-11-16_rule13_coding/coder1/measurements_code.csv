@@ -1,0 +1,521 @@
+meas_id,pressure_bar,cosolvent,heavy_other,remark
+M0001,,,0,
+M0002,,,0,
+M0003,,,0,reacting molecule reduced FMN; only N5 label stated
+M0004,,,0,reacting molecule reduced FMN; only N5 label stated
+M0005,,,0,reacting molecule reduced FMN; only N5 label stated
+M0006,,,0,reacting molecule reduced FMN; only N5 label stated
+M0007,,,,
+M0008,,,,
+M0009,,,,
+M0010,,,8,
+M0011,,,8,
+M0012,,,8,
+M0013,,,8,
+M0014,,,8,
+M0015,,,8,
+M0016,,,8,
+M0017,,,8,
+M0018,,,8,
+M0019,,,8,
+M0020,,,8,
+M0021,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0022,,,,
+M0023,,,,
+M0024,,,,
+M0025,,,,
+M0026,,,nd,"dideutero LA, position not named"
+M0027,,,1,
+M0028,,,1,
+M0029,,,1,
+M0030,,,1,
+M0031,,,1,
+M0032,,,1,
+M0033,,,1,
+M0034,,,0,
+M0035,,,0,
+M0036,,,0,
+M0037,,,0,
+M0038,,,0,
+M0039,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0040,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0041,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0042,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0043,,,0,intrinsic H/D: both H and D species carry the same [2-14C] reporter
+M0044,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0045,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0046,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0047,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0048,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0049,,,0,intrinsic H/D: both H and D species carry the same [2-14C] reporter
+M0050,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0051,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0052,,,0,
+M0053,,,0,
+M0054,,,0,
+M0055,,,1,
+M0056,,,0,
+M0057,,,,
+M0058,,,0,
+M0059,,,,
+M0060,,,0,
+M0061,,,,
+M0062,,,0,
+M0063,,,,
+M0064,,,0,
+M0065,,,0,
+M0066,,,0,
+M0067,,,0,
+M0068,,,0,
+M0069,,,0,
+M0070,,,0,
+M0071,,,0,
+M0072,,,0,
+M0073,,,0,
+M0074,,,0,
+M0075,,,0,
+M0076,,,0,
+M0077,,,0,
+M0078,,,0,
+M0079,,,1,
+M0080,,,2,
+M0081,,,2,
+M0082,,,2,
+M0083,,,2,
+M0084,,,1,"intramolecular competition in methyl group, combined with Dk1 of the C2H3 substrate"
+M0085,,,1,"intramolecular competition in methyl group, combined with Dk1 of the C2H3 substrate"
+M0086,,,1,"intramolecular competition in methyl group, combined with Dk1 of the C2H3 substrate"
+M0087,,,,
+M0088,,,,
+M0089,,,,
+M0090,,,1,"intramolecular competition in methyl group, combined with Dk1 of the C2H3 substrate"
+M0091,,,1,"intramolecular competition in methyl group, combined with Dk1 of the C2H3 substrate"
+M0092,,,1,"intramolecular competition in methyl group, combined with Dk1 of the C2H3 substrate"
+M0093,,,,
+M0094,,,,
+M0095,,,,
+M0096,,,30,uniformly deuterated LA vs h31-LA: 31 C-H positions minus the transferred one
+M0097,,,30,uniformly deuterated LA vs h31-LA: 31 C-H positions minus the transferred one
+M0098,,,1,
+M0099,,,1,
+M0100,,,1,
+M0101,,,1,
+M0102,,,1,
+M0103,,,1,
+M0104,1,,0,k0 extrapolated to 0 bar from the 1 bar-2 kbar series; row states 1 bar
+M0105,2000,,0,
+M0106,,,1,
+M0107,,,1,
+M0108,,,1,
+M0109,,,1,
+M0110,,,1,
+M0111,,,1,
+M0112,,,1,
+M0113,,,1,
+M0114,,,1,
+M0115,,,1,
+M0116,,,1,
+M0117,,,1,
+M0118,,,1,
+M0119,,,1,
+M0120,,,1,
+M0121,,,1,
+M0122,,,1,
+M0123,,,1,
+M0124,,,1,
+M0125,,,1,
+M0126,,,1,
+M0127,,,1,
+M0128,,,1,
+M0129,,,1,
+M0130,,,1,
+M0131,,,1,
+M0132,,,1,H/T: [Ad-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+M0133,,,1,"D/T: (R)-[Ad-14C,4-2H]NADPH vs (R)-[4-3H]NADPH; remote 14C reporter on the reacting molecule counted"
+M0134,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0135,,,1,H/T: [Ad-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+M0136,,,1,"D/T: (R)-[Ad-14C,4-2H]NADPH vs (R)-[4-3H]NADPH; remote 14C reporter on the reacting molecule counted"
+M0137,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0138,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0139,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0140,,,nd,
+M0141,,,nd,
+M0142,,,nd,
+M0143,,,nd,
+M0144,,,nd,
+M0145,,,nd,
+M0146,,,nd,
+M0147,,,nd,
+M0148,,,nd,
+M0149,,,nd,
+M0150,,,nd,
+M0151,,,nd,
+M0152,,,nd,
+M0153,,,nd,
+M0154,,,nd,
+M0155,,,nd,
+M0156,,,nd,
+M0157,,,nd,
+M0158,,,nd,
+M0159,,,nd,
+M0160,,,nd,
+M0161,,,nd,
+M0162,,,nd,
+M0163,,,nd,
+M0164,,,nd,
+M0165,,,nd,
+M0166,,,nd,
+M0167,,,nd,
+M0168,,,nd,
+M0169,,,nd,
+M0170,,,nd,
+M0171,,,nd,
+M0172,,,nd,
+M0173,,,nd,
+M0174,,,nd,
+M0175,,,nd,
+M0176,,,nd,
+M0177,,,nd,
+M0178,,,nd,
+M0179,,,nd,
+M0180,,,,
+M0181,,,,
+M0182,,,,
+M0183,,,,
+M0184,,,,
+M0185,,,,
+M0186,,,,
+M0187,,,,
+M0188,,,0,
+M0189,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0190,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0191,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0192,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0193,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0194,,,0,
+M0195,,,0,
+M0196,,,0,
+M0197,,,0,
+M0198,,,0,
+M0199,,,0,
+M0200,,,nd,"intrinsic H/D; H species [Ad-14C], D species labelling not stated"
+M0201,,,0,"cosolvent data only in figures, not this value"
+M0202,,,0,
+M0203,,,0,"cosolvent data only in figures, not this value"
+M0204,,,0,"cosolvent data only in figures, not this value"
+M0205,,,0,"cosolvent data only in figures, not this value"
+M0206,,,0,"cosolvent data only in figures, not this value"
+M0207,,,0,"cosolvent data only in figures, not this value"
+M0208,,,0,"cosolvent data only in figures, not this value"
+M0209,,,0,"cosolvent data only in figures, not this value"
+M0210,,,0,
+M0211,,,0,
+M0212,,,0,
+M0213,,,0,
+M0214,,,0,
+M0215,,,0,
+M0216,,,0,
+M0217,,,0,
+M0218,,,0,
+M0219,,,0,
+M0220,,,1,
+M0221,,,30,
+M0222,,,30,
+M0223,,,30,
+M0224,,,30,
+M0225,,,30,
+M0226,,,30,
+M0227,,,30,
+M0228,,,30,
+M0229,,,30,
+M0230,,,30,
+M0231,,,30,
+M0232,,,30,
+M0233,,,,
+M0234,,,,
+M0235,,,,
+M0236,,,,
+M0237,,,,
+M0238,,,,
+M0239,,,nd,
+M0240,,,nd,
+M0241,,,nd,
+M0242,,,nd,
+M0243,,,nd,
+M0244,,,nd,
+M0245,,,nd,
+M0246,,,nd,
+M0247,,,1,
+M0248,,,1,
+M0249,,,0,
+M0250,,,0,
+M0251,,,0,
+M0252,,,,
+M0253,,,,
+M0254,,,,
+M0255,,,,
+M0256,,,nd,two different labelled substrates combined; cannot count
+M0257,,,2,
+M0258,,,,
+M0259,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,acetonitrile is the substrate vehicle; included as cosolvent
+M0260,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,acetonitrile is the substrate vehicle; included as cosolvent
+M0261,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,acetonitrile is the substrate vehicle; included as cosolvent
+M0262,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,acetonitrile is the substrate vehicle; included as cosolvent
+M0263,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,acetonitrile is the substrate vehicle; included as cosolvent
+M0264,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,acetonitrile is the substrate vehicle; included as cosolvent
+M0265,,,0,
+M0266,,,0,
+M0267,,,0,
+M0268,,,0,
+M0269,,,0,
+M0270,,,0,
+M0271,,,0,both reactions in 2H2O
+M0272,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0273,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0274,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0275,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0276,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0277,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0278,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0279,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0280,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0281,,,,"9 % glycerol only as viscosity control, not in the reported ratio"
+M0282,,,,
+M0283,,,0,
+M0284,,,30,
+M0285,,,1,
+M0286,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0287,,,,
+M0288,,,,
+M0289,,,,
+M0290,,,,
+M0291,,,,
+M0292,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0293,,,0,"14C reporter on dUMP, not on the reacting CH2H4folate"
+M0294,,,nd,14C ring label on light species; number of labelled ring positions not stated
+M0295,,,nd,14C ring label on light species; number of labelled ring positions not stated
+M0296,,,,
+M0297,,,,
+M0298,,,0,
+M0299,,,0,
+M0300,,,0,
+M0301,,,0,
+M0302,,,0,
+M0303,,,0,
+M0304,,,0,
+M0305,,,0,
+M0306,,,0,
+M0307,,,0,
+M0308,,,0,
+M0309,,,0,
+M0310,,,0,
+M0311,,,0,
+M0312,,,0,
+M0313,,,0,
+M0314,,,0,
+M0315,,,0,
+M0316,,,0,
+M0317,,,0,
+M0318,,,0,
+M0319,,,0,
+M0320,,,0,
+M0321,,,0,
+M0322,,,0,
+M0323,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0324,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0325,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0326,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0327,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0328,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0329,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0330,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0331,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0332,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0333,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0334,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0335,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0336,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0337,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0338,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0339,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0340,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0341,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0342,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0343,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0344,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0345,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0346,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0347,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0348,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0349,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0350,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0351,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0352,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0353,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0354,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0355,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0356,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0357,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0358,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0359,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0360,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0361,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0362,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0363,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0364,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0365,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0366,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0367,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0368,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0369,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0370,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0371,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0372,,,0,
+M0373,,,0,
+M0374,,,0,
+M0375,,,0,
+M0376,,,0,
+M0377,,,0,
+M0378,,,0,
+M0379,,,0,
+M0380,,,0,
+M0381,,,0,
+M0382,,,0,
+M0383,,,0,
+M0384,,,0,
+M0385,,,0,
+M0386,,,0,
+M0387,,,0,
+M0388,,,0,
+M0389,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0390,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0391,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0392,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0393,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0394,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0395,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0396,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0397,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0398,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0399,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0400,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0401,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0402,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0403,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0404,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0405,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0406,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0407,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0408,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0409,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0410,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0411,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0412,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0413,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0414,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0415,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0416,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0417,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0418,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0419,,,1,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+M0420,,,0,intrinsic H/D: both H and D species carry the same [2-14C] reporter
+M0421,,,0,intrinsic H/D: both H and D species carry the same [2-14C] reporter
+M0422,,,0,intrinsic H/D: both H and D species carry the same [2-14C] reporter
+M0423,,,0,intrinsic H/D: both H and D species carry the same [2-14C] reporter
+M0424,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0425,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0426,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0427,,,1,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+M0428,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0429,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0430,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0431,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0432,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0433,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0434,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0435,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0436,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0437,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0438,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0439,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0440,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0441,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0442,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0443,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0444,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0445,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0446,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0447,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0448,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0449,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0450,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0451,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0452,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0453,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0454,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0455,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0456,,,nd,competitive tritium experiment; reporter label position not stated in the row
+M0457,,,2,perdeuterated methylamine: only methyl H counted (amine H exchange)
+M0458,,,,
+M0459,,,0,
+M0460,,,0,
+M0461,,,1,
+M0462,,,1,
+M0463,,,,
+M0464,,,0,
+M0465,,,,
+M0466,,,,
+M0467,,,1,
+M0468,,,0,
+M0469,,,,
+M0470,,,,
+M0471,,,1,
+M0472,,,0,
+M0473,,,,
+M0474,,,0,
+M0475,,,,
+M0476,,,1,
+M0477,,,1,
+M0478,,,1,
+M0479,,,1,
+M0480,,,1,
+M0481,,,1,
+M0482,,,1,
+M0483,,,1,
+M0484,,,1,
+M0485,,,1,
+M0486,,,1,
+M0487,,,1,
+M0488,,,1,
+M0489,,,1,
+M0490,,,1,
+M0491,,,1,
+M0492,,,1,
+M0493,,,1,
+M0494,,,1,
+M0495,,,1,
+M0496,,,1,
+M0497,,,1,
+M0498,,,1,
+M0499,,,1,
+M0500,,,1,
+M0501,,,1,
+M0502,,,1,
+M0503,,,1,
+M0504,,,2,
+M0505,,,2,
+M0506,,,2,
+M0507,,,5,
+M0508,,,5,
+M0509,,,5,
+M0510,,,2,
+M0511,,,2,
+M0512,,,2,
+M0513,,,2,
+M0514,,,2,
+M0515,,,2,
+M0516,,,2,
+M0517,,,2,
+M0518,,,2,
+M0519,,,2,
+M0520,,,2,
