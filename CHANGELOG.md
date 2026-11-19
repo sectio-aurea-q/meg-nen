@@ -3,6 +3,24 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-19 19:17
+
+- Supporting information read for the points the main texts had left open: the SI of S051, S057 and S059, and
+  ref. 12 of S022 (Heyes et al. 2009, J. Biol. Chem. 284, 3762). Four questions, two readers blind to each other;
+  they agree on every question.
+  - S057 (T0115–T0120, M0239–M0244): heavy substrate D31-LA, `heavy_other` nd → 30; `pH` 9.0; T0119 (Y317L)
+    `T_min_K` 283.15 → 288.15 (SI Table S7 lists 15–45 °C).
+  - S059 (T0133, T0134, M0245, M0246): d31-LA, `heavy_other` nd → 30; `pH` 9.0; fitted range 283.15–313.15 K.
+  - POR hydride-transfer series of S022 (eight rows): `cosolvent` glycerol 44 %; sucrose 20 %, `pH` 7.5, both by
+    S022's reference to its ref. 12 and marked so in `notes`.
+  - S051 (T0102, T0103): the tabulated range 5–30 °C added to `notes`; the fitted range stays empty.
+  - Open, noted in the rows: the ΔΔH‡ of T0035 and T0036 equal those of the 2009 paper (rule 1).
+  - Primary isotope effects now: 0: 276, 1: 84, 2: 20, 5: 3, 8: 11, 30: 63, nd: 1. Primary temperature series:
+    0: 101, 1: 22, 2: 7, 8: 2, 30: 11, nd: 19.
+- Not obtained: the SI of S058; T0121–T0132 stay `nd`.
+- No value changes; counts unchanged.
+- Record: `curation/2026-11-19_si_reading_open_point_3/`.
+
 ## 2026-11-19 15:20
 
 - Sources read again for the rows two referees had listed on 18 November (label, buffer, pH and fitted range of
