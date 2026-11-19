@@ -3,6 +3,16 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-19 19:20
+
+- SI of S058 (Hu et al. 2016) read, two readers blind to each other, who agree: the heavy substrate of
+  T0121–T0132 is perdeutero linoleic acid, `heavy_other` nd → 30; `pH` 9.0 (0.1 M borate).
+  - Primary temperature series now: 0: 101, 1: 22, 2: 7, 8: 2, 30: 23, nd: 7.
+  - SI Tables S3–S5 print kcat(H), kcat(D) and Dkcat at five temperatures and four pressures for three enzymes;
+    not entered yet.
+- No value changes; counts unchanged.
+- Record: `curation/2026-11-19_si_reading_S058/`.
+
 ## 2026-11-19 19:17
 
 - Supporting information read for the points the main texts had left open: the SI of S051, S057 and S059, and
