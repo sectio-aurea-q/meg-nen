@@ -3,6 +3,21 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-19 15:20
+
+- Sources read again for the rows two referees had listed on 18 November (label, buffer, pH and fitted range of
+  the lipoxygenase series coded `nd`; origin of slope and single value in T0133 and T0134; buffer of the POR
+  series; label of T0069 and T0070; fitted range of T0103; attribution of M0247). Seven questions to the main text
+  of S022, S033, S051, S057, S058, S059 and S060, two readers blind to each other; they agree on every question.
+  - T0069 and T0070: `heavy_other` from 30 to `nd`, `labelled_position` now names both statements of the source
+    (Fig. 3 legend: D31-LA; Table 2 footnote b: 11,11-D2-LA). The main text does not resolve the contradiction.
+  - No other field changes: for the other rows the main text says no more than the rows already do. What is
+    missing stands in the supporting information of S051, S057, S058 and S059 and in ref. 12 of S022, which were
+    not read; the list is in the record.
+  - Primary temperature series now: 0: 101, 1: 22, 2: 7, 8: 2, 30: 3, nd: 27.
+- No value changes; counts unchanged.
+- Record: `curation/2026-11-19_source_reading_open_point_3/`.
+
 ## 2026-11-19 14:05
 
 - New field `value_origin` in `measurements.csv` (rule 14, `CURATION.md`): how the source obtained the printed
