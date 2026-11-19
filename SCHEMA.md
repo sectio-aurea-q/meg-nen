@@ -93,7 +93,7 @@ Added on 12 November 2026 (CURATION.md rule 4b). Fields that also occur in `meas
 | `value`, `error` | the rate constant and its ± as printed |
 | `error_type`, `n_measurements` | as in `measurements.csv` |
 | `unit` | the unit as the source states it, written with ASCII exponents, e.g. `s-1`, `M-1 s-1` |
-| `temperature_K`, `pH`, `conditions`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above |
+| `temperature_K`, `pH`, `conditions`, `pressure_bar`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above; `pressure_bar` was added on 19 November 2026 and is empty where the source states no pressure |
 
 ## Units and derived quantities
 

@@ -3,6 +3,23 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-19 20:24
+
+- Single values from supporting information (rules 4a and 4b), asked for by two referees on 18 November:
+  - S058 (Hu et al. 2016), SI Tables S3–S5: 60 isotope effects and 120 rate constants of WT, I553V and L546A
+    lipoxygenase at five temperatures and four pressures.
+  - S057 (Offenbacher et al. 2017), SI Table S7: 47 isotope effects and 94 rate constants of six variants at 10 to
+    45 °C.
+  - Typed by two readers blind to each other; the readings agree in all 642 cells. Rows M0521–M0627, R0045–R0258.
+  - Two cells of Table S5 of S058 (L546A, 293 K, 1 and 344 bar) do not follow from the printed rate constants;
+    entered as printed, with a note. kcat-D of L546A is printed in 10-2 s-1 and entered so.
+- `rates.csv` gets the field `pressure_bar`. `tools/validate.py` compares `pressure_bar` in the check of rule 4b
+  and in the check of rule 10; the latter no longer pairs a series at 1 bar with a value at 2 kbar (two pairs of
+  10.1073/pnas.0608408104 fall out: 134 pairs instead of 136).
+- Counts: 627 isotope effects (266 of them from supporting information), 175 temperature series, 258 rate
+  constants.
+- Record: `curation/2026-11-19_si_values_S057_S058/`.
+
 ## 2026-11-19 19:20
 
 - SI of S058 (Hu et al. 2016) read, two readers blind to each other, who agree: the heavy substrate of

@@ -17,7 +17,7 @@ HEADERS = {
                        'as_printed,'
                        'extracted_by,checked_by,status,notes',
     'rates.csv': 'rate_id,step_id,labelled_position,isotope,quantity,value,error,error_type,n_measurements,unit,temperature_K,pH,'
-                 'conditions,doi,location,as_printed,extracted_by,checked_by,status,notes',
+                 'conditions,pressure_bar,doi,location,as_printed,extracted_by,checked_by,status,notes',
 }
 ALLOWED = {
     'status': {'verified', 'single', 'disputed'},
@@ -186,7 +186,7 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
 # at once. Series and value come from different fits, so the test is deliberately loose.
 R_KCAL = 1.98720425e-3  # kcal / (mol K)
 TOLERANCE = 3.0
-MATCH = ('step_id', 'isotopes', 'kie_type', 'quantity', 'method', 'kind', 'doi')
+MATCH = ('step_id', 'isotopes', 'kie_type', 'quantity', 'method', 'kind', 'doi', 'pressure_bar')
 
 
 def num(value):
@@ -225,6 +225,7 @@ for i, r in enumerate(rates, 2):
     allowed('rates.csv', i, r, 'isotope', 'quantity', 'status')
     source('rates.csv', i, r)
     number('rates.csv', i, r, 'pH', 0, 14)
+    number('rates.csv', i, r, 'pressure_bar', 0, 20000)
     number('rates.csv', i, r, 'value', 0, required=True)
     number('rates.csv', i, r, 'error', 0)
     error_fields('rates.csv', i, r)
@@ -235,7 +236,7 @@ for i, r in enumerate(rates, 2):
 # Where both rate constants and an isotope effect are held for the same step, quantity, pH, temperature
 # and paper, the ratio of the rate constants must reproduce the isotope effect within 10 %.
 RATE_TOLERANCE = 0.10
-RATE_KEY = ('step_id', 'quantity', 'pH', 'temperature_K', 'doi')
+RATE_KEY = ('step_id', 'quantity', 'pH', 'temperature_K', 'doi', 'pressure_bar')
 by_key = {}
 for r in rates:
     by_key.setdefault(tuple(r[f] for f in RATE_KEY), {})[r['isotope']] = (num(r['value']), r['unit'], r['rate_id'])

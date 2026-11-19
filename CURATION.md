@@ -60,7 +60,10 @@
    prints (`Ea_light_kcal` in `temperature.csv`). Rate constants are counted separately from isotope effects in
    every summary. `tools/validate.py` checks that, where the collection holds the rate constants of both isotopes
    and an isotope effect for the same step, quantity, pH, temperature and paper, their ratio reproduces the isotope
-   effect within 10 %.
+   effect within 10 %. Since 19 November 2026 `rates.csv` carries `pressure_bar`, and both this check and the check of
+   rule 10 compare it too: a source that measures one step at several pressures prints rate constants that differ
+   only by pressure (`curation/2026-11-19_si_values_S057_S058/`). Rate constants are compared only where both
+   carry the same unit.
 5. **Observed or intrinsic.** A value is `intrinsic` when the source says so of that value, when the source
    reports it as corrected for the commitment to catalysis, or when it comes
    from a competitive measurement that the source reports as yielding intrinsic effects. A statement that a
