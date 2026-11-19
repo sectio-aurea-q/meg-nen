@@ -9,7 +9,7 @@ HEADERS = {
     'enzymes.csv': 'enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes',
     'steps.csv': 'step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes',
     'measurements.csv': 'meas_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
-                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,pressure_bar,cosolvent,heavy_other,heavy_solvent,doi,location,as_printed,'
+                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,pressure_bar,cosolvent,heavy_other,heavy_solvent,value_origin,doi,location,as_printed,'
                         'extracted_by,checked_by,status,notes',
     'temperature.csv': 'temp_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
                        'T_min_K,T_max_K,n_temperatures,AH_AX,AH_AX_error,dEa_kcal,dEa_error,'
@@ -29,6 +29,7 @@ ALLOWED = {
     'kind': {'observed', 'intrinsic'},
     'isotope': {'H', 'D', 'T'},
     'branch': {'', 'high', 'low'},
+    'value_origin': {'ratio', 'corrected', 'combined', 'fit_T', 'extrapolated', 'nd'},
     'error_type': {'sd', 'se', 'ci95', 'other', 'conflicting', 'not_stated', 'not_recorded', 'none'},
 }
 
@@ -151,6 +152,7 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
             number(name, i, r, 'value', 0, required=True)
             number(name, i, r, 'error', 0)
             error_fields(name, i, r)
+            allowed(name, i, r, 'value_origin')  # rule 14
             number(name, i, r, 'temperature_K', 200, 400, required=True)
         else:
             lo = number(name, i, r, 'T_min_K', 200, 400)

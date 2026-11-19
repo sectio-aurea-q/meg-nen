@@ -130,6 +130,19 @@
    carbon-bound hydrogen less the transferred one (30 for perdeuterated linoleic acid). The count says how many
    positions are labelled, not how large their effect is (`curation/2026-11-18_heavy_solvent_and_heavy_other/`).
 
+14. **How the number was obtained (rule added on 19 November 2026).** `value_origin` says whether a single value
+   is a measured ratio (`ratio`), a measured ratio the source corrected (`corrected`), a number the source
+   calculated from other isotope effects (`combined`: Northrop method, Swain–Schaad relation, commitment
+   correction), a number calculated from the fit of a temperature series and stated at one temperature (`fit_T`),
+   or a number extrapolated beyond the measured conditions (`extrapolated`); `nd` where the reading does not allow
+   a decision (SCHEMA.md). Until now this stood only in `notes`: on 18 November 2026 two referees of an analysis
+   found that it paired a single value with the slope of the same Arrhenius fit (KE07) and used a rate constant
+   extrapolated to 0 bar (M0104) as if measured. The first coding was made from the rows themselves by two coders
+   blind to each other, as for rules 12 and 13; no source was read again for it. They agreed on 514 of 520 rows;
+   the six differences were settled by the curator and are listed with the reason
+   (`curation/2026-11-19_value_origin/`). A row that presents its value as the measured isotope effect and says
+   nothing of a further calculation is coded `ratio`; that is a reading of the row, not of the source.
+
 `tools/validate.py` checks every row before a release. Besides the schema it checks the sign and unit
 convention against the data: where a temperature series and a single-temperature value cover the same
 step, isotope pair, effect type, quantity, method and kind in the same paper, and the value's temperature

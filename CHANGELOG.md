@@ -3,6 +3,20 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-19 14:05
+
+- New field `value_origin` in `measurements.csv` (rule 14, `CURATION.md`): how the source obtained the printed
+  number — `ratio`, `corrected`, `combined`, `fit_T`, `extrapolated` or `nd`. On 18 November two referees of an
+  analysis found that six KE07 values are calculated from the same Arrhenius fit as the slope they were paired with,
+  and that M0104 is extrapolated to 0 bar; this stood only in `notes`.
+  - Coded twice from the rows, by two coders blind to each other; no source read again. Agreement 514 of 520
+    (κ = 0.974); the six differences (product-partition isotope effects M0080–M0083, M0257, M0520) settled for
+    `ratio`, with the reason.
+  - Result: `ratio` 368, `combined` 127, `corrected` 18, `fit_T` 6 (M0259–M0264), `extrapolated` 1 (M0104), `nd` 0.
+  - `tools/validate.py` checks the field; `SCHEMA.md` describes it.
+- No value changes; counts unchanged.
+- Record: `curation/2026-11-19_value_origin/`.
+
 ## 2026-11-18 23:55
 
 - New field `heavy_solvent` in `measurements.csv` and `temperature.csv` (rule 13, `CURATION.md`): heavy water as

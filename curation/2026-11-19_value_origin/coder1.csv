@@ -1,0 +1,521 @@
+meas_id,value_origin,reason
+M0001,ratio,limiting rate / KIE reported as measured ratio
+M0002,ratio,limiting rate / KIE reported as measured ratio
+M0003,ratio,limiting rate / KIE reported as measured ratio
+M0004,ratio,limiting rate / KIE reported as measured ratio
+M0005,ratio,limiting rate / KIE reported as measured ratio
+M0006,ratio,limiting rate / KIE reported as measured ratio
+M0007,ratio,limiting rate / KIE reported as measured ratio
+M0008,ratio,limiting rate / KIE reported as measured ratio
+M0009,ratio,limiting rate / KIE reported as measured ratio
+M0010,ratio,limiting rate / KIE reported as measured ratio
+M0011,ratio,limiting rate / KIE reported as measured ratio
+M0012,ratio,limiting rate / KIE reported as measured ratio
+M0013,ratio,limiting rate / KIE reported as measured ratio
+M0014,ratio,limiting rate / KIE reported as measured ratio
+M0015,ratio,limiting rate / KIE reported as measured ratio
+M0016,ratio,limiting rate / KIE reported as measured ratio
+M0017,ratio,intrinsic realized at pH 9.5; ratio of limiting rate k3 measured
+M0018,ratio,intrinsic realized at pH 9.5; ratio of limiting rate k3 measured
+M0019,ratio,intrinsic realized at pH 9.5; ratio of limiting rate k3 measured
+M0020,ratio,intrinsic realized at pH 9.5; ratio of limiting rate k3 measured
+M0021,combined,H/D values are computed from the competitive H/T and D/T KIEs
+M0022,ratio,The observed 2° KIEs were
+M0023,ratio,The observed 2° KIEs were
+M0024,combined,calculated from the observed 2° KIE and the commitment Cf
+M0025,combined,calculated from the observed 2° KIE and the commitment Cf
+M0026,ratio,KIE reported as measured ratio of rates/rate constants
+M0027,ratio,KIE reported as measured ratio of rates/rate constants
+M0028,ratio,KIE reported as measured ratio of rates/rate constants
+M0029,ratio,KIE reported as measured ratio of rates/rate constants
+M0030,ratio,KIE reported as measured ratio of rates/rate constants
+M0031,ratio,KIE reported as measured ratio of rates/rate constants
+M0032,ratio,KIE reported as measured ratio of rates/rate constants
+M0033,ratio,KIE reported as measured ratio of rates/rate constants
+M0034,ratio,KIE reported as measured ratio of rates/rate constants
+M0035,ratio,KIE reported as measured ratio of rates/rate constants
+M0036,ratio,KIE reported as measured ratio of rates/rate constants
+M0037,ratio,KIE reported as measured ratio of rates/rate constants
+M0038,ratio,KIE reported as measured ratio of rates/rate constants
+M0039,ratio,KIE reported as measured ratio of rates/rate constants
+M0040,ratio,KIE reported as measured ratio of rates/rate constants
+M0041,combined,intrinsic value calculated from the observed H/T and D/T KIEs (Northrop method)
+M0042,combined,intrinsic value calculated from the observed H/T and D/T KIEs (Northrop method)
+M0043,combined,intrinsic value calculated from the observed H/T and D/T KIEs (Northrop method)
+M0044,ratio,observed competitive KIE measured
+M0045,ratio,observed competitive KIE measured
+M0046,ratio,observed competitive KIE measured
+M0047,combined,intrinsic value calculated from the H/T and D/T experiments (Northrop)
+M0048,combined,intrinsic value calculated from the H/T and D/T experiments (Northrop)
+M0049,combined,intrinsic value calculated from the H/T and D/T experiments (Northrop)
+M0050,ratio,the observed H/T KIE on V/K of Y94F was measured to be 2.62
+M0051,combined,from the observed H/T and D/T KIEs (Northrop method)
+M0052,ratio,"Dkcat, measured values in Table 3"
+M0053,ratio,"Dkcat, measured values in Table 3"
+M0054,ratio,"Dkcat, measured values in Table 3"
+M0055,corrected,intramolecular competition by FT-ICR-MS; statistical factor of 2 applied
+M0056,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0057,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0058,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0059,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0060,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0061,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0062,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0063,ratio,"KIE/SIE from single-exponential fits, rates measured at 25 °C"
+M0064,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0065,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0066,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0067,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0068,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0069,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0070,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0071,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0072,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0073,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0074,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0075,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0076,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0077,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0078,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0079,ratio,Dkcat/D(kcat/Km)/Dkobs from Michaelis–Menten or trace fits
+M0080,ratio,from the change in product distribution between separate reactions (eq 1)
+M0081,ratio,from the change in product distribution between separate reactions (eq 1)
+M0082,ratio,from the change in product distribution between separate reactions (eq 1)
+M0083,ratio,from the change in product distribution between separate reactions (eq 1)
+M0084,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0085,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0086,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0087,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0088,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0089,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0090,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0091,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0092,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0093,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0094,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0095,combined,"H versus D loss within methyl group, combined with Dk1 of the 4-C2H3 substrate"
+M0096,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0097,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0098,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0099,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0100,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0101,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0102,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0103,ratio,KIE / Dkcat = kcat-H/kcat-D at that temperature
+M0104,extrapolated,k0 is the rate constant extrapolated to 0 bar from the fit of the pressure series
+M0105,ratio,"KIE at 2 kbar measured; NAD2H about 94 % D, not corrected"
+M0106,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0107,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0108,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0109,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0110,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0111,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0112,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0113,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0114,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0115,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0116,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0117,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0118,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0119,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0120,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0121,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0122,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0123,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0124,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0125,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0126,ratio,"Dkcat for benzyl alcohol against its α,α-d2 isotopolog, measured"
+M0127,ratio,"Dkcat from Michaelis–Menten/Hill fits, kcat H and D"
+M0128,ratio,"Dkcat from Michaelis–Menten/Hill fits, kcat H and D"
+M0129,ratio,"Dkcat from Michaelis–Menten/Hill fits, kcat H and D"
+M0130,ratio,"Dkcat from Michaelis–Menten/Hill fits, kcat H and D"
+M0131,ratio,the source's own ratio from the kcat and Km values of Table 2
+M0132,ratio,"competitive observed KIE, average of independent measurements"
+M0133,ratio,"competitive observed KIE, average of independent measurements"
+M0134,combined,intrinsic by the modified Northrop equation; calculated from combinations of observed KIEs
+M0135,ratio,"competitive observed KIE, average of independent measurements"
+M0136,ratio,"competitive observed KIE, average of independent measurements"
+M0137,combined,intrinsic by the modified Northrop equation
+M0138,combined,intrinsic by the modified Northrop equation
+M0139,combined,intrinsic by the modified Northrop equation
+M0140,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0141,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0142,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0143,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0144,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0145,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0146,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0147,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0148,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0149,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0150,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0151,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0152,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0153,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0154,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0155,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0156,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0157,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0158,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0159,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0160,ratio,Dkcat or Dkcat/Km from competitive/steady-state assay
+M0161,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0162,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0163,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0164,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0165,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0166,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0167,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0168,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0169,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0170,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0171,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0172,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0173,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0174,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0175,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0176,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0177,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0178,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0179,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0180,ratio,"Dkcat, Dkcat/Km or solvent KIE measured at that temperature"
+M0181,corrected,corrected for the viscosity of D2O (relative viscosity 1.25)
+M0182,ratio,"solvent isotope effect at 20 °C on kcat, no correction stated"
+M0183,corrected,corrected for the viscosity of D2O (relative viscosity 1.25)
+M0184,ratio,"solvent isotope effect at 20 °C on kcat, no correction stated"
+M0185,corrected,corrected for the viscosity of D2O (relative viscosity 1.25)
+M0186,ratio,"solvent isotope effect at 20 °C on kcat, no correction stated"
+M0187,corrected,corrected for the viscosity of D2O (relative viscosity 1.25)
+M0188,ratio,kcat with 6R-H- and 6R-D-CH2H4folate measured separately
+M0189,combined,intrinsic KIE by the modified Northrop method (Eq. 8); H and D not competed directly
+M0190,combined,"intrinsic KIEs by the Northrop method (Eq. 1), experiments at that temperature"
+M0191,combined,"intrinsic KIEs by the Northrop method (Eq. 1), experiments at that temperature"
+M0192,combined,"intrinsic KIEs by the Northrop method (Eq. 1), experiments at that temperature"
+M0193,combined,"intrinsic KIEs by the Northrop method (Eq. 1), experiments at that temperature"
+M0194,ratio,deuterium KIE on kcat when NADPH is replaced by NADPD
+M0195,ratio,deuterium KIE on kcat when NADPH is replaced by NADPD
+M0196,ratio,Dkcat / Dkburst = kburst(NADPH)/kburst(NADPD)
+M0197,ratio,Dkcat / Dkburst = kburst(NADPH)/kburst(NADPD)
+M0198,ratio,Dkcat / Dkburst = kburst(NADPH)/kburst(NADPD)
+M0199,ratio,Dkcat / Dkburst = kburst(NADPH)/kburst(NADPD)
+M0200,combined,"intrinsic KIEs by the modified Northrop method (Eqs. 7, 8)"
+M0201,ratio,KIE on kH from NADPH and NADPD measured separately
+M0202,ratio,KIE on kH from NADPH and NADPD measured separately
+M0203,ratio,KIE on kH from NADPH and NADPD measured separately
+M0204,ratio,KIE on kH from NADPH and NADPD measured separately
+M0205,ratio,KIE on kH from NADPH and NADPD measured separately
+M0206,ratio,KIE on kH from NADPH and NADPD measured separately
+M0207,ratio,KIE on kH from NADPH and NADPD measured separately
+M0208,ratio,KIE on kH from NADPH and NADPD measured separately
+M0209,ratio,KIE on kH from NADPH and NADPD measured separately
+M0210,ratio,KIE on kH from NADPH and NADPD measured separately
+M0211,ratio,KIE on kH from NADPH and NADPD measured separately
+M0212,ratio,KIE on kH from NADPH and NADPD measured separately
+M0213,ratio,KIE on kH from NADPH and NADPD measured separately
+M0214,ratio,KIE on kH from NADPH and NADPD measured separately
+M0215,ratio,KIE on kH from NADPH and NADPD measured separately
+M0216,ratio,KIE on kH from NADPH and NADPD measured separately
+M0217,ratio,KIE on kH from NADPH and NADPD measured separately
+M0218,ratio,KIE on kH from NADPH and NADPD measured separately
+M0219,ratio,KIE on kH from NADPH and NADPD measured separately
+M0220,corrected,rates fitted to Michaelis–Menten and corrected for the iron content of the enzyme
+M0221,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0222,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0223,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0224,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0225,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0226,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0227,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0228,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0229,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0230,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0231,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0232,ratio,competitive: KIE = ([P-H]/[P-D]) at <5 % over ratio at complete conversion
+M0233,ratio,solvent isotope effect H2O over D2O; no correction was made
+M0234,ratio,solvent isotope effect H2O over D2O; no correction was made
+M0235,ratio,solvent isotope effect H2O over D2O; no correction was made
+M0236,ratio,solvent isotope effect H2O over D2O; no correction was made
+M0237,ratio,solvent isotope effect H2O over D2O; no correction was made
+M0238,ratio,solvent isotope effect H2O over D2O; no correction was made
+M0239,corrected,kcat corrected for the iron content of the enzyme (ferrozine assay)
+M0240,corrected,kcat corrected for the iron content of the enzyme (ferrozine assay)
+M0241,corrected,kcat corrected for the iron content of the enzyme (ferrozine assay)
+M0242,corrected,kcat corrected for the iron content of the enzyme (ferrozine assay)
+M0243,corrected,kcat corrected for the iron content of the enzyme (ferrozine assay)
+M0244,corrected,kcat corrected for the iron content of the enzyme (ferrozine assay)
+M0245,ratio,"kcat with protio and deuterated linoleic acid, collected at 303 K"
+M0246,ratio,"kcat with protio and deuterated linoleic acid, collected at 303 K"
+M0247,ratio,"Dkcat = kcat(H)/kcat(D), Michaelis–Menten fits"
+M0248,ratio,"Dkcat = kcat(H)/kcat(D), Michaelis–Menten fits"
+M0249,ratio,ratio of observed/limiting rate constants with NADH and NADD from fits
+M0250,ratio,ratio of observed/limiting rate constants with NADH and NADD from fits
+M0251,ratio,ratio of observed/limiting rate constants with NADH and NADD from fits
+M0252,ratio,"isotope effect on kcat, rate fitted to Equation 3"
+M0253,ratio,"isotope effect on kcat, rate fitted to Equation 3"
+M0254,ratio,"isotope effect on kcat, rate fitted to Equation 3"
+M0255,ratio,"isotope effect on kcat, rate fitted to Equation 3"
+M0256,combined,computed by the source from the mechanism of Scheme 3 (Equations 4 and 5)
+M0257,ratio,from the change in the fraction of benzylic product (Equation 6)
+M0258,corrected,corrected for the relative abundance of deuterium in the buffer (Equation 4)
+M0259,fit_T,kH/kD were calculated from the Arrhenius equation from rate constants between 283 and 323 K
+M0260,fit_T,kH/kD were calculated from the Arrhenius equation from rate constants between 283 and 323 K
+M0261,fit_T,kH/kD were calculated from the Arrhenius equation from rate constants between 283 and 323 K
+M0262,fit_T,kH/kD were calculated from the Arrhenius equation from rate constants between 283 and 323 K
+M0263,fit_T,kH/kD were calculated from the Arrhenius equation from rate constants between 283 and 323 K
+M0264,fit_T,kH/kD were calculated from the Arrhenius equation from rate constants between 283 and 323 K
+M0265,ratio,"ratio of the kcat with the light and the heavy substrate, non-linear fits"
+M0266,ratio,"ratio of the kcat with the light and the heavy substrate, non-linear fits"
+M0267,ratio,"ratio of the kcat with the light and the heavy substrate, non-linear fits"
+M0268,ratio,"ratio of the kcat with the light and the heavy substrate, non-linear fits"
+M0269,ratio,"ratio of the kcat with the light and the heavy substrate, non-linear fits"
+M0270,ratio,"ratio of the kcat with the light and the heavy substrate, non-linear fits"
+M0271,ratio,"ratio of the kcat with the light and the heavy substrate, non-linear fits"
+M0272,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0273,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0274,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0275,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0276,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0277,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0278,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0279,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0280,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0281,ratio,SKIE is the ratio of the kcat in 1H2O and in 2H2O
+M0282,corrected,corrected for the relative abundance of deuterium in the buffer (Equation 4)
+M0283,ratio,"Dkcat peaked at 40 °C, single-concentration series"
+M0284,corrected,rate constants corrected for iron content; corrected to O2 saturation
+M0285,corrected,rate constants corrected for iron content; corrected to O2 saturation
+M0286,combined,calculated from observed H/T and D/T V/K KIEs by the Northrop equation
+M0287,ratio,measured secondary V/K KIE before correction
+M0288,ratio,measured secondary V/K KIE before correction
+M0289,combined,values corrected for the commitment (and protium content); commitment correction wins
+M0290,combined,values corrected for the commitment (and protium content); commitment correction wins
+M0291,combined,obtained from the corrected secondary KIEs with the Swain–Schaad relationship
+M0292,ratio,"observed competitive V/K KIE, average of experiments"
+M0293,ratio,"observed competitive V/K KIE, average of experiments"
+M0294,ratio,"observed competitive V/K KIE, average of experiments"
+M0295,ratio,"observed competitive V/K KIE, average of experiments"
+M0296,ratio,"observed competitive V/K KIE, average of experiments"
+M0297,ratio,"observed competitive V/K KIE, average of experiments"
+M0298,ratio,"observed competitive V/K KIE, average of experiments"
+M0299,ratio,"observed competitive V/K KIE, average of experiments"
+M0300,ratio,"observed competitive V/K KIE, average of experiments"
+M0301,ratio,"observed competitive V/K KIE, average of experiments"
+M0302,ratio,"observed competitive V/K KIE, average of experiments"
+M0303,ratio,"observed competitive V/K KIE, average of experiments"
+M0304,ratio,"observed competitive V/K KIE, average of experiments"
+M0305,ratio,"observed competitive V/K KIE, average of experiments"
+M0306,ratio,"observed competitive V/K KIE, average of experiments"
+M0307,ratio,"observed competitive V/K KIE, average of experiments"
+M0308,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0309,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0310,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0311,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0312,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0313,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0314,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0315,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0316,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0317,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0318,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0319,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0320,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0321,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0322,combined,calculated in the source by Northrop's method from the observed H/T and D/T KIEs
+M0323,ratio,observed competitive KIE on V/K
+M0324,ratio,observed competitive KIE on V/K
+M0325,ratio,observed competitive KIE on V/K
+M0326,ratio,observed competitive KIE on V/K
+M0327,ratio,observed competitive KIE on V/K
+M0328,ratio,observed competitive KIE on V/K
+M0329,ratio,observed competitive KIE on V/K
+M0330,ratio,observed competitive KIE on V/K
+M0331,ratio,observed competitive KIE on V/K
+M0332,ratio,observed competitive KIE on V/K
+M0333,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0334,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0335,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0336,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0337,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0338,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0339,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0340,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0341,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0342,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0343,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0344,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0345,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0346,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0347,combined,intrinsic KIE calculated from the observed H/T and D/T KIEs (Northrop method)
+M0348,ratio,observed competitive KIE on V/K
+M0349,ratio,observed competitive KIE on V/K
+M0350,ratio,observed competitive KIE on V/K
+M0351,ratio,observed competitive KIE on V/K
+M0352,ratio,observed competitive KIE on V/K
+M0353,ratio,observed competitive KIE on V/K
+M0354,ratio,observed competitive KIE on V/K
+M0355,ratio,observed competitive KIE on V/K
+M0356,ratio,observed competitive KIE on V/K
+M0357,ratio,observed competitive KIE on V/K
+M0358,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0359,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0360,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0361,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0362,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0363,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0364,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0365,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0366,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0367,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0368,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0369,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0370,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0371,combined,calculated from randomly paired observed H/T and D/T KIEs with Equation 3
+M0372,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0373,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0374,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0375,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0376,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0377,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0378,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0379,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0380,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0381,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0382,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0383,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0384,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0385,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0386,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0387,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0388,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0389,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0390,ratio,KIE column with rates for NADPH and NADPD / observed KIE on kcat/KM
+M0391,ratio,observed KIE on kcat/KM in the presence of 50 mM MgCl2
+M0392,ratio,observed KIE on kcat/KM in the presence of 50 mM MgCl2
+M0393,ratio,observed KIE on kcat/KM in the presence of 50 mM MgCl2
+M0394,ratio,observed KIE on kcat/KM in the presence of 50 mM MgCl2
+M0395,ratio,observed KIE on kcat/KM in the presence of 50 mM MgCl2
+M0396,ratio,observed KIE on kcat/KM in the presence of 50 mM MgCl2
+M0397,combined,intrinsic H/T KIE solved numerically from Eq 8 of the main text
+M0398,combined,intrinsic H/T KIE solved numerically from Eq 8 of the main text
+M0399,combined,intrinsic H/T KIE solved numerically from Eq 8 of the main text
+M0400,combined,intrinsic H/T KIE solved numerically from Eq 8 of the main text
+M0401,combined,calculated from the intrinsic H/T KIE by the Swain–Schaad relationship
+M0402,combined,calculated from the intrinsic H/T KIE by the Swain–Schaad relationship
+M0403,combined,calculated from the intrinsic H/T KIE by the Swain–Schaad relationship
+M0404,combined,calculated from the intrinsic H/T KIE by the Swain–Schaad relationship
+M0405,combined,calculated from the intrinsic H/T KIE by the Swain–Schaad relationship
+M0406,combined,calculated from the intrinsic H/T KIE by the Swain–Schaad relationship
+M0407,combined,calculated from the intrinsic H/T KIE by the Swain–Schaad relationship
+M0408,ratio,observed KIE on V/K from the competitive experiments
+M0409,ratio,observed KIE on V/K from the competitive experiments
+M0410,ratio,observed KIE on V/K from the competitive experiments
+M0411,ratio,observed KIE on V/K from the competitive experiments
+M0412,ratio,observed KIE on V/K from the competitive experiments
+M0413,ratio,observed KIE on V/K from the competitive experiments
+M0414,ratio,observed KIE on V/K from the competitive experiments
+M0415,ratio,observed KIE on V/K from the competitive experiments
+M0416,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0417,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0418,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0419,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0420,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0421,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0422,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0423,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0424,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0425,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0426,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0427,combined,calculated from the observed KIEs of Table S1 by Northrop's method
+M0428,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0429,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0430,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0431,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0432,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0433,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0434,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0435,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0436,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0437,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0438,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0439,ratio,"observed KIE on V/K, competitive V/K experiments"
+M0440,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0441,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0442,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0443,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0444,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0445,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0446,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0447,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0448,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0449,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0450,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0451,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0452,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0453,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0454,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0455,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0456,combined,calculated by Northrop's method from all combinations of observed H/T and D/T KIEs
+M0457,ratio,"KIE on k3 from fit to eq 2, observed KIE 16.8"
+M0458,ratio,KIEobs from stopped-flow rates; not corrected for isotopic impurity
+M0459,ratio,KIEobs from stopped-flow rates; not corrected for isotopic impurity
+M0460,corrected,calculated by the source: corrected for isotopic impurity (footnote d)
+M0461,ratio,"KIEobs (25 °C), observed value"
+M0462,corrected,corrected for isotopic impurity (footnote d)
+M0463,ratio,KIEobs; 2° KIEs were not corrected
+M0464,ratio,"apparent isotope effects on kcat at 30 °C, noncompetitive"
+M0465,ratio,"apparent isotope effects on kcat at 30 °C, noncompetitive"
+M0466,ratio,"apparent isotope effects on kcat at 30 °C, noncompetitive"
+M0467,combined,calculated by the source as the product of the primary and secondary effects
+M0468,ratio,"apparent isotope effects on kcat at 30 °C, noncompetitive"
+M0469,ratio,"apparent isotope effects on kcat at 30 °C, noncompetitive"
+M0470,ratio,"apparent isotope effects on kcat at 30 °C, noncompetitive"
+M0471,combined,calculated by the source as the product of primary and secondary effects
+M0472,combined,calculated from the observed Table 1 effects with eqs 1-3
+M0473,combined,calculated from the observed Table 1 effects with eqs 1-3
+M0474,combined,calculated from the observed Table 1 effects with eqs 1-3
+M0475,combined,calculated from the observed Table 1 effects with eqs 1-3
+M0476,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0477,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0478,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0479,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0480,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0481,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0482,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0483,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0484,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0485,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0486,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0487,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0488,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0489,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0490,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0491,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0492,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0493,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0494,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0495,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0496,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0497,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0498,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0499,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0500,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0501,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0502,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0503,ratio,"intramolecular isotope effect, product ratio by GC-MS, average of three determinations"
+M0504,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0505,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0506,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0507,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0508,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0509,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0510,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0511,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0512,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0513,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0514,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0515,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0516,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0517,ratio,intermolecular DV / D(V/K) from nonlinear regression or competitive mixtures
+M0518,ratio,"apparent DV, toluene-d0 vs d3 incubated separately, calculated from Table 1 rates"
+M0519,ratio,competitive D(V/K) from deuterium content of product relative to substrate mixture
+M0520,ratio,"from its own Table 1 product distributions, (kH/k4)/(kD/k4)"
