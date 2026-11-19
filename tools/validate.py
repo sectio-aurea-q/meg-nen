@@ -9,11 +9,12 @@ HEADERS = {
     'enzymes.csv': 'enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes',
     'steps.csv': 'step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes',
     'measurements.csv': 'meas_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
-                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,pressure_bar,cosolvent,heavy_other,doi,location,as_printed,'
+                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,pressure_bar,cosolvent,heavy_other,heavy_solvent,doi,location,as_printed,'
                         'extracted_by,checked_by,status,notes',
     'temperature.csv': 'temp_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
                        'T_min_K,T_max_K,n_temperatures,AH_AX,AH_AX_error,dEa_kcal,dEa_error,'
-                       'Ea_light_kcal,Ea_light_error,pH,conditions,pressure_bar,cosolvent,heavy_other,T_break_K,branch,doi,location,as_printed,'
+                       'Ea_light_kcal,Ea_light_error,pH,conditions,pressure_bar,cosolvent,heavy_other,heavy_solvent,T_break_K,branch,doi,location,'
+                       'as_printed,'
                        'extracted_by,checked_by,status,notes',
     'rates.csv': 'rate_id,step_id,labelled_position,isotope,quantity,value,error,error_type,n_measurements,unit,temperature_K,pH,'
                  'conditions,doi,location,as_printed,extracted_by,checked_by,status,notes',
@@ -72,6 +73,7 @@ def number(table, i, r, field, lo=None, hi=None, required=False):
 
 
 N_MEAS = re.compile(r'^(>=)?\d+$')
+HEAVY_SOLVENT = re.compile(r'^D2O( \d+(\.\d+)? %)?$')
 
 
 def error_fields(table, i, r):
@@ -140,6 +142,11 @@ for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id'
                 err(name, i, f"heavy_other {h!r} must be a whole number or 'nd' for a primary effect (rule 13)")
         elif h:
             err(name, i, 'heavy_other is only filled for primary effects (rule 13)')
+        hs = r['heavy_solvent'].strip()
+        if hs and not HEAVY_SOLVENT.match(hs):
+            err(name, i, f"heavy_solvent {hs!r} must be empty, 'D2O' or 'D2O <amount> %' (rule 13)")
+        elif hs and r['kie_type'] == 'solvent':
+            err(name, i, 'heavy_solvent stays empty for a solvent effect: there heavy water is the substitution (rule 13)')
         if name == 'measurements.csv':
             number(name, i, r, 'value', 0, required=True)
             number(name, i, r, 'error', 0)

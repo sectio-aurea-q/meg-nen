@@ -3,6 +3,28 @@
 What changed in MEG-NEN, newest first. Times are Central European Time. Every second reading, comparison and
 decision is kept in `curation/`.
 
+## 2026-11-18 23:55
+
+- New field `heavy_solvent` in `measurements.csv` and `temperature.csv` (rule 13, `CURATION.md`): heavy water as
+  the solvent of both the light and the heavy reaction. On 18 November two referees of an analysis of the collection
+  found that a primary value measured in D2O passed the comparison of the other rule-13 fields with a series
+  measured in ordinary water.
+  - Coded once, by a search of every text field for the spellings of heavy water and a decision on each hit; not
+    coded twice. 46 rows mention heavy water; 43 are solvent effects, where the field stays empty by definition.
+  - Filled in two rows, M0006 and M0271 (`D2O`); in no temperature series.
+  - `tools/validate.py` checks the field; `SCHEMA.md` describes it.
+- `heavy_other`, two points of the count settled (rule 13 clarified):
+  - M0026 and T0021 ("dideutero linoleic acid", primary) from `nd` to 1: one of the two deuteriums is the
+    transferred one, so one further position is labelled, wherever it sits.
+  - M0140–M0179 ("all H (perdeutero-LA, D-LA)") from `nd` to 30: a substrate labelled in all its hydrogens is
+    counted from its formula, as the same substrate already is where the row prints "2H31".
+  - Primary isotope effects now: 0: 276, 1: 84, 2: 20, 5: 3, 8: 11, 30: 55, nd: 9. Primary temperature series:
+    0: 101, 1: 22, 2: 7, 8: 2, 30: 5, nd: 25.
+  - `SCHEMA.md` now says that the number counts positions and gives neither the size nor the direction of their
+    contribution.
+- No value changes; counts unchanged.
+- Record: `curation/2026-11-18_heavy_solvent_and_heavy_other/`.
+
 ## 2026-11-18 22:30
 
 - S070 (Gelb et al. 1982): the missing page 375 and the correction notice for page 374 were read from photos of

@@ -51,7 +51,8 @@ acceptor atom. Every isotope effect belongs to one step and comes from one prima
 | `conditions` | buffer and anything else the source states |
 | `pressure_bar` | pressure in bar where the source states one (high-pressure studies); empty means ordinary pressure, none stated (CURATION.md rule 13) |
 | `cosolvent` | added cosolvent or viscogen as `<name> <amount>`, e.g. `glycerol 30 %`; empty if none is stated |
-| `heavy_other` | primary effects only: the number of non-transferred atom positions whose isotope differs between the light and the heavy reaction (0 for a single label at the transferred position, 1 for a dideuterated centre such as 11,11-d2 or intramolecular CH2D, 2 for CD3; hydrogen positions only, a remote 14C reporter is not counted); `nd` if the reading does not allow a count; empty for other effect types |
+| `heavy_other` | primary effects only: the number of non-transferred atom positions whose isotope differs between the light and the heavy reaction (0 for a single label at the transferred position, 1 for a dideuterated centre such as 11,11-d2 or intramolecular CH2D, 2 for CD3; hydrogen positions only, a remote 14C reporter is not counted; a substrate labelled in all its hydrogens is counted from its formula, 30 for perdeuterated linoleic acid); `nd` if the reading does not allow a count; empty for other effect types. The number counts positions: it says neither how large their contribution is nor its direction (in intramolecular competition the further deuterium is on the light path) |
+| `heavy_solvent` | heavy water as the solvent of both the light and the heavy reaction, where the row says so: `D2O`, or `D2O <amount> %` for a mixture; empty means ordinary water, none stated. Empty also for `solvent` effects and for effects that change substrate and solvent together: there heavy water is the isotope substitution itself and stands in `labelled_position` (CURATION.md rule 13) |
 | `doi` | DOI of the primary source |
 | `location` | where the number stands: a table with its row and column where it has them, otherwise the section of the running text, a figure legend, or a page: `Table 1`, `Fig. 3 legend`, `p. 1148`; a value from a table of the supporting information begins with `SI:`, e.g. `SI: Table S2, row 278 K` (CURATION.md rule 4a) |
 | `as_printed` | the number exactly as printed, with its unit, at most 15 words |
@@ -74,7 +75,7 @@ mean the same.
 | `AH_AX`, `AH_AX_error` | ratio of the Arrhenius pre-factors as fitted, light over heavy (A_H/A_D for H/D). These are apparent pre-factors: a tunnelling correction, if any, is absorbed in them |
 | `dEa_kcal`, `dEa_error` | E_a(heavy) − E_a(light), in kcal/mol |
 | `Ea_light_kcal`, `Ea_light_error` | E_a of the light isotope, in kcal/mol |
-| `pH`, `conditions`, `pressure_bar`, `cosolvent`, `heavy_other`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above |
+| `pH`, `conditions`, `pressure_bar`, `cosolvent`, `heavy_other`, `heavy_solvent`, `doi`, `location`, `as_printed`, `extracted_by`, `checked_by`, `status`, `notes` | as above |
 | `T_break_K`, `branch` | where the source fits a broken (biphasic) plot: the break temperature in kelvin and the branch the series belongs to, `high` (above the break) or `low`; both empty otherwise |
 
 ## `rates.csv`: one rate constant at one temperature, for one isotope

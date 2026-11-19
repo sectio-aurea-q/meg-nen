@@ -121,6 +121,14 @@
    perdeuterated label carries secondary effects inside a value marked `primary`. The first coding was made from the
    rows themselves by two coders blind to each other, as for rule 12, and no source was read again for it
    (`curation/2026-11-16_rule13_coding/`). `nd` means the reading does not allow a count. Only hydrogen positions are counted; a remote 14C reporter label (as in the competitive tritium method) is not, because it is placed where it carries no isotope effect. `T_break_K` may be `nd` where the source gives the break only as a range.
+   Since 18 November 2026 heavy water as the solvent of a substrate isotope effect has its own field too
+   (`heavy_solvent`): two referees of an analysis had found that a primary value measured in D2O passed the
+   comparison of the other fields. This field was coded once, by a search of every text field for the spellings of
+   heavy water and a decision on each hit, not by two coders. On the same day two points of the count in
+   `heavy_other` were settled: a dideuterated substrate in a primary row counts 1 wherever the second deuterium
+   sits, and a substrate that the row calls labelled in all its hydrogens is counted from its formula, every
+   carbon-bound hydrogen less the transferred one (30 for perdeuterated linoleic acid). The count says how many
+   positions are labelled, not how large their effect is (`curation/2026-11-18_heavy_solvent_and_heavy_other/`).
 
 `tools/validate.py` checks every row before a release. Besides the schema it checks the sign and unit
 convention against the data: where a temperature series and a single-temperature value cover the same
