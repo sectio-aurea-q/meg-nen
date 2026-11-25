@@ -1,0 +1,154 @@
+# How a number gets in
+
+1. **Primary source only.** Every value comes from the paper that measured it, with its DOI
+   and the exact place (table, figure, page). Reviews only point to primary sources. A value a
+   paper attributes to other work is not entered; where a paper reprints such a value in its own
+   table without attribution, or forms an isotope effect from a rate constant published elsewhere,
+   the row is entered and the credit is recorded in `notes`.
+2. **Two readings, the second blind.** Every value is read twice; the second reader does not see
+   the first reading. Blind is not independent: both readings so far were made by the same model
+   from the same sources under the same rules. A row is `verified` when both readings produced it and either agreed or the
+   difference between them was settled against the source; `disputed` while such a difference is
+   still open; and `single` in every other case — either because only one reading has produced the
+   row, where `notes` say whether the other reading has since checked it against the source, or
+   because the row is held at `single` on purpose until a person has checked it. `notes` say which
+   case applies. Every
+   reading so far, and every settlement of a difference between two readings, is the work of the
+   model; what a person has still to do is in rule 3.
+3. **Readers are named.** `extracted_by` and `checked_by` name the reader; AI-assisted
+   readings are marked `ai-1` and `ai-2`. Where a record in `curation/` says that *the curator* did
+   something — settled a difference between the readings, read an equation or a scheme from an image,
+   compared two sequences, looked a PDB entry up again — that work was done by the model on the
+   author's behalf, outside the two blind readings. It is a third machine look, not a check by a
+   person, and it does not make a row `verified` on its own. Where a person is meant, these files say
+   *a person*. Before each release a person checks a random sample
+   of at least 10 % of the verified rows against the sources, and the error rate found is
+   published with the release. A first check was made on 11 November 2026
+   (`curation/2026-11-11_person_check/`); only part of it is recorded row by row, and it will be repeated
+   with every row recorded before a numbered release. Every second reading is kept in `curation/`, together with the
+   comparison of both readings and the decisions taken on each difference.
+4. **As printed.** `as_printed` holds the number exactly as it stands in the source. Nothing
+   is rounded or averaged in curating; where a source prints individual experiments together with
+   their average, the average is entered and the experiments are listed in `notes`. A value that a
+   source calculates only as the prediction of a relation it is testing (a Swain–Schaad estimate printed
+   beside the measured effect) is not entered, and neither is a number used as an input to a correction
+   without its origin. A value that a source calculates from its own measurements and reports as an
+   isotope effect of the step (an intrinsic effect by Northrop's method, or an effect for one isotope
+   pair obtained from that for another) is entered, and `notes` say that it is calculated. A value that can only be read off a plot is not entered, in the article or in its
+   supporting information, while a number printed in a figure legend is printed text and is entered.
+   A value that appears only in the supporting information is entered under rule 4a and not otherwise. The collection holds isotope effects on rate constants and on
+   Arrhenius or Eyring parameters and, under rule 4b, rate constants of the light and the heavy isotope, and nothing else: an isotope effect on another quantity, such as an
+   activation volume or a pressure derivative, has no field here and is not entered.
+4a. **Supporting information (rule added on 12 November 2026).** Until this date no value from supporting
+   information was entered. From now on a value printed in a *table* of a source's supporting information
+   may be entered, under the same two readings as any other value, on three conditions: the file read is
+   the supporting information as published with the article, and `curation/` records its file name and
+   where it was obtained; `location` begins with `SI:` followed by the table and, where it has them, its
+   row and column; and `notes` begin with `supporting information`. Rows entered under this rule are
+   counted separately in every summary of the collection, so that the counts of values printed in the
+   articles themselves stay comparable between versions. The reason for the rule is that many sources
+   print the isotope effect at each temperature only there, while the article gives the fitted
+   Arrhenius parameters. At the time the rule was added no such row had been entered.
+4b. **Rate constants (rule added on 12 November 2026).** Until this date the collection held no rate constant.
+   From now on a rate constant of a hydrogen-transfer step may be entered in `data/rates.csv`, under the same two
+   readings as any other value, on three conditions: the source prints it as a number, in the article or in a table
+   of its supporting information (rule 4a applies to the latter); the source states the temperature, and prints
+   the rate constant of the same step for at least two temperatures; and the row says which isotope sits in the
+   transferred position. The reason for the rule is that the temperature dependence of the rate itself is a
+   second observable beside the isotope effect, and a collection that keeps only the ratio discards it. Nothing is
+   derived from the rate constants here: no activation energy is fitted and none is stored beyond what a source
+   prints (`Ea_light_kcal` in `temperature.csv`). Rate constants are counted separately from isotope effects in
+   every summary. `tools/validate.py` checks that, where the collection holds the rate constants of both isotopes
+   and an isotope effect for the same step, quantity, pH, temperature and paper, their ratio reproduces the isotope
+   effect within 10 %. Since 19 November 2026 `rates.csv` carries `pressure_bar`, and both this check and the check of
+   rule 10 compare it too: a source that measures one step at several pressures prints rate constants that differ
+   only by pressure (`curation/2026-11-19_si_values_S057_S058/`). Rate constants are compared only where both
+   carry the same unit.
+5. **Observed or intrinsic.** A value is `intrinsic` when the source says so of that value, when the source
+   reports it as corrected for the commitment to catalysis, or when it comes
+   from a competitive measurement that the source reports as yielding intrinsic effects. A statement that a
+   method *can* yield intrinsic effects is not enough: it must be said of the measurement. Where the last of
+   these three cases is used, `notes` should record the source's statement; 20 rows do not yet do so and are to be closed
+   before release. A source also says so of a value when it asserts, of that measurement or of the conditions
+   under which it was made for the same enzyme and step, that what is measured there *is*, reflects or is
+   realized as the intrinsic effect; such an assertion carries to a temperature series fitted from those same
+   measurements. It stays `observed` when the source also prints, for the same step, an intrinsic value obtained
+   by another route, which the database holds as its own row, when the identification is hedged ("essentially", "approaches", "likely to be",
+   "largely revealed"), or when it is made of the system, the method or earlier work and not of this
+   measurement.
+6. **No value without a source.** Numbers from memory, "typical" values and values copied
+   from other databases stay out. The table in `seed/` is the old, unchecked MEG-APSU table:
+   it only says which papers to read, and none of its numbers enters `data/` without being
+   read again in the source.
+7. **No derived labels.** The database holds measured quantities and the categories its sources
+   state, and nothing inferred from them. In particular no row carries a label saying whether a step
+   counts as tunnelling, and none is computed: deciding what the measurements can determine is the
+   work this collection is meant to serve, not an input to it. Should such a label ever be added, it
+   is to be computed from the data by documented rules and never typed in, so that anyone can change
+   a threshold and see what follows.
+8. **PDFs are not published.** The papers stay with the author; the database holds numbers,
+   places and short quotes only. ("The author" is the person; "the curator" in the records under
+   `curation/` is the model, as rule 3 says.)
+9. **Changes are visible.** A wrong value is corrected in a commit that names the reason,
+   never removed silently.
+
+10. **One sign, one unit.** `dEa_kcal` is E_a(heavy) − E_a(light) in kcal/mol throughout, whatever
+   the source's own convention. That convention is established before the value is entered: from the
+   paper's own equations or definitions where it gives any, otherwise by recomputing the printed
+   isotope effect from the printed parameters and seeing which direction reproduces it. Where a paper
+   gives neither, the direction is read as heavy minus light, and `notes` record that it was read that
+   way rather than taken from the source, which is the case for 15 of the 175 series.
+   kJ/mol is converted by dividing by 4.184, to four significant figures. `as_printed` keeps the printed
+   number with the unit the source printed, so every conversion can be recomputed from the row itself.
+11. **No value without its temperature.** A single-temperature isotope effect is not entered unless
+   its source states the temperature at which it was measured; `tools/validate.py` rejects a row
+   without one. A temperature series is entered even where its source states no fitted range: `T_min_K`
+   and `T_max_K` are then left empty rather than guessed, which is the case for 47 of the 175 series.
+12. **What the ± is (rule added on 12 November 2026).** Every isotope effect and every rate constant carries
+   `error_type` and, where known, `n_measurements`. The reporting standard of the field asks for both (Francis and
+   Kohen, Perspectives in Science 1, 2014; STRENDA). `error_type` distinguishes two kinds of not knowing:
+   `not_stated` means that the source, as read, does not say what its ± is; `not_recorded` means only that the
+   readings so far did not write it down, and the source has to be opened again. Neither is ever filled in by
+   guessing from the size of the error or from the habits of a laboratory. The first coding, on 12 November 2026,
+   was made from the rows themselves (`notes`, `conditions`, `as_printed`), by two coders blind to each other, and
+   no source was read again for it (`curation/2026-11-12_error_type_coding/`); 107 isotope effects are
+   `not_recorded` and 206 `not_stated`. From now on both fields are filled when a value is read. `temperature.csv`
+   does not carry these fields yet.
+
+13. **Conditions that decide whether two numbers belong together (rule added on 16 November 2026).** Pressure,
+   added cosolvent, the branch of a broken Arrhenius plot, and how many non-transferred positions are labelled
+   besides the transferred one are held in their own fields (`pressure_bar`, `cosolvent`, `T_break_K` and `branch`,
+   `heavy_other`; SCHEMA.md). Until now they stood only in `conditions` and `notes`, and an analysis that paired a
+   single value with a temperature series could not see them: on 16 November 2026 two referees found pairs across
+   1 bar and 2 kbar, across a break and across the regime below 5 °C. `heavy_other` matters because a dideuterated or
+   perdeuterated label carries secondary effects inside a value marked `primary`. The first coding was made from the
+   rows themselves by two coders blind to each other, as for rule 12, and no source was read again for it
+   (`curation/2026-11-16_rule13_coding/`). `nd` means the reading does not allow a count. Only hydrogen positions are counted; a remote 14C reporter label (as in the competitive tritium method) is not, because it is placed where it carries no isotope effect. `T_break_K` may be `nd` where the source gives the break only as a range.
+   Since 18 November 2026 heavy water as the solvent of a substrate isotope effect has its own field too
+   (`heavy_solvent`): two referees of an analysis had found that a primary value measured in D2O passed the
+   comparison of the other fields. This field was coded once, by a search of every text field for the spellings of
+   heavy water and a decision on each hit, not by two coders. On the same day two points of the count in
+   `heavy_other` were settled: a dideuterated substrate in a primary row counts 1 wherever the second deuterium
+   sits, and a substrate that the row calls labelled in all its hydrogens is counted from its formula, every
+   carbon-bound hydrogen less the transferred one (30 for perdeuterated linoleic acid). The count says how many
+   positions are labelled, not how large their effect is (`curation/2026-11-18_heavy_solvent_and_heavy_other/`).
+
+14. **How the number was obtained (rule added on 19 November 2026).** `value_origin` says whether a single value
+   is a measured ratio (`ratio`), a measured ratio the source corrected (`corrected`), a number the source
+   calculated from other isotope effects (`combined`: Northrop method, Swain–Schaad relation, commitment
+   correction), a number calculated from the fit of a temperature series and stated at one temperature (`fit_T`),
+   or a number extrapolated beyond the measured conditions (`extrapolated`); `nd` where the reading does not allow
+   a decision (SCHEMA.md). Until now this stood only in `notes`: on 18 November 2026 two referees of an analysis
+   found that it paired a single value with the slope of the same Arrhenius fit (KE07) and used a rate constant
+   extrapolated to 0 bar (M0104) as if measured. The first coding was made from the rows themselves by two coders
+   blind to each other, as for rules 12 and 13; no source was read again for it. They agreed on 514 of 520 rows;
+   the six differences were settled by the curator and are listed with the reason
+   (`curation/2026-11-19_value_origin/`). A row that presents its value as the measured isotope effect and says
+   nothing of a further calculation is coded `ratio`; that is a reading of the row, not of the source.
+
+`tools/validate.py` checks every row before a release. Besides the schema it checks the sign and unit
+convention against the data: where a temperature series and a single-temperature value cover the same
+step, isotope pair, effect type, quantity, method and kind in the same paper, and the value's temperature
+falls inside the series' fitted range or within 1 K of it, the series must reproduce the value through
+KIE = (A_light/A_heavy) · exp(dEa/RT), within a factor of three. Since 12 November 2026 the pairs are also matched
+on `kind`, so an intrinsic series is compared only with intrinsic values and an observed series only with observed ones.

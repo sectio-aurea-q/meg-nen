@@ -1,0 +1,5 @@
+table,id,field,old,new,reason
+temperature.csv,T0069,heavy_other,30,nd,"the source contradicts itself (Fig. 3 legend: D31-LA; Table 2 footnote b: 11,11-D2-LA); two blind readings of 19 Nov 2026 agree that the main text does not resolve it"
+temperature.csv,T0069,labelled_position,"all H (perdeuterated D31-LA, Fig. 3)","deuterated linoleic acid: perdeuterated D31-LA by the Fig. 3 legend, 11,11-D2-LA by Table 2 footnote b",both statements of the source
+temperature.csv,T0070,heavy_other,30,nd,"the source contradicts itself (Fig. 3 legend: D31-LA; Table 2 footnote b: 11,11-D2-LA); two blind readings of 19 Nov 2026 agree that the main text does not resolve it"
+temperature.csv,T0070,labelled_position,"all H (perdeuterated D31-LA, Fig. 3)","deuterated linoleic acid: perdeuterated D31-LA by the Fig. 3 legend, 11,11-D2-LA by Table 2 footnote b",both statements of the source

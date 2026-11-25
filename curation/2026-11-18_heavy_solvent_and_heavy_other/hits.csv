@@ -1,0 +1,47 @@
+table,id,step_id,kie_type,words_found,fields,heavy_solvent,decision
+measurements.csv,M0006,MR_PSEPU_WT_OX_H,primary,D2O / deuterated solvent / pD,conditions / notes,D2O,conditions: the light and the heavy coenzyme were both measured in D2O
+measurements.csv,M0007,MR_PSEPU_WT_OX_P,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0008,MR_PSEPU_WT_OX_P,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0009,MR_PSEPU_WT_OX_H,other,D2O,labelled_position / conditions,,"light reaction in H2O, heavy reaction in D2O: the solvent is part of the substitution (kie_type other, double isotope effect)"
+measurements.csv,M0057,POR_THEVB_WT_PT,solvent,D2O / deuterated buffer,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0059,POR_SYNY3_WT_PT,solvent,D2O / deuterated buffer,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0061,POR_GLOVI_WT_PT,solvent,D2O / deuterated buffer,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0063,PORB_ARATH_WT_PT,solvent,D2O / deuterated buffer,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0180,SLO1_SOYBN_WT_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0181,SLO1_SOYBN_WT_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0182,SLO1_SOYBN_I552A_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0183,SLO1_SOYBN_I552A_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0184,SLO1_SOYBN_L546A_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0185,SLO1_SOYBN_L546A_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0186,SLO1_SOYBN_V750A_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0187,SLO1_SOYBN_V750A_LA,solvent,D2O / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0233,SLO1_SOYBN_WT_LA,solvent,D2O / pD / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0234,SLO1_SOYBN_WT_LA,solvent,D2O / pD / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0235,SLO1_SOYBN_I553A_L754A_LA,solvent,D2O / pD / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0236,SLO1_SOYBN_I553A_L754A_LA,solvent,D2O / pD / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0237,SLO1_SOYBN_L546A_L754A_LA,solvent,D2O / pD / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0238,SLO1_SOYBN_L546A_L754A_LA,solvent,D2O / pD / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0258,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0271,CPA2E_THEAT_WT_CDPGLC,primary,2H2O / heavy water / p2H,labelled_position / conditions / notes / as_printed,D2O,labelled_position and conditions: the same reaction in MOPS-2H2O
+measurements.csv,M0272,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0273,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0274,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0275,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0276,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0277,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0278,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0279,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0280,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0281,CPA2E_THEAT_WT_CDPGLC,solvent,2H2O / D2O / p2H / pL / solvent isotope,labelled_position / conditions / notes / as_printed,,solvent effect: heavy water is the isotope substitution itself
+measurements.csv,M0282,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / location,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0010,MR_PSEPU_WT_OX_P,solvent,D2O,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0037,POR_THEVB_WT_PT,solvent,D2O / deuterated buffer / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0040,POR_SYNY3_WT_PT,solvent,D2O / deuterated buffer / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0043,POR_GLOVI_WT_PT,solvent,D2O / deuterated buffer / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0046,PORB_ARATH_WT_PT,solvent,D2O / deuterated buffer / solvent isotope,labelled_position / conditions / notes,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0140,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0141,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0142,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0143,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / as_printed / location,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0152,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / as_printed,,solvent effect: heavy water is the isotope substitution itself
+temperature.csv,T0153,PTMT2_STRPL_WT_GGPP,solvent,D2O / pD,labelled_position / conditions / notes / as_printed,,solvent effect: heavy water is the isotope substitution itself

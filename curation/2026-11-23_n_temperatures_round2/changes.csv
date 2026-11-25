@@ -1,0 +1,24 @@
+table,id,field,new,reason
+temperature.csv,T0021,notes,(appended),"article read again on 23 Nov 2026 (two blind readings): only the range 15 to 50 °C is printed (Table 1, footnote a), no number, list or step; SI not read; n_temperatures stays empty"
+temperature.csv,T0022,notes,(appended),article read again on 23 Nov 2026 (two blind readings): neither number nor range of the temperatures printed; the values per temperature are in SI Tables S2–S5 (not read); n_temperatures stays empty
+temperature.csv,T0023,notes,(appended),article read again on 23 Nov 2026 (two blind readings): neither number nor range of the temperatures printed; the values per temperature are in SI Tables S2–S5 (not read); n_temperatures stays empty
+temperature.csv,T0024,notes,(appended),article read again on 23 Nov 2026 (two blind readings): neither number nor range of the temperatures printed; the values per temperature are in SI Tables S2–S5 (not read); n_temperatures stays empty
+temperature.csv,T0025,notes,(appended),article read again on 23 Nov 2026 (two blind readings): neither number nor range of the temperatures printed; the values per temperature are in SI Tables S2–S5 (not read); n_temperatures stays empty
+temperature.csv,T0051,notes,(appended),article read again on 23 Nov 2026 (two blind readings): neither number nor range of the temperatures printed; three enzyme preparations fitted separately and averaged (note 31 of the source); n_temperatures stays empty
+temperature.csv,T0115,n_temperatures,8,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0115,notes,(appended),"n_temperatures 8 entered on 23 Nov 2026 (two blind readings): SI Table S7 has one row per temperature, 10 to 45 °C in steps of 5, for H and D; the source does not say in so many words that every row entered the fit"
+temperature.csv,T0116,n_temperatures,8,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0116,notes,(appended),"n_temperatures 8 entered on 23 Nov 2026 (two blind readings): SI Table S7 has one row per temperature, 10 to 45 °C in steps of 5, for H and D; the source does not say in so many words that every row entered the fit"
+temperature.csv,T0117,n_temperatures,8,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0117,notes,(appended),"n_temperatures 8 entered on 23 Nov 2026 (two blind readings): SI Table S7 has one row per temperature, 10 to 45 °C in steps of 5, for H and D; the source does not say in so many words that every row entered the fit"
+temperature.csv,T0118,n_temperatures,8,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0118,notes,(appended),"n_temperatures 8 entered on 23 Nov 2026 (two blind readings): SI Table S7 has one row per temperature, 10 to 45 °C in steps of 5, for H and D; the source does not say in so many words that every row entered the fit"
+temperature.csv,T0119,n_temperatures,7,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0119,notes,(appended),"n_temperatures 7 entered on 23 Nov 2026 (two blind readings): SI Table S7 has one row per temperature for Y317L, 15 to 45 °C in steps of 5 (no row at 10 °C), for H and D; the source does not say in so many words that every row entered the fit"
+temperature.csv,T0120,n_temperatures,8,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0120,notes,(appended),"n_temperatures 8 entered on 23 Nov 2026 (two blind readings): SI Table S7 has one row per temperature, 10 to 45 °C in steps of 5, for H and D; the source does not say in so many words that every row entered the fit"
+temperature.csv,T0133,n_temperatures,>=7,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0133,notes,(appended),"SI Appendix read on 23 Nov 2026 (two blind readings): assays at 10–40 °C, Ea(H) 'from at least seven temperatures for each variant'; no list or step of the temperatures for the kinetics, so n_temperatures is the lower bound >=7; Table 1 footnote * says the temperature data were reported before (ref. 35 of the source, not read)"
+temperature.csv,T0134,n_temperatures,>=7,two blind readings of 23 Nov 2026 agree
+temperature.csv,T0134,notes,(appended),"SI Appendix read on 23 Nov 2026 (two blind readings): assays at 10–40 °C, Ea(H) 'from at least seven temperatures for each variant'; no list or step of the temperatures for the kinetics, so n_temperatures is the lower bound >=7; Table 1 footnote * says the temperature data were reported before (ref. 35 of the source, not read)"
+temperature.csv,T0138,notes,(appended),"article and figure package read again on 23 Nov 2026 (two blind readings): only the range 5.3–20 °C is printed; Fig. 9A shows six points per isotope, which is not a printed number (rule 4); n_temperatures stays empty"

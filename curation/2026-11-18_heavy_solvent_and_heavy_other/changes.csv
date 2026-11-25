@@ -1,0 +1,45 @@
+table,id,field,old,new,reason
+measurements.csv,M0026,heavy_other,nd,1,"dideuterated substrate in a primary row: two D, one transferred, so one further position, wherever it sits (coder 2 of 16 Nov 2026)"
+measurements.csv,M0140,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0141,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0142,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0143,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0144,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0145,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0146,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0147,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0148,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0149,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0150,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0151,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0152,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0153,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0154,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0155,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0156,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0157,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0158,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0159,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0160,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0161,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0162,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0163,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0164,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0165,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0166,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0167,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0168,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0169,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0170,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0171,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0172,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0173,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0174,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0175,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0176,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0177,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0178,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0179,heavy_other,nd,30,the row says all H of linoleic acid (perdeutero-LA): 31 carbon-bound hydrogens less the transferred one
+measurements.csv,M0006,heavy_solvent,,D2O,"conditions: 50 mM potassium phosphate, D2O; NADH or NAD2H"
+measurements.csv,M0271,heavy_solvent,,D2O,labelled_position: in 2H2O solvent; conditions: the same reaction in MOPS-2H2O
+temperature.csv,T0021,heavy_other,nd,1,"dideuterated substrate in a primary row: two D, one transferred, so one further position, wherever it sits (coder 2 of 16 Nov 2026)"

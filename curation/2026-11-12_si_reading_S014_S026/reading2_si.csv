@@ -1,0 +1,51 @@
+file,doi,table,row_label,temperature_C,column_header,as_printed,value,error
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 5,5,Observed H/T KIE,3.69±0.09,3.69,0.09
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 15,15,Observed H/T KIE,3.82±0.05,3.82,0.05
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 25,25,Observed H/T KIE,3.80±0.09,3.80,0.09
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 35,35,Observed H/T KIE,3.78±0.05,3.78,0.05
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 45,45,Observed H/T KIE,3.79±0.13,3.79,0.13
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 5,5,Observed D/T KIE,1.57±0.02,1.57,0.02
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 15,15,Observed D/T KIE,1.57±0.05,1.57,0.05
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 25,25,Observed D/T KIE,1.58±0.03,1.58,0.03
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 35,35,Observed D/T KIE,1.57±0.03,1.57,0.03
+1,10.1021/ja902120t,Table S2,Temperature ˚ C: 45,45,Observed D/T KIE,1.57±0.02,1.57,0.02
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 5,5,Intrinsic KIE (H/T),5.89±0.79,5.89,0.79
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 15,15,Intrinsic KIE (H/T),5.80±0.70,5.80,0.70
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 25,25,Intrinsic KIE (H/T),5.93±0.73,5.93,0.73
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 35,35,Intrinsic KIE (H/T),5.88±0.75,5.88,0.75
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 45,45,Intrinsic KIE (H/T),5.88±0.62,5.88,0.62
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 5,5,Intrinsic KIE (H/D),3.14±0.31,3.14,0.31
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 15,15,Intrinsic KIE (H/D),3.38±0.28,3.38,0.28
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 25,25,Intrinsic KIE (H/D),3.43±0.30,3.43,0.30
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 35,35,Intrinsic KIE (H/D),3.41±0.30,3.41,0.30
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 45,45,Intrinsic KIE (H/D),3.41±0.25,3.41,0.25
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 5,5,Intrinsic KIE (D/T),1.70±0.07,1.70,0.07
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 15,15,Intrinsic KIE (D/T),1.69±0.06,1.69,0.06
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 25,25,Intrinsic KIE (D/T),1.70±0.06,1.70,0.06
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 35,35,Intrinsic KIE (D/T),1.70±0.06,1.70,0.06
+1,10.1021/ja902120t,Table S3,Temperature ˚ C: 45,45,Intrinsic KIE (D/T),1.70±0.05,1.70,0.05
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 5,5,H/T KIE,3.65 ±0.06,3.65,0.06
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 15,15,H/T KIE,3.94 ±0.06,3.94,0.06
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 25,25,H/T KIE,3.92 ±0.03,3.92,0.03
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 35,35,H/T KIE,3.97 ±0.06,3.97,0.06
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 45,45,H/T KIE,4.18 ±0.06,4.18,0.06
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 5,5,D/T KIE,1.63 ±0.02,1.63,0.02
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 15,15,D/T KIE,1.65 ±0.03,1.65,0.03
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 25,25,D/T KIE,1.64 ±0.03,1.64,0.03
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 35,35,D/T KIE,1.64 ±0.02,1.64,0.02
+2,10.1098/rstb.2006.1871,Table 1,Temp. ˚C: 45,45,D/T KIE,1.65 ±0.02,1.65,0.02
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 5,5,H/T KIE,8.20 ±0.77,8.20,0.77
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 15,15,H/T KIE,7.87 ±0.77,7.87,0.77
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 25,25,H/T KIE,7.59 ±0.65,7.59,0.65
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 35,35,H/T KIE,7.42 ±0.63,7.42,0.63
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 45,45,H/T KIE,7.17 ±0.61,7.17,0.61
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 5,5,H/D KIE,4.37 ±0.29,4.37,0.29
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 15,15,H/D KIE,4.24 ±0.29,4.24,0.29
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 25,25,H/D KIE,4.14 ±0.25,4.14,0.25
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 35,35,H/D KIE,4.07 ±0.20,4.07,0.20
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 45,45,H/D KIE,3.98 ±0.20,3.98,0.20
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 5,5,D/T KIE,1.88 ±0.05,1.88,0.05
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 15,15,D/T KIE,1.85 ±0.05,1.85,0.05
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 25,25,D/T KIE,1.83 ±0.05,1.83,0.05
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 35,35,D/T KIE,1.82 ±0.05,1.82,0.05
+2,10.1098/rstb.2006.1871,Table 2,Temp. ˚C: 45,45,D/T KIE,1.80 ±0.05,1.80,0.05

@@ -1,0 +1,2 @@
+step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes
+MADH_METME_WT_MA,MADH_METME_WT,methylamine,methylamine methyl C–H (iminoquinone intermediate),active-site base (not identified),proton,single,"reductive half-reaction; S004 Fig. 1 and text: ""An active-site base then abstracts a proton from the iminoquinone intermediate to form a carbanion with concomitant reduction of the TTQ cofactor""; the source calls it the proton abstraction step"

@@ -1,0 +1,278 @@
+#!/usr/bin/env python3
+"""Checks the five data tables against SCHEMA.md. Exit code 0 means every row passes."""
+import csv, math, re, sys, pathlib
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+DOI = re.compile(r'^10\.\d{4,9}/\S+$')
+
+HEADERS = {
+    'enzymes.csv': 'enzyme_id,name,ec,organism,uniprot,variant,pdb,status,notes',
+    'steps.csv': 'step_id,enzyme_id,substrate,donor,acceptor,transfer,status,notes',
+    'measurements.csv': 'meas_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
+                        'value,error,error_type,n_measurements,temperature_K,pH,conditions,pressure_bar,cosolvent,heavy_other,heavy_solvent,value_origin,doi,location,as_printed,'
+                        'extracted_by,checked_by,status,notes',
+    'temperature.csv': 'temp_id,step_id,labelled_position,kie_type,isotopes,quantity,method,kind,'
+                       'T_min_K,T_max_K,n_temperatures,AH_AX,AH_AX_error,dEa_kcal,dEa_error,'
+                       'Ea_light_kcal,Ea_light_error,pH,conditions,pressure_bar,cosolvent,heavy_other,heavy_solvent,T_break_K,branch,doi,location,'
+                       'as_printed,'
+                       'extracted_by,checked_by,status,notes',
+    'rates.csv': 'rate_id,step_id,labelled_position,isotope,quantity,value,error,error_type,n_measurements,unit,temperature_K,pH,'
+                 'conditions,pressure_bar,doi,location,as_printed,extracted_by,checked_by,status,notes',
+}
+ALLOWED = {
+    'status': {'verified', 'single', 'disputed'},
+    'transfer': {'H_atom', 'hydride', 'proton', 'PCET', 'unknown'},
+    'kie_type': {'primary', 'secondary', 'solvent', 'other'},
+    'isotopes': {'H/D', 'H/T', 'D/T'},
+    'quantity': {'kcat', 'kcat/KM', 'single_turnover', 'other'},
+    'method': {'noncompetitive', 'competitive', 'other'},
+    'kind': {'observed', 'intrinsic'},
+    'isotope': {'H', 'D', 'T'},
+    'branch': {'', 'high', 'low'},
+    'value_origin': {'ratio', 'corrected', 'combined', 'fit_T', 'extrapolated', 'nd'},
+    'error_type': {'sd', 'se', 'ci95', 'other', 'conflicting', 'not_stated', 'not_recorded', 'none'},
+}
+
+errors = []
+
+
+def err(table, row, msg):
+    errors.append(f'{table} row {row}: {msg}')
+
+
+def load(name):
+    with open(ROOT / 'data' / name, newline='', encoding='utf-8') as f:
+        if f.readline().strip() != HEADERS[name]:
+            err(name, 1, 'header differs from SCHEMA.md')
+            return []
+        f.seek(0)
+        return list(csv.DictReader(f))
+
+
+def allowed(table, i, r, *fields):
+    for f in fields:
+        if r[f] not in ALLOWED[f]:
+            err(table, i, f'{f} {r[f]!r} is not one of {sorted(ALLOWED[f])}')
+
+
+def number(table, i, r, field, lo=None, hi=None, required=False):
+    v = r[field].strip()
+    if not v:
+        if required:
+            err(table, i, f'{field} is empty')
+        return None
+    try:
+        x = float(v)
+    except ValueError:
+        err(table, i, f'{field} is not a number: {v!r}')
+        return None
+    if lo is not None and x < lo:
+        err(table, i, f'{field} = {v} is below {lo}')
+    elif hi is not None and x > hi:
+        err(table, i, f'{field} = {v} is above {hi}')
+    return x
+
+
+N_MEAS = re.compile(r'^(>=)?\d+$')
+HEAVY_SOLVENT = re.compile(r'^D2O( \d+(\.\d+)? %)?$')
+
+
+def error_fields(table, i, r):
+    """CURATION.md rule 12: kind of the printed error and number of measurements."""
+    allowed(table, i, r, 'error_type')
+    if (r['error_type'] == 'none') != (not r['error'].strip()):
+        err(table, i, "error_type is 'none' exactly when no error is printed")
+    n = r['n_measurements'].strip()
+    if n and not N_MEAS.match(n):
+        err(table, i, f'n_measurements {n!r} is neither a whole number nor >= a whole number')
+
+
+def unique(table, rows, key):
+    seen = set()
+    for i, r in enumerate(rows, 2):
+        if not r[key].strip():
+            err(table, i, f'{key} is empty')
+        elif r[key] in seen:
+            err(table, i, f'{key} {r[key]} appears twice')
+        seen.add(r[key])
+    return seen
+
+
+def source(table, i, r):
+    if not DOI.match(r['doi'].strip()):
+        err(table, i, f'doi {r["doi"]!r} is not a DOI')
+    for f in ('location', 'as_printed', 'extracted_by'):
+        if not r[f].strip():
+            err(table, i, f'{f} is empty')
+    if len(r['as_printed'].split()) > 15:
+        err(table, i, 'as_printed is longer than 15 words')
+    if r['status'] == 'verified':
+        first, second = r['extracted_by'].strip(), r['checked_by'].strip()
+        if not second:
+            err(table, i, 'verified, but there is no second reading (checked_by)')
+        elif first == second:
+            err(table, i, 'verified needs two different readers')
+
+
+enzymes = load('enzymes.csv')
+enzyme_ids = unique('enzymes.csv', enzymes, 'enzyme_id')
+for i, r in enumerate(enzymes, 2):
+    allowed('enzymes.csv', i, r, 'status')
+
+steps = load('steps.csv')
+step_ids = unique('steps.csv', steps, 'step_id')
+for i, r in enumerate(steps, 2):
+    allowed('steps.csv', i, r, 'transfer', 'status')
+    if r['enzyme_id'] not in enzyme_ids:
+        err('steps.csv', i, f'enzyme_id {r["enzyme_id"]!r} is not in enzymes.csv')
+
+tables = {}
+for name, key in (('measurements.csv', 'meas_id'), ('temperature.csv', 'temp_id')):
+    rows = tables[name] = load(name)
+    unique(name, rows, key)
+    for i, r in enumerate(rows, 2):
+        if r['step_id'] not in step_ids:
+            err(name, i, f'step_id {r["step_id"]!r} is not in steps.csv')
+        allowed(name, i, r, 'kie_type', 'isotopes', 'quantity', 'method', 'kind', 'status')
+        source(name, i, r)
+        number(name, i, r, 'pH', 0, 14)
+        number(name, i, r, 'pressure_bar', 0, 20000)
+        h = r['heavy_other'].strip()
+        if r['kie_type'] == 'primary':
+            if h != 'nd' and not (h.isdigit()):
+                err(name, i, f"heavy_other {h!r} must be a whole number or 'nd' for a primary effect (rule 13)")
+        elif h:
+            err(name, i, 'heavy_other is only filled for primary effects (rule 13)')
+        hs = r['heavy_solvent'].strip()
+        if hs and not HEAVY_SOLVENT.match(hs):
+            err(name, i, f"heavy_solvent {hs!r} must be empty, 'D2O' or 'D2O <amount> %' (rule 13)")
+        elif hs and r['kie_type'] == 'solvent':
+            err(name, i, 'heavy_solvent stays empty for a solvent effect: there heavy water is the substitution (rule 13)')
+        if name == 'measurements.csv':
+            number(name, i, r, 'value', 0, required=True)
+            number(name, i, r, 'error', 0)
+            error_fields(name, i, r)
+            allowed(name, i, r, 'value_origin')  # rule 14
+            number(name, i, r, 'temperature_K', 200, 400, required=True)
+        else:
+            lo = number(name, i, r, 'T_min_K', 200, 400)
+            hi = number(name, i, r, 'T_max_K', 200, 400)
+            if (lo is None) != (hi is None):
+                err(name, i, 'give both T_min_K and T_max_K, or neither')
+            elif lo is not None and lo >= hi:
+                err(name, i, 'T_min_K is not below T_max_K')
+            nt = r['n_temperatures'].strip()
+            if nt and not N_MEAS.match(nt):
+                err(name, i, f'n_temperatures {nt!r} is neither a whole number nor >= a whole number')
+            elif nt and int(nt.lstrip('>=')) < 2:
+                err(name, i, 'n_temperatures is below 2')
+            number(name, i, r, 'AH_AX', 0)
+            number(name, i, r, 'dEa_kcal')
+            number(name, i, r, 'Ea_light_kcal')
+            for f in ('AH_AX_error', 'dEa_error', 'Ea_light_error'):
+                number(name, i, r, f, 0)
+            tb = 'nd' if r['T_break_K'].strip() == 'nd' else number(name, i, r, 'T_break_K', 200, 400)
+            allowed(name, i, r, 'branch')
+            if (tb is None) != (not r['branch']):
+                err(name, i, 'give both T_break_K and branch, or neither (rule 13)')
+            if not (r['AH_AX'].strip() or r['dEa_kcal'].strip()):
+                err(name, i, 'neither AH_AX nor dEa_kcal is given')
+
+# Sign and unit convention, checked against the data (CURATION.md rule 10).
+# Where a temperature series and a single-temperature value cover the same step, isotope pair,
+# effect type, quantity, method and kind (observed or intrinsic) in the same paper, and the value's temperature
+# falls inside (or within 1 K of)
+# the series' fitted range, the series must reproduce the value:
+#     KIE = (A_light / A_heavy) * exp(dEa / RT),      dEa = Ea(heavy) - Ea(light).
+# A sign slip inverts the exponential and a unit slip scales dEa by 4.184, so either shows up
+# at once. Series and value come from different fits, so the test is deliberately loose.
+R_KCAL = 1.98720425e-3  # kcal / (mol K)
+TOLERANCE = 3.0
+MATCH = ('step_id', 'isotopes', 'kie_type', 'quantity', 'method', 'kind', 'doi', 'pressure_bar')
+
+
+def num(value):
+    try:
+        return float(value)
+    except ValueError:
+        return None
+
+
+checked = 0
+for i, s in enumerate(tables['temperature.csv'], 2):
+    a, d = num(s['AH_AX']), num(s['dEa_kcal'])
+    lo, hi = num(s['T_min_K']), num(s['T_max_K'])
+    if None in (a, d, lo, hi) or a <= 0:
+        continue
+    for m in tables['measurements.csv']:
+        if any(m[f] != s[f] for f in MATCH):
+            continue
+        t, observed = num(m['temperature_K']), num(m['value'])
+        if None in (t, observed) or observed <= 0 or not lo - 1 <= t <= hi + 1:
+            continue
+        checked += 1
+        ratio = a * math.exp(d / (R_KCAL * t)) / observed
+        if not 1 / TOLERANCE <= ratio <= TOLERANCE:
+            err('temperature.csv', i,
+                f'{s["temp_id"]} predicts {a * math.exp(d / (R_KCAL * t)):.3g} at '
+                f'{t:.1f} K, but {m["meas_id"]} prints {observed:.3g} '
+                f'(factor {ratio:.2f}); check the sign of dEa_kcal and its unit')
+
+# Rate constants (CURATION.md rule 4b).
+rates = load('rates.csv')
+unique('rates.csv', rates, 'rate_id')
+for i, r in enumerate(rates, 2):
+    if r['step_id'] not in step_ids:
+        err('rates.csv', i, f'step_id {r["step_id"]!r} is not in steps.csv')
+    allowed('rates.csv', i, r, 'isotope', 'quantity', 'status')
+    source('rates.csv', i, r)
+    number('rates.csv', i, r, 'pH', 0, 14)
+    number('rates.csv', i, r, 'pressure_bar', 0, 20000)
+    number('rates.csv', i, r, 'value', 0, required=True)
+    number('rates.csv', i, r, 'error', 0)
+    error_fields('rates.csv', i, r)
+    number('rates.csv', i, r, 'temperature_K', 200, 400, required=True)
+    if not r['unit'].strip():
+        err('rates.csv', i, 'unit is empty')
+
+# Where both rate constants and an isotope effect are held for the same step, quantity, pH, temperature
+# and paper, the ratio of the rate constants must reproduce the isotope effect within 10 %.
+RATE_TOLERANCE = 0.10
+def half_unit(v):
+    """Half a unit of the last printed digit of a number, e.g. 0.005 for '0.04' and 0.5 for '128'."""
+    v = v.strip()
+    return 0.5 * 10 ** -(len(v.split('.')[1]) if '.' in v else 0)
+RATE_KEY = ('step_id', 'quantity', 'pH', 'temperature_K', 'doi', 'pressure_bar')
+by_key = {}
+for r in rates:
+    by_key.setdefault(tuple(r[f] for f in RATE_KEY), {})[r['isotope']] = (num(r['value']), r['unit'], r['rate_id'], half_unit(r['value']))
+rate_checked = 0
+for m in tables['measurements.csv']:
+    pair = by_key.get(tuple(m[f] for f in RATE_KEY))
+    if not pair or m['kie_type'] != 'primary' or m['method'] != 'noncompetitive' or m['kind'] != 'observed':
+        continue
+    light, heavy = m['isotopes'].split('/')
+    if light not in pair or heavy not in pair:
+        continue
+    (kl, ul, il, hl), (kh, uh, ih, hh) = pair[light], pair[heavy]
+    kie = num(m['value'])
+    if None in (kl, kh, kie) or kh <= 0 or kie <= 0 or ul != uh:
+        continue
+    rate_checked += 1
+    # A printed number stands for an interval of half a unit of its last digit on either side; the quotient of two
+    # rate constants with few digits can therefore lie more than 10 % from a printed isotope effect that it agrees with.
+    lo, hi = (kl - hl) / (kh + hh), (kl + hl) / (kh - hh) if kh > hh else float('inf')
+    if not (lo / kie - 1 <= RATE_TOLERANCE and hi / kie - 1 >= -RATE_TOLERANCE):
+        err('rates.csv', 0, f'{il}/{ih} = {kl / kh:.3g}, but {m["meas_id"]} prints {kie:.3g}')
+
+if errors:
+    print('\n'.join(errors))
+    print(f'\n{len(errors)} problem(s)')
+    sys.exit(1)
+print(f'all rows pass: {len(enzymes)} enzymes, {len(steps)} steps, '
+      f'{len(tables["measurements.csv"])} isotope effects, '
+      f'{len(tables["temperature.csv"])} temperature series, {len(rates)} rate constants')
+print(f'sign and unit convention: {checked} series/value pairs agree within a factor '
+      f'of {TOLERANCE:g}')
+print(f'rate constants: {rate_checked} ratios reproduce the isotope effect of the same row within '
+      f'{RATE_TOLERANCE:.0%}')

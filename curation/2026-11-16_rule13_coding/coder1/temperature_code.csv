@@ -1,0 +1,176 @@
+temp_id,pressure_bar,cosolvent,heavy_other,T_break_K,branch,remark
+T0001,,,1,,,
+T0002,,,1,,,
+T0003,,,1,,,
+T0004,,,1,,,H/T: [Ad-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0005,,,0,,,intrinsic H/D derived; H and D species both carry the [Ad-14C] tracer (D species labelling inferred from row wording)
+T0006,,,1,,,"D/T: (R)-[Ad-14C,4-2H]NADPH vs (R)-[4-3H]NADPH; remote 14C reporter on the reacting molecule counted"
+T0007,,,0,,,
+T0008,,,0,,,
+T0009,,,0,,,reacting molecule reduced FMN; only N5 label stated
+T0010,,,,,,
+T0011,,,8,,,
+T0012,,,8,,,
+T0013,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0014,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0015,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0016,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0017,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0018,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0019,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0020,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0021,,,nd,,,"dideutero LA, position not named"
+T0022,,,1,303.15,high,
+T0023,,,1,303.15,high,
+T0024,,,1,303.15,high,
+T0025,,,1,303.15,high,
+T0026,,,1,313.15,high,
+T0027,,,0,,,
+T0028,,,0,,,"KIEs below 15 °C excluded, not described as a broken plot"
+T0029,,,0,,,
+T0030,,,0,293.15,low,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0031,,,0,293.15,low,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0032,,,0,293.15,high,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0033,,,0,293.15,high,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0034,,,1,,,"linear part of Arrhenius plot only, no break stated"
+T0035,,,0,246.15,high,"cryogenic buffer as in ref. 12, composition not stated"
+T0036,,,0,246.15,low,"cryogenic buffer as in ref. 12, composition not stated"
+T0037,,,,,,
+T0038,,,0,246.15,high,"cryogenic buffer as in ref. 12, composition not stated"
+T0039,,,0,246.15,low,"cryogenic buffer as in ref. 12, composition not stated"
+T0040,,,,,,
+T0041,,,0,246.15,high,"cryogenic buffer as in ref. 12, composition not stated"
+T0042,,,0,246.15,low,"cryogenic buffer as in ref. 12, composition not stated"
+T0043,,,,,,
+T0044,,,0,246.15,high,"cryogenic buffer as in ref. 12, composition not stated"
+T0045,,,0,246.15,low,"cryogenic buffer as in ref. 12, composition not stated"
+T0046,,,,,,
+T0047,,,0,,,
+T0048,,,0,,,
+T0049,,,0,,,
+T0050,,,0,,,
+T0051,,,1,,,
+T0052,,,2,,,
+T0053,,,2,,,
+T0054,,,2,,,
+T0055,,,2,,,
+T0056,,,0,,,
+T0057,,,0,,,
+T0058,,,0,,,
+T0059,,,30,,,uniformly deuterated LA vs h31-LA: 31 C-H positions minus the transferred one
+T0060,,,30,,,uniformly deuterated LA vs h31-LA: 31 C-H positions minus the transferred one
+T0061,,,1,,,
+T0062,1,,0,,,
+T0063,2000,,0,,,
+T0064,,,0,,,monophasic treatment; biphasic fits not entered
+T0065,,,1,,,
+T0066,,,1,,,"single-line fit, subtle break below errors"
+T0067,,,0,,,
+T0068,,,0,,,
+T0069,,,30,,,
+T0070,,,30,,,
+T0071,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0072,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0073,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0074,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0075,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0076,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0077,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0078,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0079,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0080,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0081,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0082,,,1,,,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+T0083,,,1,,,"D/T: [2-14C,5-2H]dUMP vs [5-3H]dUMP; remote 14C reporter on the reacting molecule counted"
+T0084,,,1,,,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+T0085,,,1,,,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+T0086,,,1,,,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+T0087,,,0,,,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0088,,,1,,,H/T: [2-14C]dUMP reporter on the light species; remote 14C reporter on the reacting molecule counted
+T0089,,,0,,,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0090,,,0,,,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0091,,,1,,,H/T: [Ad-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0092,,,1,,,H/T: [Ad-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0093,,,1,,,H/T: [Ad-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0094,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0095,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0096,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0097,,,1,,,H/T: [carbonyl-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0098,,,1,,,H/T: [carbonyl-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0099,,,1,,,H/T: [carbonyl-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0100,,,1,,,H/T: [carbonyl-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0101,,,1,,,H/T: [carbonyl-14C]NADPH reporter; remote 14C reporter on the reacting molecule counted
+T0102,,,0,,,
+T0103,,,0,,,
+T0104,,,0,,,
+T0105,,,0,,,
+T0106,,,0,,,
+T0107,,,0,,,
+T0108,,,0,,,
+T0109,,,0,,,
+T0110,,,0,,,
+T0111,,,0,,,
+T0112,,,0,,,
+T0113,,,0,,,
+T0114,,,1,,,
+T0115,,,nd,,,
+T0116,,,nd,,,
+T0117,,,nd,,,
+T0118,,,nd,,,
+T0119,,,nd,,,
+T0120,,,nd,,,
+T0121,1,,nd,,,
+T0122,344,,nd,,,
+T0123,688,,nd,,,
+T0124,1034,,nd,,,
+T0125,1,,nd,,,
+T0126,344,,nd,,,
+T0127,688,,nd,,,
+T0128,1034,,nd,,,
+T0129,1,,nd,,,
+T0130,344,,nd,,,
+T0131,688,,nd,,,
+T0132,1034,,nd,,,
+T0133,,,nd,,,
+T0134,,,nd,,,
+T0135,,,1,,,
+T0136,,,1,,,
+T0137,,,0,,,
+T0138,,,0,,,
+T0139,,,2,,,
+T0140,,,,,,
+T0141,,,,,,
+T0142,,,,,,
+T0143,,,,,,
+T0144,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,acetonitrile is the substrate vehicle; included as cosolvent
+T0145,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,acetonitrile is the substrate vehicle; included as cosolvent
+T0146,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,acetonitrile is the substrate vehicle; included as cosolvent
+T0147,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,acetonitrile is the substrate vehicle; included as cosolvent
+T0148,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,acetonitrile is the substrate vehicle; included as cosolvent
+T0149,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,acetonitrile is the substrate vehicle; included as cosolvent
+T0150,,,0,nd,low,"break between 40 and 45 °C, no single value"
+T0151,,,0,nd,high,"break between 40 and 45 °C, no single value"
+T0152,,,,,,
+T0153,,,,,,
+T0154,,,30,,,
+T0155,,,1,,,
+T0156,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0157,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0158,,,nd,,,competitive tritium experiment; reporter label position not stated in the row
+T0159,,,nd,,,labelling not described in the row
+T0160,,,nd,,,labelling not described in the row
+T0161,,,nd,,,labelling not described in the row
+T0162,,,nd,,,labelling not described in the row
+T0163,,,1,,,
+T0164,,,1,,,
+T0165,,,0,,,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0166,,,0,,,"14C reporter on dUMP, not on the reacting CH2H4folate"
+T0167,,,nd,,,labelling not described in the row
+T0168,,,2,,,perdeuterated methylamine: only methyl H counted (amine H exchange)
+T0169,,glycerol 30 %,2,,,perdeuterated methylamine: only methyl H counted (amine H exchange)
+T0170,,,,,,
+T0171,,,0,,,
+T0172,,,1,,,
+T0173,,,,,,
+T0174,,,0,,,
+T0175,,,1,,,

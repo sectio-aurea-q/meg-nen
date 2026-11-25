@@ -1,0 +1,501 @@
+row_id,error_type,n_measurements,evidence
+M0001,not_recorded,,
+M0002,not_recorded,,
+M0003,not_recorded,,
+M0004,not_recorded,,
+M0005,not_recorded,,
+M0006,not_recorded,,
+M0007,not_recorded,,
+M0008,not_recorded,,
+M0009,not_recorded,,
+M0010,not_recorded,,
+M0011,not_recorded,,
+M0012,not_recorded,,
+M0013,not_recorded,,
+M0014,not_recorded,,
+M0015,not_recorded,,
+M0016,not_recorded,,
+M0017,not_recorded,,
+M0018,not_recorded,,
+M0019,not_recorded,,
+M0020,not_recorded,,
+M0021,se,,"± is a standard error (Methods, Intrinsic KIEs)"
+M0022,not_recorded,,
+M0023,not_recorded,,
+M0024,not_recorded,,
+M0025,not_recorded,,
+M0026,not_stated,,"error in parentheses, type not stated"
+M0027,not_stated,,± type not stated
+M0028,not_stated,,± type not stated
+M0029,not_stated,,error type not stated
+M0030,not_stated,,error type not stated
+M0031,not_stated,,error type not stated
+M0032,not_stated,,error type not stated
+M0033,not_stated,,error type not stated
+M0034,not_recorded,,
+M0035,not_recorded,,
+M0036,not_recorded,,
+M0037,not_recorded,,
+M0038,not_recorded,,
+M0039,not_recorded,4,also Fig. 2 (average of four experiments)
+M0040,not_recorded,,
+M0041,not_recorded,,
+M0042,not_recorded,,
+M0043,not_recorded,,
+M0044,not_recorded,,
+M0045,not_recorded,,
+M0046,not_recorded,,
+M0047,not_recorded,,
+M0048,not_recorded,,
+M0049,not_recorded,,
+M0050,not_recorded,,
+M0051,not_recorded,,
+M0052,none,,
+M0053,none,,
+M0054,none,,
+M0055,none,,
+M0056,not_recorded,,
+M0057,not_recorded,,
+M0058,not_recorded,,
+M0059,not_recorded,,
+M0060,not_recorded,,
+M0061,not_recorded,,
+M0062,not_recorded,,
+M0063,not_recorded,,
+M0064,not_recorded,,
+M0065,not_recorded,,
+M0066,not_recorded,,
+M0067,not_recorded,,
+M0068,not_recorded,,
+M0069,not_recorded,,
+M0070,not_recorded,,
+M0071,not_recorded,,
+M0072,not_recorded,,
+M0073,not_recorded,,
+M0074,not_recorded,,
+M0075,not_recorded,,
+M0076,not_recorded,,
+M0077,not_recorded,,
+M0078,not_recorded,,
+M0079,other,3,averages over three enzyme preparations ... errors of the individual analyses propagated (note 31)
+M0080,not_stated,,± type not stated
+M0081,not_stated,,± type not stated
+M0082,not_stated,,± type not stated
+M0083,not_stated,,± type not stated
+M0084,not_stated,,± type not stated
+M0085,not_stated,,± type not stated
+M0086,not_stated,,± type not stated
+M0087,not_stated,,± type not stated
+M0088,not_stated,,± type not stated
+M0089,not_stated,,± type not stated
+M0090,not_stated,,± type not stated
+M0091,not_stated,,± type not stated
+M0092,not_stated,,± type not stated
+M0093,not_stated,,± type not stated
+M0094,not_stated,,± type not stated
+M0095,not_stated,,± type not stated
+M0096,not_stated,,± type not stated
+M0097,not_stated,,± type not stated
+M0098,se,2,error propagated; propagated from kcat values: averages of duplicates ... with standard errors
+M0099,se,2,error propagated; propagated from kcat values: averages of duplicates ... with standard errors
+M0100,se,2,error propagated; propagated from kcat values: averages of duplicates ... with standard errors
+M0101,se,2,error propagated; propagated from kcat values: averages of duplicates ... with standard errors
+M0102,se,2,error propagated; propagated from kcat values: averages of duplicates ... with standard errors
+M0103,se,,error propagated; propagated from kcat values: averages of duplicates/triplicates with standard errors
+M0104,not_recorded,,
+M0105,none,,
+M0106,not_stated,,± type not stated
+M0107,not_stated,,± type not stated
+M0108,not_stated,,± type not stated
+M0109,not_stated,,± type not stated
+M0110,not_recorded,,
+M0111,not_recorded,,
+M0112,not_recorded,,
+M0113,not_recorded,,
+M0114,not_recorded,,
+M0115,not_recorded,,
+M0116,not_recorded,,
+M0117,not_recorded,,
+M0118,not_recorded,,
+M0119,not_recorded,,
+M0120,not_recorded,,
+M0121,not_recorded,,
+M0122,not_recorded,,
+M0123,not_recorded,,
+M0124,not_recorded,,
+M0125,not_recorded,,
+M0126,not_recorded,,
+M0127,se,>=3,errors s.e.m. of at least three measurements
+M0128,se,>=3,errors s.e.m. of at least three measurements
+M0129,se,>=3,errors s.e.m. of at least three measurements
+M0130,se,>=3,errors s.e.m. of at least three measurements
+M0131,none,,
+M0132,not_recorded,>=5,footnote a: average of at least five independent measurements
+M0133,not_recorded,>=5,footnote a: average of at least five independent measurements
+M0134,not_recorded,,
+M0135,not_recorded,>=5,footnote a: average of at least five independent measurements
+M0136,not_recorded,>=5,footnote a: average of at least five independent measurements
+M0137,not_recorded,,
+M0138,not_recorded,,
+M0139,not_recorded,,
+M0140,not_stated,,"parentheses give the error, type not stated"
+M0141,not_stated,,"parentheses give the error, type not stated"
+M0142,not_stated,,"parentheses give the error, type not stated"
+M0143,not_stated,,"parentheses give the error, type not stated"
+M0144,not_stated,,"parentheses give the error, type not stated"
+M0145,not_stated,,"parentheses give the error, type not stated"
+M0146,not_stated,,"parentheses give the error, type not stated"
+M0147,not_stated,,"parentheses give the error, type not stated"
+M0148,not_stated,,"parentheses give the error, type not stated"
+M0149,not_stated,,"parentheses give the error, type not stated"
+M0150,not_stated,,"parentheses give the error, type not stated"
+M0151,not_stated,,"parentheses give the error, type not stated"
+M0152,not_stated,,"parentheses give the error, type not stated"
+M0153,not_stated,,"parentheses give the error, type not stated"
+M0154,not_stated,,"parentheses give the error, type not stated"
+M0155,not_stated,,"parentheses give the error, type not stated"
+M0156,not_stated,,"parentheses give the error, type not stated"
+M0157,not_stated,,"parentheses give the error, type not stated"
+M0158,not_stated,,"parentheses give the error, type not stated"
+M0159,not_stated,,"parentheses give the error, type not stated"
+M0160,not_stated,,"parentheses give the error, type not stated"
+M0161,not_stated,,"parentheses give the error, type not stated"
+M0162,not_stated,,"parentheses give the error, type not stated"
+M0163,not_stated,,"parentheses give the error, type not stated"
+M0164,not_stated,,"parentheses give the error, type not stated"
+M0165,not_stated,,"parentheses give the error, type not stated"
+M0166,not_stated,,"parentheses give the error, type not stated"
+M0167,not_stated,,"parentheses give the error, type not stated"
+M0168,not_stated,,"parentheses give the error, type not stated"
+M0169,not_stated,,"parentheses give the error, type not stated"
+M0170,not_stated,,"parentheses give the error, type not stated"
+M0171,not_stated,,"parentheses give the error, type not stated"
+M0172,not_stated,,"parentheses give the error, type not stated"
+M0173,not_stated,,"parentheses give the error, type not stated"
+M0174,not_stated,,"parentheses give the error, type not stated"
+M0175,not_stated,,"parentheses give the error, type not stated"
+M0176,not_stated,,"parentheses give the error, type not stated"
+M0177,not_stated,,"parentheses give the error, type not stated"
+M0178,not_stated,,"parentheses give the error, type not stated"
+M0179,not_stated,,"parentheses give the error, type not stated"
+M0180,not_stated,,"parentheses give the error, type not stated"
+M0181,not_stated,,"parentheses give the error, type not stated"
+M0182,not_stated,,"parentheses give the error, type not stated"
+M0183,not_stated,,"parentheses give the error, type not stated"
+M0184,not_stated,,"parentheses give the error, type not stated"
+M0185,not_stated,,"parentheses give the error, type not stated"
+M0186,not_stated,,"parentheses give the error, type not stated"
+M0187,not_stated,,"parentheses give the error, type not stated"
+M0188,not_recorded,,
+M0189,not_recorded,,
+M0190,not_stated,,error type not stated
+M0191,not_stated,,error type not stated
+M0192,not_stated,,error type not stated
+M0193,not_stated,,error type not stated
+M0194,not_stated,,error type not stated
+M0195,not_stated,,error type not stated
+M0196,not_stated,,error type not stated
+M0197,not_stated,,error type not stated
+M0198,not_stated,,error type not stated
+M0199,not_stated,,error type not stated
+M0200,not_recorded,,
+M0201,not_stated,>=9,error type not stated; at least nine repeats
+M0202,not_stated,3,error type not stated; three independent measurements per point
+M0203,not_stated,,error type not stated
+M0204,not_stated,,error type not stated
+M0205,not_stated,,error type not stated
+M0206,not_stated,,error type not stated
+M0207,not_stated,,error type not stated
+M0208,not_stated,,error type not stated
+M0209,not_stated,,error type not stated
+M0210,none,>=15,single-exponential fits of at least 15 averaged shots
+M0211,none,>=15,single-exponential fits of at least 15 averaged shots
+M0212,none,>=15,single-exponential fits of at least 15 averaged shots
+M0213,none,>=15,single-exponential fits of at least 15 averaged shots
+M0214,none,>=15,single-exponential fits of at least 15 averaged shots
+M0215,sd,2,averages of 2 trials across two expression batches ± one standard deviation
+M0216,sd,2,averages of 2 trials across two expression batches ± one standard deviation
+M0217,sd,2,averages of 2 trials across two expression batches ± one standard deviation
+M0218,sd,2,averages of 2 trials across two expression batches ± one standard deviation
+M0219,sd,2,averages of 2 trials across two expression batches ± one standard deviation
+M0220,not_stated,,error type not stated
+M0221,not_stated,,error type not stated
+M0222,not_stated,,error type not stated
+M0223,not_stated,,error type not stated
+M0224,not_stated,,error type not stated
+M0225,not_stated,,error type not stated
+M0226,not_stated,,error type not stated
+M0227,not_stated,,error type not stated
+M0228,not_stated,,error type not stated
+M0229,not_stated,,error type not stated
+M0230,not_stated,,error type not stated
+M0231,not_stated,,error type not stated
+M0232,not_stated,,error type not stated
+M0233,not_stated,,error type not stated
+M0234,not_stated,,error type not stated
+M0235,not_stated,,error type not stated
+M0236,not_stated,,error type not stated
+M0237,not_stated,,error type not stated
+M0238,not_stated,,error type not stated
+M0239,not_stated,,error type not stated
+M0240,not_stated,,error type not stated
+M0241,not_stated,,error type not stated
+M0242,not_stated,,error type not stated
+M0243,not_stated,,error type not stated
+M0244,not_stated,,error type not stated
+M0245,not_stated,,error type not stated
+M0246,not_stated,,error type not stated
+M0247,se,>=3,the uncertainty being the s.e.m. of the non-linear fits; at least three independent experiments
+M0248,se,>=3,the uncertainty being the s.e.m. of the non-linear fits; at least three independent experiments
+M0249,sd,>=4,"n > 3, mean ± SD (Table 2 caption)"
+M0250,sd,>=4,"n > 3, mean ± SD (Table 2 caption)"
+M0251,not_recorded,,
+M0252,not_stated,,error type not stated
+M0253,not_stated,,error type not stated
+M0254,not_stated,,error type not stated
+M0255,not_stated,,error type not stated
+M0256,not_recorded,,
+M0257,not_stated,,error type not stated
+M0258,none,,
+M0259,se,3,"from three independent experiments, with propagated standard errors in parentheses"
+M0260,se,3,"from three independent experiments, with propagated standard errors in parentheses"
+M0261,se,3,"from three independent experiments, with propagated standard errors in parentheses"
+M0262,se,3,"from three independent experiments, with propagated standard errors in parentheses"
+M0263,se,3,"from three independent experiments, with propagated standard errors in parentheses"
+M0264,se,3,"from three independent experiments, with propagated standard errors in parentheses"
+M0265,not_recorded,,
+M0266,not_recorded,,
+M0267,not_recorded,4,also given in the text as 4.3 ± 0.3 (N = 4)
+M0268,not_recorded,,
+M0269,not_recorded,,
+M0270,not_recorded,,
+M0271,not_recorded,,
+M0272,not_stated,3,experiments in triplicate; error type not stated
+M0273,not_stated,3,experiments in triplicate; error type not stated
+M0274,not_stated,3,experiments in triplicate; error type not stated
+M0275,not_stated,3,experiments in triplicate; error type not stated
+M0276,not_stated,3,experiments in triplicate; error type not stated
+M0277,not_stated,3,experiments in triplicate; error type not stated
+M0278,not_stated,3,experiments in triplicate; error type not stated
+M0279,not_stated,3,experiments in triplicate; error type not stated
+M0280,not_stated,3,experiments in triplicate; error type not stated
+M0281,not_stated,3,experiments in triplicate; error type not stated
+M0282,none,,
+M0283,none,,
+M0284,se,,Errors: standard errors of the fits (Methods)
+M0285,se,,Errors: standard errors of the fits (Methods)
+M0286,not_stated,,Error type not stated
+M0287,not_stated,,error type not stated
+M0288,not_stated,,error type not stated
+M0289,not_recorded,,
+M0290,not_recorded,,
+M0291,none,,
+M0292,not_recorded,>=3,average of at least three experiments
+M0293,not_recorded,>=3,average of at least three experiments
+M0294,sd,4,Average values with standard deviations; individual experiments listed
+M0295,sd,3,Average values with standard deviations; individual experiments listed
+M0296,sd,4,Average values with standard deviations; individual experiments listed
+M0297,sd,3,Average values with standard deviations; individual experiments listed
+M0298,sd,,± is the standard deviation (table caption)
+M0299,sd,,± is the standard deviation (table caption)
+M0300,sd,,± is the standard deviation (table caption)
+M0301,sd,,± is the standard deviation (table caption)
+M0302,sd,,± is the standard deviation (table caption)
+M0303,sd,,± is the standard deviation (table caption)
+M0304,sd,,± is the standard deviation (table caption)
+M0305,sd,,± is the standard deviation (table caption)
+M0306,sd,,± is the standard deviation (table caption)
+M0307,sd,,± is the standard deviation (table caption)
+M0308,ci95,,errors ... at the 95 % confidence interval (table note)
+M0309,ci95,,errors ... at the 95 % confidence interval (table note)
+M0310,ci95,,errors ... at the 95 % confidence interval (table note)
+M0311,ci95,,errors ... at the 95 % confidence interval (table note)
+M0312,ci95,,errors ... at the 95 % confidence interval (table note)
+M0313,ci95,,errors ... at the 95 % confidence interval (table note)
+M0314,ci95,,errors ... at the 95 % confidence interval (table note)
+M0315,ci95,,errors ... at the 95 % confidence interval (table note)
+M0316,ci95,,errors ... at the 95 % confidence interval (table note)
+M0317,ci95,,errors ... at the 95 % confidence interval (table note)
+M0318,ci95,,errors ... at the 95 % confidence interval (table note)
+M0319,ci95,,errors ... at the 95 % confidence interval (table note)
+M0320,ci95,,errors ... at the 95 % confidence interval (table note)
+M0321,ci95,,errors ... at the 95 % confidence interval (table note)
+M0322,ci95,,errors ... at the 95 % confidence interval (table note)
+M0323,not_stated,,the table does not say what the ± is
+M0324,not_stated,,the table does not say what the ± is
+M0325,not_stated,,the table does not say what the ± is
+M0326,not_stated,,the table does not say what the ± is
+M0327,not_stated,,the table does not say what the ± is
+M0328,not_stated,,the table does not say what the ± is
+M0329,not_stated,,the table does not say what the ± is
+M0330,not_stated,,the table does not say what the ± is
+M0331,not_stated,,the table does not say what the ± is
+M0332,not_stated,,the table does not say what the ± is
+M0333,not_stated,,the table does not say what the ± is
+M0334,not_stated,,the table does not say what the ± is
+M0335,not_stated,,the table does not say what the ± is
+M0336,not_stated,,the table does not say what the ± is
+M0337,not_stated,,the table does not say what the ± is
+M0338,not_stated,,the table does not say what the ± is
+M0339,not_stated,,the table does not say what the ± is
+M0340,not_stated,,the table does not say what the ± is
+M0341,not_stated,,the table does not say what the ± is
+M0342,not_stated,,the table does not say what the ± is
+M0343,not_stated,,the table does not say what the ± is
+M0344,not_stated,,the table does not say what the ± is
+M0345,not_stated,,the table does not say what the ± is
+M0346,not_stated,,the table does not say what the ± is
+M0347,not_stated,,the table does not say what the ± is
+M0348,se,,the introduction of the file calls the errors standard errors
+M0349,se,,the introduction of the file calls the errors standard errors
+M0350,se,,the introduction of the file calls the errors standard errors
+M0351,se,,the introduction of the file calls the errors standard errors
+M0352,se,,the introduction of the file calls the errors standard errors
+M0353,se,,the introduction of the file calls the errors standard errors
+M0354,se,,the introduction of the file calls the errors standard errors
+M0355,se,,the introduction of the file calls the errors standard errors
+M0356,se,,the introduction of the file calls the errors standard errors
+M0357,se,,the introduction of the file calls the errors standard errors
+M0358,conflicting,,"introduction: standard errors, while text says of 9.44 ±0.29: 95 % confidence interval"
+M0359,se,,the introduction of the file calls the errors standard errors
+M0360,se,,the introduction of the file calls the errors standard errors
+M0361,se,,the introduction of the file calls the errors standard errors
+M0362,se,,the introduction of the file calls the errors standard errors
+M0363,se,,the introduction of the file calls the errors standard errors
+M0364,se,,the introduction of the file calls the errors standard errors
+M0365,se,,the introduction of the file calls the errors standard errors
+M0366,se,,the introduction of the file calls the errors standard errors
+M0367,se,,the introduction of the file calls the errors standard errors
+M0368,se,,the introduction of the file calls the errors standard errors
+M0369,se,,the introduction of the file calls the errors standard errors
+M0370,se,,the introduction of the file calls the errors standard errors
+M0371,se,,the introduction of the file calls the errors standard errors
+M0372,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0373,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0374,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0375,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0376,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0377,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0378,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0379,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0380,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0381,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0382,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0383,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0384,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0385,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0386,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0387,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0388,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+M0389,not_stated,,the table does not say what the ± is
+M0390,not_stated,,the table does not say what the ± is
+M0391,not_stated,,the table does not say what the ± is
+M0392,not_stated,,the table does not say what the ± is
+M0393,not_stated,,the table does not say what the ± is
+M0394,not_stated,,the table does not say what the ± is
+M0395,not_stated,,the table does not say what the ± is
+M0396,not_stated,,the table does not say what the ± is
+M0397,not_stated,,the table does not say what the ± is
+M0398,not_stated,,the table does not say what the ± is
+M0399,not_stated,,the table does not say what the ± is
+M0400,not_stated,,the table does not say what the ± is
+M0401,not_stated,,the table does not say what the ± is
+M0402,not_stated,,the table does not say what the ± is
+M0403,not_stated,,the table does not say what the ± is
+M0404,not_stated,,the table does not say what the ± is
+M0405,not_stated,,the table does not say what the ± is
+M0406,not_stated,,the table does not say what the ± is
+M0407,not_stated,,the table does not say what the ± is
+M0408,not_stated,,the table does not say what the ± is
+M0409,not_stated,,the table does not say what the ± is
+M0410,not_stated,,the table does not say what the ± is
+M0411,not_stated,,the table does not say what the ± is
+M0412,not_stated,,the table does not say what the ± is
+M0413,not_stated,,the table does not say what the ± is
+M0414,not_stated,,the table does not say what the ± is
+M0415,not_stated,,the table does not say what the ± is
+M0416,ci95,,errors at the 95 % confidence level (table note)
+M0417,ci95,,errors at the 95 % confidence level (table note)
+M0418,ci95,,errors at the 95 % confidence level (table note)
+M0419,ci95,,errors at the 95 % confidence level (table note)
+M0420,ci95,,errors at the 95 % confidence level (table note)
+M0421,ci95,,errors at the 95 % confidence level (table note)
+M0422,ci95,,errors at the 95 % confidence level (table note)
+M0423,ci95,,errors at the 95 % confidence level (table note)
+M0424,ci95,,errors at the 95 % confidence level (table note)
+M0425,ci95,,errors at the 95 % confidence level (table note)
+M0426,ci95,,errors at the 95 % confidence level (table note)
+M0427,ci95,,errors at the 95 % confidence level (table note)
+M0428,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0429,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0430,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0431,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0432,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0433,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0434,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0435,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0436,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0437,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0438,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0439,not_stated,>=3,does not say what the ± is; at least 4 points from each
+M0440,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0441,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0442,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0443,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0444,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0445,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0446,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0447,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0448,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0449,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0450,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0451,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0452,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0453,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0454,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0455,ci95,,errors at the 95 % confidence interval (table footnote a)
+M0456,ci95,,errors at the 95 % confidence interval (table footnote a)
+R0001,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0002,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0003,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0004,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0005,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0006,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0007,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0008,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0009,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0010,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0011,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0012,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0013,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0014,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0015,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0016,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0017,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0018,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0019,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0020,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0021,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0022,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0023,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0024,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0025,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0026,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0027,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0028,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0029,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0030,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0031,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0032,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0033,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0034,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0035,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0036,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0037,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0038,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0039,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0040,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0041,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0042,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0043,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"
+R0044,se,>=6,"average of at least 6 measurements, errors are standard errors of the mean (caption)"

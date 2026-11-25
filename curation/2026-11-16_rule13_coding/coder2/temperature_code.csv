@@ -1,0 +1,176 @@
+temp_id,pressure_bar,cosolvent,heavy_other,T_break_K,branch,remark
+T0001,,,1,,,
+T0002,,,1,,,
+T0003,,,1,,,
+T0004,,,0,,,intrinsic; Ad-14C tracer not counted
+T0005,,,0,,,intrinsic; Ad-14C tracer not counted
+T0006,,,0,,,intrinsic; Ad-14C tracer not counted
+T0007,,,0,,,
+T0008,,,0,,,
+T0009,,,0,,,
+T0010,,,,,,
+T0011,,,8,,,
+T0012,,,8,,,
+T0013,,,0,,,
+T0014,,,0,,,
+T0015,,,0,,,
+T0016,,,0,,,
+T0017,,,0,,,
+T0018,,,0,,,
+T0019,,,0,,,
+T0020,,,0,,,
+T0021,,,1,,,"dideutero LA, positions not named"
+T0022,,,1,303.15,high,
+T0023,,,1,303.15,high,
+T0024,,,1,303.15,high,
+T0025,,,1,303.15,high,
+T0026,,,1,313.15,high,
+T0027,,,0,,,
+T0028,,,0,,,"fit 15-35 C; KIEs fall below 15 C, break not stated as such"
+T0029,,,0,,,
+T0030,,,0,293.15,low,
+T0031,,,0,293.15,low,
+T0032,,,0,293.15,high,
+T0033,,,0,293.15,high,
+T0034,,,1,,,linear part fitted; deviation at higher T not called a break
+T0035,,,0,246.15,high,cryogenic buffer of ref. 12 not named
+T0036,,,0,246.15,low,cryogenic buffer of ref. 12 not named
+T0037,,,,,,
+T0038,,,0,246.15,high,cryogenic buffer of ref. 12 not named
+T0039,,,0,246.15,low,cryogenic buffer of ref. 12 not named
+T0040,,,,,,
+T0041,,,0,246.15,high,cryogenic buffer of ref. 12 not named
+T0042,,,0,246.15,low,cryogenic buffer of ref. 12 not named
+T0043,,,,,,
+T0044,,,0,246.15,high,cryogenic buffer of ref. 12 not named
+T0045,,,0,246.15,low,cryogenic buffer of ref. 12 not named
+T0046,,,,,,
+T0047,,,0,,,
+T0048,,,0,,,
+T0049,,,0,,,
+T0050,,,0,,,
+T0051,,,1,,,
+T0052,,,2,,,
+T0053,,,2,,,
+T0054,,,2,,,
+T0055,,,2,,,
+T0056,,,0,,,
+T0057,,,0,,,
+T0058,,,0,,,
+T0059,,,30,,,h31-LA vs uniformly deuterated
+T0060,,,30,,,h31-LA vs uniformly deuterated
+T0061,,,1,,,
+T0062,1,,0,,,
+T0063,2000,,0,,,
+T0064,,,0,,,
+T0065,,,1,,,
+T0066,,,1,,,subtle break mentioned but single line fitted
+T0067,,,0,,,
+T0068,,,0,,,
+T0069,,,30,,,"D31-LA per Fig. 3; Table 2 says 11,11-D2"
+T0070,,,30,,,"D31-LA per Fig. 3; Table 2 says 11,11-D2"
+T0071,,,0,,,
+T0072,,,0,,,
+T0073,,,0,,,
+T0074,,,0,,,
+T0075,,,0,,,
+T0076,,,0,,,
+T0077,,,0,,,
+T0078,,,0,,,
+T0079,,,0,,,
+T0080,,,0,,,
+T0081,,,0,,,
+T0082,,,0,,,
+T0083,,,0,,,
+T0084,,,0,,,
+T0085,,,0,,,
+T0086,,,0,,,
+T0087,,,0,,,
+T0088,,,0,,,
+T0089,,,0,,,
+T0090,,,0,,,
+T0091,,,0,,,
+T0092,,,0,298.15,high,
+T0093,,,0,298.15,low,
+T0094,,,0,,,
+T0095,,,0,,,
+T0096,,,0,,,
+T0097,,,0,,,
+T0098,,,0,,,
+T0099,,,0,,,
+T0100,,,0,,,
+T0101,,,0,,,
+T0102,,,0,,,
+T0103,,,0,,,
+T0104,,,0,,,
+T0105,,,0,,,
+T0106,,,0,,,
+T0107,,,0,,,
+T0108,,,0,,,
+T0109,,,0,,,
+T0110,,,0,,,
+T0111,,,0,,,
+T0112,,,0,,,
+T0113,,,0,,,
+T0114,,,1,,,
+T0115,,,nd,,,
+T0116,,,nd,,,
+T0117,,,nd,,,
+T0118,,,nd,,,
+T0119,,,nd,,,
+T0120,,,nd,,,
+T0121,1,,nd,,,
+T0122,344,,nd,,,
+T0123,688,,nd,,,
+T0124,1034,,nd,,,
+T0125,1,,nd,,,
+T0126,344,,nd,,,
+T0127,688,,nd,,,
+T0128,1034,,nd,,,
+T0129,1,,nd,,,
+T0130,344,,nd,,,
+T0131,688,,nd,,,
+T0132,1034,,nd,,,
+T0133,,,nd,,,
+T0134,,,nd,,,
+T0135,,,1,,,
+T0136,,,1,,,
+T0137,,,0,,,
+T0138,,,0,,,
+T0139,,,2,,,
+T0140,,,,,,
+T0141,,,,,,
+T0142,,,,,,
+T0143,,,,,,
+T0144,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,glycerol likely enzyme stock; acetonitrile for substrate
+T0145,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,glycerol likely enzyme stock; acetonitrile for substrate
+T0146,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,glycerol likely enzyme stock; acetonitrile for substrate
+T0147,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,glycerol likely enzyme stock; acetonitrile for substrate
+T0148,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,glycerol likely enzyme stock; acetonitrile for substrate
+T0149,,glycerol 1.25 %; acetonitrile 1-1.5 %,0,,,glycerol likely enzyme stock; acetonitrile for substrate
+T0150,,,0,nd,low,"break between 40 and 45 C (313.15-318.15 K), no single value"
+T0151,,,0,nd,high,"break between 40 and 45 C (313.15-318.15 K), no single value"
+T0152,,,,,,
+T0153,,,,,,
+T0154,,,30,,,2H31-LA
+T0155,,,1,,,
+T0156,,,0,,,
+T0157,,,0,,,
+T0158,,,0,,,
+T0159,,,nd,,,labelling not described; ranges split at 303 K but no break stated
+T0160,,,nd,,,labelling not described; ranges split at 303 K but no break stated
+T0161,,,nd,,,labelling not described; ranges split at 303 K but no break stated
+T0162,,,nd,,,labelling not described; ranges split at 303 K but no break stated
+T0163,,,1,,,ranges split at 303 K but no break stated
+T0164,,,1,,,ranges split at 303 K but no break stated
+T0165,,,0,,,
+T0166,,,0,,,
+T0167,,,nd,,,H/D derived from H/T and D/T; secondary-position labels not given in row
+T0168,,,2,,,
+T0169,,glycerol 30 %,2,,,
+T0170,,,,,,
+T0171,,,0,,,
+T0172,,,1,,,
+T0173,,,,,,
+T0174,,,0,,,
+T0175,,,1,,,

@@ -1,0 +1,28 @@
+table,id,field,new,reason
+temperature.csv,T0059,notes,(appended),"article and SI read again on 21 Nov 2026 (two blind readings): only the range is printed, no number, list or step of the temperatures; the SI omits the H-LA data of WT below 7.5 °C and the data above 27.5 °C (WT) and 25 °C (I219A); n_temperatures stays empty"
+temperature.csv,T0060,notes,(appended),"article and SI read again on 21 Nov 2026 (two blind readings): only the range is printed, no number, list or step of the temperatures; the SI omits the H-LA data of WT below 7.5 °C and the data above 27.5 °C (WT) and 25 °C (I219A); n_temperatures stays empty"
+temperature.csv,T0102,n_temperatures,6,see notes
+temperature.csv,T0102,notes,(appended),n_temperatures 6 entered on 21 Nov 2026: the number of temperatures tabulated in SI Table S1 (reading of 19 Nov 2026); which of them entered the fit is not stated
+temperature.csv,T0104,n_temperatures,9,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0104,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Tables S2 and S3 print kH and kD at 9 temperatures (10 to 50 in steps of 5 °C); the source does not say which of them entered the Arrhenius fit of Table 5, so n_temperatures is the number tabulated and the range stays empty; Table S4 prints the isotope effect at each of these temperatures (not entered yet)"
+temperature.csv,T0105,n_temperatures,7,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0105,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Tables S2 and S3 print kH and kD at 7 temperatures (5 to 35 in steps of 5 °C); the source does not say which of them entered the Arrhenius fit of Table 5, so n_temperatures is the number tabulated and the range stays empty; Table S4 prints the isotope effect at each of these temperatures (not entered yet)"
+temperature.csv,T0106,n_temperatures,7,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0106,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Tables S2 and S3 print kH and kD at 7 temperatures (5 to 35 in steps of 5 °C); the source does not say which of them entered the Arrhenius fit of Table 5, so n_temperatures is the number tabulated and the range stays empty; Table S4 prints the isotope effect at each of these temperatures (not entered yet)"
+temperature.csv,T0107,n_temperatures,8,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0107,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Tables S2 and S3 print kH and kD at 8 temperatures (5 to 40 in steps of 5 °C); the source does not say which of them entered the Arrhenius fit of Table 5, so n_temperatures is the number tabulated and the range stays empty; Table S4 prints the isotope effect at each of these temperatures (not entered yet)"
+temperature.csv,T0108,n_temperatures,7,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0108,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Tables S2 and S3 print kH and kD at 7 temperatures (5 to 35 in steps of 5 °C); the source does not say which of them entered the Arrhenius fit of Table 5, so n_temperatures is the number tabulated and the range stays empty; Table S4 prints the isotope effect at each of these temperatures (not entered yet)"
+temperature.csv,T0109,n_temperatures,7,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0109,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Tables S2 and S3 print kH and kD at 7 temperatures (5 to 35 in steps of 5 °C); the source does not say which of them entered the Arrhenius fit of Table 5, so n_temperatures is the number tabulated and the range stays empty; Table S4 prints the isotope effect at each of these temperatures (not entered yet)"
+temperature.csv,T0110,n_temperatures,6,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0110,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Tables S2 and S3 print kH and kD at 6 temperatures (5 to 30 in steps of 5 °C); the source does not say which of them entered the Arrhenius fit of Table 5, so n_temperatures is the number tabulated and the range stays empty; Table S4 prints the isotope effect at each of these temperatures (not entered yet)"
+temperature.csv,T0138,notes,(appended),"article read again on 21 Nov 2026 (two blind readings): only the range 5.3-20 °C is printed, no number, list or step of the temperatures; n_temperatures stays empty"
+temperature.csv,T0150,n_temperatures,4,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0150,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Table S1 lists 20, 25, 30, 35 and 40 °C in this range and the Fig. 3 legend omits 25 °C from the Arrhenius plot (low coefficient of determination), so n_temperatures 4; Table S1 prints VH/VD at each temperature (not entered yet)"
+temperature.csv,T0151,n_temperatures,4,SI read on 21 Nov 2026 (two blind readings)
+temperature.csv,T0151,notes,(appended),"SI read on 21 Nov 2026 (two blind readings): Table S1 lists 45, 50, 60 and 70 °C in this range, none of them omitted in the Fig. 3 legend, so n_temperatures 4; Table S1 prints VH/VD at each temperature (not entered yet)"
+temperature.csv,T0171,n_temperatures,7,see notes
+temperature.csv,T0171,notes,(appended),"n_temperatures 7 entered on 21 Nov 2026, counted from the printed range and step (5 to 35 °C at 5 °C intervals)"
+temperature.csv,T0172,n_temperatures,7,see notes
+temperature.csv,T0172,notes,(appended),"n_temperatures 7 entered on 21 Nov 2026, counted from the printed range and step (5 to 35 °C at 5 °C intervals)"

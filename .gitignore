@@ -1,0 +1,9 @@
+# Source papers are never published (CURATION.md, rule 8); they live outside this folder.
+*.pdf
+*.PDF
+*.html
+*.htm
+# System and tool files
+.DS_Store
+__pycache__/
+*.pyc
